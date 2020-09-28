@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: unset;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+@import "./TenDrum";
+
+.hamburger {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 20;
+    width: auto;
+    padding: 10px;
+    height: 50px;
+    color: lightcoral;
+    line-height: 36px;
+    text-align: center;
+    font-size: 36px;
+    // background-color: rgba(225, 225, 225, 0.5);
+    margin-bottom: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.btn-group {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(252, 172, 138,1);
+    opacity: 0.9;
+
+    display: none;
+    &.active {
+        display: block;
+    }
+    .btns {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn {
+            padding: 10px;
+            
+            color: darkgreen;
+            font-weight: bolder;
+            line-height: 50%;
+            text-align: center;
+            font-size: 24px;
+        }        
+    }
+}
+.swiper-container {
+    width: 100%;
+    height: 90vh;
+    .swiper-slide {
+        /* Center slide text vertically */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .abouts {
+            width: 50%;
+            .about-title {
+                font-size: 36px;
+            }
+            .about-text {
+                font-size: 24px;
+            }
+        }
+    }
+    .swiper-pagination-bullets{
+        right: 0;
+        left: 10px;
+    }
+}
+
+
+    
+
