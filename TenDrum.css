@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -15,12 +16,75 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-family: 微軟正黑體;
 }
 
 html,
 body {
   position: relative;
   height: 100%;
+}
+
+body {
+  background-color: #EFE5CB;
+}
+
+.Mask {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-color: dimgray;
+}
+
+.Nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Nav .Logo-pic {
+  width: 30%;
+}
+
+.Nav .Menu-group {
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
+.Nav .Menu-group .index-btn {
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.Nav .Menu-group .index-btn:hover {
+  cursor: pointer;
+}
+
+.big-img {
+  position: absolute;
+  bottom: 0;
+  background-image: url("./img/十鼓描圖-上色2版拷貝.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  min-height: 42vh;
 }
 
 .hamburger {
@@ -31,7 +95,7 @@ body {
   width: auto;
   padding: 10px;
   height: 50px;
-  color: lightcoral;
+  color: #0b6c6d;
   line-height: 36px;
   text-align: center;
   font-size: 36px;
@@ -42,20 +106,48 @@ body {
   cursor: pointer;
 }
 
-.btn-group {
+.btn-groupxxx {
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-color: #fcac8a;
-  opacity: 0.9;
+  background-color: rgba(252, 172, 138, 0.1);
   display: none;
 }
 
-.btn-group.active {
+.btn-groupxxx.active {
   display: block;
 }
 
-.btn-group .btns {
+.btn-groupxxx .btnsss {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn-groupxxx .btnsss .icons {
+  width: 10%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.btn-groupxxx .btnsss .icons .icon {
   width: 100%;
+}
+
+.btn-groupxxx .btnsss .btns {
+  width: 85%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,23 +158,63 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
 }
 
-.btn-group .btns .btn {
-  padding: 10px;
-  color: darkgreen;
+.btn-groupxxx .btnsss .btns #btn-index {
+  font-size: 45px;
+}
+
+.btn-groupxxx .btnsss .btns .btn {
+  padding: 30px;
+  width: 100%;
+  color: #4d483d;
   font-weight: bolder;
   line-height: 50%;
   text-align: center;
-  font-size: 24px;
+  font-size: 40px;
 }
 
-.swiper-container {
+.btn-groupxxx .btnsss .btns .btn:hover {
+  background-color: #d4a63f;
+}
+
+.btn-groupxxx .btnsss .infor {
+  width: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 95px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.btn-groupxxx .btnsss .infor .top {
   width: 100%;
-  height: 90vh;
+  text-align: right;
 }
 
-.swiper-container .swiper-slide {
+.btn-groupxxx .btnsss .bott {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.about-swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.about-swiper .swiper-slide {
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,20 +227,41 @@ body {
           align-items: center;
 }
 
-.swiper-container .swiper-slide .abouts {
+.about-swiper .swiper-slide .abouts {
   width: 50%;
 }
 
-.swiper-container .swiper-slide .abouts .about-title {
+.about-swiper .swiper-slide .abouts .en-title {
+  font-size: 120px;
+}
+
+.about-swiper .swiper-slide .abouts .en-title p {
+  border-bottom: 1px solid white;
+}
+
+.about-swiper .swiper-slide .abouts .cn-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 70px;
+}
+
+.about-swiper .swiper-slide .abouts .cn-title .big-size {
+  font-size: 100px;
+}
+
+.about-swiper .swiper-slide .abouts .about-title {
   font-size: 36px;
 }
 
-.swiper-container .swiper-slide .abouts .about-text {
+.about-swiper .swiper-slide .abouts .about-text {
   font-size: 24px;
 }
 
-.swiper-container .swiper-pagination-bullets {
-  right: 0;
-  left: 10px;
+.about-swiper .color-B15821 {
+  background-color: #B15821;
 }
 /*# sourceMappingURL=TenDrum.css.map */

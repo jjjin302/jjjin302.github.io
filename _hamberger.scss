@@ -1,0 +1,91 @@
+@mixin hamberger() {
+    .hamburger {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 20;
+        width: auto;
+        padding: 10px;
+        height: 50px;
+        color: #0b6c6d;
+        line-height: 36px;
+        text-align: center;
+        font-size: 36px;
+        // background-color: rgba(225, 225, 225, 0.5);
+        margin-bottom: 20px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .btn-groupxxx {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(252, 172, 138, 0.1);
+        // opacity: 0.9;
+
+        display: none;
+        &.active {
+            display: block;
+        }
+        .btnsss {
+            display: flex;
+            .icons {
+                width: 10%;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                padding: 20px;
+                .icon {
+                    width: 100%;
+                }
+            }
+            .btns {
+                width: 85%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 50px;
+                #btn-index{
+                    font-size: 45px;
+                }
+                .btn {
+                    padding: 30px;
+                    width: 100%;
+                    color: #4d483d;
+                    font-weight: bolder;
+                    line-height: 50%;
+                    text-align: center;
+                    font-size: 40px;
+                    &:hover {
+                        background-color: #d4a63f;
+                    }
+                }
+            }
+            .infor {
+                width: 5%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 95px;
+                flex-wrap: wrap;
+                padding: 20px;
+                .top {
+                    width: 100%;
+                    text-align: right;
+                    
+                }
+            }
+            .bott {
+                
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    }
+}

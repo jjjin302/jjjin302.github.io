@@ -1,0 +1,45 @@
+@mixin about() {
+    .about-swiper {
+        width: 100%;
+        height: 100vh;
+        .swiper-slide {
+            /* Center slide text vertically */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .abouts {                
+                    .en-title {
+                        
+                        font-size: 120px;
+                        p {
+                            border-bottom: 1px solid white;
+                        }
+                    }
+                    .cn-title {
+                        
+                        display: flex;
+                        align-items: baseline;
+                        font-size: 70px;
+                        .big-size {
+                            font-size: 100px;
+                        }
+                    } 
+                width: 50%;
+                .about-title {
+                    font-size: 36px;
+                }
+                .about-text {
+                    font-size: 24px;
+                }
+            }
+        }
+        .color-B15821{
+            background-color: #B15821;
+        }
+        // .swiper-pagination-bullets {
+        //     right: 0;
+        //     left: 10px;
+        // }
+    }
+}
