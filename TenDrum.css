@@ -697,31 +697,6 @@ body {
   line-height: 80px;
 }
 
-.about-swiper .swiper-slide .abouts .irregular-circle {
-  height: 80px;
-  border-radius: 80% 55% 75% 60%;
-}
-
-.about-swiper .swiper-slide .abouts .irregular-color01 {
-  background: #efe5cb;
-  -webkit-box-shadow: 8px 10px 2px #b15821;
-          box-shadow: 8px 10px 2px #b15821;
-}
-
-.about-swiper .swiper-slide .abouts .irregular-color02 {
-  background: #f7f8f8;
-}
-
-.about-swiper .swiper-slide .abouts .irregular-color03 {
-  background: #ffffff;
-  -webkit-box-shadow: 8px 10px 2px #0b6c6d;
-          box-shadow: 8px 10px 2px #0b6c6d;
-}
-
-.about-swiper .swiper-slide .abouts .color-0B6C6D {
-  background-color: #0b6c6d;
-}
-
 .about-swiper .swiper-slide .abouts .about-text {
   font-size: 16px;
 }
