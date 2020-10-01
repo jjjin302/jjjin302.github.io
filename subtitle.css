@@ -42,7 +42,7 @@
         animation: morph 3s linear infinite;
         animation-delay: 400ms;
         opacity: .89;
-        content: "簡介";
+        content: "";
         line-height: 120px;
         text-indent: -21px;
       }
