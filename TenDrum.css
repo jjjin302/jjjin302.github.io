@@ -674,12 +674,11 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   font-size: 30px;
-  color: #d4a63f;
+  color: #f7f8f8;
 }
 
 .about-swiper .swiper-slide .abouts .cn-title .big-size {
   font-size: 36px;
-  color: #f7f8f8;
 }
 
 .about-swiper .swiper-slide .abouts .cn-title .line01 {
@@ -702,7 +701,10 @@ body {
 }
 
 .about-swiper .color-B15821 {
-  background-color: #b15821;
+  width: 100%;
+  background-image: url("./img/關於背景1002試用_工作區域 1.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .about-swiper .color-E9C37C {
