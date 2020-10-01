@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Fredericka the Great', cursive,微軟正黑體,'Noto Sans HK', sans-serif;
+    font-family: "Fredericka the Great", cursive, "Noto Sans HK", 微軟正黑體, sans-serif;
 }
 a {
     text-decoration: none;
@@ -12,25 +12,22 @@ html {
 body {
     margin: 0;
     padding: 0;
-    
-    
 }
 
 html,
 body {
     position: relative;
     height: 100%;
-    
 }
 @import "./TenDrum";
-@import"./index";
-@import"./hamberger";
-@import"./About";
-@import"./News";
-@import"./Facility";
-@import"./Drum";
-@import"./Information";
-@import"./Rented";
+@import "./index";
+@import "./hamberger";
+@import "./About";
+@import "./News";
+@import "./Facility";
+@import "./Drum";
+@import "./Information";
+@import "./Rented";
 @include Index();
 @include hamberger();
 @include about();

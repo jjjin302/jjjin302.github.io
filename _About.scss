@@ -1,47 +1,69 @@
 @mixin about() {
-    
     .about-swiper {
         width: 100%;
         height: 100vh;
         .swiper-slide {
             /* Center slide text vertically */
-
             display: flex;
             justify-content: center;
             align-items: center;
             .abouts {
+                // width: 50%;
+
                 .en-title {
-                    color: #F7F8F8;
-                    font-size: 120px;
+                    color: #f7f8f8;
+
                     u {
                         font-size: 30px;
+                    }
+                    .line02 {
                         
+                        color: #b15821;
                     }
                 }
                 .cn-title {
                     display: flex;
                     align-items: baseline;
-                    font-size: 70px;
-                    color: #D4A63F;
+                    font-size: 30px;
+                    color: #d4a63f;
                     .big-size {
-                        font-size: 100px;
-                        color: #F7F8F8;
+                        font-size: 36px;
+                        color: #f7f8f8;
                     }
-                    .line01{
-                        font-size: 30px;
-                        color: #0B6C6D;
+                    
+                    .line01 {
+                        
+                        color: #0b6c6d;
                     }
-                    .line02{
-                        font-size: 30px;
-                        color: #B15821;
-                    }
+                    
                 }
-                .cn-white{
-                    color: #F7F8F8;
+                .cn-white {
+                    color: #f7f8f8;
                 }
-                width: 50%;
+
                 .about-title {
                     font-size: 36px;
+                    text-align: center;
+                    line-height: 80px;
+                }
+                .irregular-circle {
+                    width: 100px;
+                    height: 80px;
+                    border-radius: 80% 55% 75% 60%;
+                }
+                .irregular-color01 {
+                    background: #efe5cb;
+                    box-shadow: 8px 10px 2px #b15821;
+                }
+                .irregular-color02 {
+                    background: #f7f8f8;
+                }
+                .irregular-color03 {
+                    background: #FFFFFF;
+                    box-shadow: 8px 10px 2px #0b6c6d;
+                }
+                .color-0B6C6D {
+                    background-color: #0b6c6d;
                 }
                 .about-text {
                     font-size: 24px;
@@ -51,9 +73,11 @@
         .color-B15821 {
             background-color: #b15821;
         }
-        .color-E9C37C{
-            background-color: #E9C37C;
+        .color-E9C37C {
+            background-color: #e9c37c;
         }
-        
+        .color-D4A63F {
+            background-color: #d4a63f;
+        }
     }
 }

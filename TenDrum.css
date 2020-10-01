@@ -2,7 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Fredericka the Great', cursive,微軟正黑體,'Noto Sans HK', sans-serif;
+  font-family: "Fredericka the Great", cursive, "Noto Sans HK", 微軟正黑體, sans-serif;
 }
 
 a {
@@ -650,17 +650,16 @@ body {
           align-items: center;
 }
 
-.about-swiper .swiper-slide .abouts {
-  width: 50%;
-}
-
 .about-swiper .swiper-slide .abouts .en-title {
-  color: #F7F8F8;
-  font-size: 120px;
+  color: #f7f8f8;
 }
 
 .about-swiper .swiper-slide .abouts .en-title u {
   font-size: 30px;
+}
+
+.about-swiper .swiper-slide .abouts .en-title .line02 {
+  color: #b15821;
 }
 
 .about-swiper .swiper-slide .abouts .cn-title {
@@ -670,31 +669,53 @@ body {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-size: 70px;
-  color: #D4A63F;
+  font-size: 30px;
+  color: #d4a63f;
 }
 
 .about-swiper .swiper-slide .abouts .cn-title .big-size {
-  font-size: 100px;
-  color: #F7F8F8;
+  font-size: 36px;
+  color: #f7f8f8;
 }
 
 .about-swiper .swiper-slide .abouts .cn-title .line01 {
-  font-size: 30px;
-  color: #0B6C6D;
-}
-
-.about-swiper .swiper-slide .abouts .cn-title .line02 {
-  font-size: 30px;
-  color: #B15821;
+  color: #0b6c6d;
 }
 
 .about-swiper .swiper-slide .abouts .cn-white {
-  color: #F7F8F8;
+  color: #f7f8f8;
 }
 
 .about-swiper .swiper-slide .abouts .about-title {
   font-size: 36px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.about-swiper .swiper-slide .abouts .irregular-circle {
+  width: 100px;
+  height: 80px;
+  border-radius: 80% 55% 75% 60%;
+}
+
+.about-swiper .swiper-slide .abouts .irregular-color01 {
+  background: #efe5cb;
+  -webkit-box-shadow: 8px 10px 2px #b15821;
+          box-shadow: 8px 10px 2px #b15821;
+}
+
+.about-swiper .swiper-slide .abouts .irregular-color02 {
+  background: #f7f8f8;
+}
+
+.about-swiper .swiper-slide .abouts .irregular-color03 {
+  background: #FFFFFF;
+  -webkit-box-shadow: 8px 10px 2px #0b6c6d;
+          box-shadow: 8px 10px 2px #0b6c6d;
+}
+
+.about-swiper .swiper-slide .abouts .color-0B6C6D {
+  background-color: #0b6c6d;
 }
 
 .about-swiper .swiper-slide .abouts .about-text {
@@ -706,7 +727,11 @@ body {
 }
 
 .about-swiper .color-E9C37C {
-  background-color: #E9C37C;
+  background-color: #e9c37c;
+}
+
+.about-swiper .color-D4A63F {
+  background-color: #d4a63f;
 }
 
 body {
