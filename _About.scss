@@ -1,4 +1,5 @@
 @mixin about() {
+    
     .about-swiper {
         width: 100%;
         height: 100vh;
@@ -8,7 +9,8 @@
             justify-content: center;
             align-items: center;
             .abouts {
-                // width: 50%;
+                
+                width: 50%;
 
                 .en-title {
                     color: #f7f8f8;
@@ -17,7 +19,6 @@
                         font-size: 30px;
                     }
                     .line02 {
-                        
                         color: #b15821;
                     }
                 }
@@ -30,25 +31,24 @@
                         font-size: 36px;
                         color: #f7f8f8;
                     }
-                    
+
                     .line01 {
-                        
                         color: #0b6c6d;
                     }
-                    
                 }
                 .cn-white {
                     color: #f7f8f8;
                 }
 
                 .about-title {
+                    width: 100%;
                     font-size: 36px;
                     text-align: center;
                     line-height: 80px;
                 }
                 .irregular-circle {
-                    width: 100px;
                     height: 80px;
+                    // border-radius:45% 50% 60% 40%;
                     border-radius: 80% 55% 75% 60%;
                 }
                 .irregular-color01 {
@@ -59,14 +59,14 @@
                     background: #f7f8f8;
                 }
                 .irregular-color03 {
-                    background: #FFFFFF;
+                    background: #ffffff;
                     box-shadow: 8px 10px 2px #0b6c6d;
                 }
                 .color-0B6C6D {
                     background-color: #0b6c6d;
                 }
                 .about-text {
-                    font-size: 24px;
+                    font-size: 16px;
                 }
             }
         }

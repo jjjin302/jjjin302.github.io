@@ -650,6 +650,10 @@ body {
           align-items: center;
 }
 
+.about-swiper .swiper-slide .abouts {
+  width: 50%;
+}
+
 .about-swiper .swiper-slide .abouts .en-title {
   color: #f7f8f8;
 }
@@ -687,13 +691,13 @@ body {
 }
 
 .about-swiper .swiper-slide .abouts .about-title {
+  width: 100%;
   font-size: 36px;
   text-align: center;
   line-height: 80px;
 }
 
 .about-swiper .swiper-slide .abouts .irregular-circle {
-  width: 100px;
   height: 80px;
   border-radius: 80% 55% 75% 60%;
 }
@@ -709,7 +713,7 @@ body {
 }
 
 .about-swiper .swiper-slide .abouts .irregular-color03 {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 8px 10px 2px #0b6c6d;
           box-shadow: 8px 10px 2px #0b6c6d;
 }
@@ -719,7 +723,7 @@ body {
 }
 
 .about-swiper .swiper-slide .abouts .about-text {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .about-swiper .color-B15821 {
