@@ -1,10 +1,10 @@
 @mixin Index() {
-    $color-gray: #666;
-    $color-black: #000;
+    $color-gray: #7f5f43;
+    $color-black: #d3a53f;
     $stripe-height: 7px;
     $btn-color: $color-gray;
     $btn-background: #fff;
-    $btn-color-hover: #fff;
+    $btn-color-hover: #d3a53f;
     $btn-background-hover: $color-gray;
     $border-color: $color-gray;
     $border-color-hover: $color-black;
@@ -150,6 +150,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        // opacity: 0.5;
         width: 100%;
         min-height: 42vh;
     }

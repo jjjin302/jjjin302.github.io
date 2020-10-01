@@ -16,7 +16,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 微軟正黑體;
+  font-family: 'Fredericka the Great', cursive, 微軟正黑體;
 }
 
 html,
@@ -102,8 +102,8 @@ body {
   text-transform: uppercase;
   padding: 5px;
   background-color: #fff;
-  color: #666;
-  border: 2px solid #666;
+  color: #7f5f43;
+  border: 2px solid #7f5f43;
   border-radius: 6px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -124,10 +124,10 @@ body {
   display: block;
   height: 7px;
   width: 100%;
-  background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(45deg, #7f5f43, #7f5f43 1px, transparent 2px, transparent 5px);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  border-top: 1px solid #666;
+  border-top: 1px solid #7f5f43;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -135,14 +135,14 @@ body {
 }
 
 .Nav .Menu-group .btn--stripe:hover {
-  background-color: #666;
-  color: #fff;
-  border-color: #000;
+  background-color: #7f5f43;
+  color: #d3a53f;
+  border-color: #d3a53f;
 }
 
 .Nav .Menu-group .btn--stripe:hover:after {
-  background-image: repeating-linear-gradient(45deg, #fff, #fff 1px, transparent 2px, transparent 5px);
-  border-top: 1px solid #000;
+  background-image: repeating-linear-gradient(45deg, #d3a53f, #d3a53f 1px, transparent 2px, transparent 5px);
+  border-top: 1px solid #d3a53f;
   -webkit-animation: stripe-slide 12s infinite linear forwards;
           animation: stripe-slide 12s infinite linear forwards;
 }
