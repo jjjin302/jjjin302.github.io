@@ -2,6 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Fredericka the Great', cursive,微軟正黑體,'Noto Sans HK', sans-serif;
 }
 
 a {
@@ -16,7 +17,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Fredericka the Great', cursive, 微軟正黑體;
 }
 
 html,
@@ -48,7 +48,7 @@ body {
   margin-right: 30px;
   text-align: center;
   font-size: 20px;
-  line-height: 20px;
+  font-weight: 300;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,8 +61,6 @@ body {
 
 .Nav .Menu-group .index-btn {
   width: 100%;
-  height: 60px;
-  text-align: center;
 }
 
 .Nav .Menu-group .index-btn:hover {
@@ -93,8 +91,7 @@ body {
   padding: 0;
   border: 0;
   background: transparent;
-  font: inherit;
-  line-height: normal;
+  line-height: calc(50px);
   cursor: pointer;
   -moz-user-select: text;
   display: block;
@@ -136,12 +133,12 @@ body {
 
 .Nav .Menu-group .btn--stripe:hover {
   background-color: #7f5f43;
-  color: #d3a53f;
+  color: #ffffff;
   border-color: #d3a53f;
 }
 
 .Nav .Menu-group .btn--stripe:hover:after {
-  background-image: repeating-linear-gradient(45deg, #d3a53f, #d3a53f 1px, transparent 2px, transparent 5px);
+  background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 1px, transparent 2px, transparent 5px);
   border-top: 1px solid #d3a53f;
   -webkit-animation: stripe-slide 12s infinite linear forwards;
           animation: stripe-slide 12s infinite linear forwards;
@@ -153,9 +150,9 @@ body {
   background-image: url("./img/十鼓描圖-上色2版拷貝.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  min-height: 42vh;
+  min-height: 48vh;
 }
 
 .decoration {
