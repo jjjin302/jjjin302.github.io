@@ -1,27 +1,30 @@
 @mixin Index() {
-    body{
-        background-color: #EFE5CB;
+    $color-gray: #666;
+    $color-black: #000;
+    $stripe-height: 7px;
+    $btn-color: $color-gray;
+    $btn-background: #fff;
+    $btn-color-hover: #fff;
+    $btn-background-hover: $color-gray;
+    $border-color: $color-gray;
+    $border-color-hover: $color-black;
+    body {
+        background-color: #efe5cb;
     }
-    .Mask {
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(105, 105, 105, 1);
-    }
+
     .Nav {
         width: 100%;
-        
+
         // background-color: thistle;
         display: flex;
         justify-content: space-between;
 
-        .Logo-pic   {
+        .Logo-pic {
             width: 30%;
         }
         .Menu-group {
-            width: 60%;
-            
+            width: 45%;
+            margin-right: 30px;
             text-align: center;
             font-size: 20px;
             line-height: 20px;
@@ -33,19 +36,117 @@
             text-transform: uppercase;
             text-rendering: optimizeLegibility;
             .index-btn {
-                
-                width: 100%;                
-                transition: 1s;
+                width: 100%;
+                height: 60px;
+                text-align: center;
+
                 &:hover {
                     cursor: pointer;
                 }
             }
+
+            // @mixin reset-button {
+            //     overflow: visible;
+            //     margin: 0;
+            //     padding: 0;
+            //     border: 0;
+            //     background: transparent;
+            //     font: inherit;
+            //     line-height: normal;
+            //     cursor: pointer;
+            //     -moz-user-select: text;
+
+            //     &:-moz-focus-inner {
+            //         padding: 0;
+            //         border: 0;
+            //     }
+            // }
+
+            @keyframes stripe-slide {
+                0% {
+                    background-position: 0% 0;
+                }
+                100% {
+                    background-position: 100% 0;
+                }
+            }
+            .btn {
+                // @include reset-button;
+                overflow: visible;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                background: transparent;
+                font: inherit;
+                line-height: normal;
+                cursor: pointer;
+                -moz-user-select: text;
+
+                &:-moz-focus-inner {
+                    padding: 0;
+                    border: 0;
+                }
+                //
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 5px;
+                background-color: $btn-background;
+                color: $btn-color;
+                border: 2px solid $border-color;
+                border-radius: 6px;
+                transition: all 0.5s ease;
+
+                &--stripe {
+                    overflow: hidden;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        height: $stripe-height;
+                        width: 100%;
+                        background-image: repeating-linear-gradient(
+                            45deg,
+                            $border-color,
+                            $border-color 1px,
+                            transparent 2px,
+                            transparent 5px
+                        );
+
+                        backface-visibility: hidden;
+                        border-top: 1px solid $border-color;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        background-size: $stripe-height $stripe-height;
+                    }
+
+                    &:hover {
+                        background-color: $btn-background-hover;
+                        color: $btn-color-hover;
+                        border-color: $border-color-hover;
+
+                        &:after {
+                            background-image: repeating-linear-gradient(
+                                45deg,
+                                $btn-color-hover,
+                                $btn-color-hover 1px,
+                                transparent 2px,
+                                transparent 5px
+                            );
+                            border-top: 1px solid $border-color-hover;
+                            animation: stripe-slide 12s infinite linear forwards;
+                        }
+                    }
+                }
+            }
         }
     }
-    .big-img{
+    .big-img {
         position: absolute;
         bottom: 0;
-        background-image: url('./img/十鼓描圖-上色2版拷貝.jpg');
+        background-image: url("./img/十鼓描圖-上色2版拷貝.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
