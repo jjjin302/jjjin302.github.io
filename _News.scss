@@ -1,0 +1,31 @@
+@mixin news() {
+    body {
+        background-color: #efe5cb;
+    }
+    .New {
+        display: flex;
+        .new-title {
+            .new-title-all {
+            }
+            .new-title01 {
+            }
+        }
+
+        .new-context {
+            .new-context-title {
+            }
+            .new-context-group {
+                .news {
+                    .new-img {
+                    }
+                    .new-time {
+                    }
+                    .new-name {
+                    }
+                    .new-more {
+                    }
+                }
+            }
+        }
+    }
+}

@@ -24,7 +24,16 @@ body {
 @import"./index";
 @import"./hamberger";
 @import"./About";
+@import"./News";
+@import"./Facility";
+@import"./Drum";
+@import"./Information";
+@import"./Rented";
 @include Index();
 @include hamberger();
 @include about();
-
+@include news();
+@include Facility();
+@include Drum();
+@include Information();
+@include Rented();

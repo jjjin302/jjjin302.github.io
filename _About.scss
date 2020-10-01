@@ -8,23 +8,36 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            .abouts {                
-                    .en-title {
+            .abouts {
+                .en-title {
+                    color: #F7F8F8;
+                    font-size: 120px;
+                    u {
+                        font-size: 30px;
                         
-                        font-size: 120px;
-                        p {
-                            border-bottom: 1px solid white;
-                        }
                     }
-                    .cn-title {
-                        
-                        display: flex;
-                        align-items: baseline;
-                        font-size: 70px;
-                        .big-size {
-                            font-size: 100px;
-                        }
-                    } 
+                }
+                .cn-title {
+                    display: flex;
+                    align-items: baseline;
+                    font-size: 70px;
+                    color: #D4A63F;
+                    .big-size {
+                        font-size: 100px;
+                        color: #F7F8F8;
+                    }
+                    .line01{
+                        font-size: 30px;
+                        color: #0B6C6D;
+                    }
+                    .line02{
+                        font-size: 30px;
+                        color: #B15821;
+                    }
+                }
+                .cn-white{
+                    color: #F7F8F8;
+                }
                 width: 50%;
                 .about-title {
                     font-size: 36px;
@@ -34,8 +47,11 @@
                 }
             }
         }
-        .color-B15821{
-            background-color: #B15821;
+        .color-B15821 {
+            background-color: #b15821;
+        }
+        .color-E9C37C{
+            background-color: #E9C37C;
         }
         // .swiper-pagination-bullets {
         //     right: 0;

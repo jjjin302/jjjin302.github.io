@@ -16,7 +16,11 @@
 
 <body>
     <!-- 漢堡條 -->
-    <i class="fas fa-bars hamburger"></i>
+    <div class="ham-ani hamburger">
+        <div class="stick stick-1"></div>
+        <div class="stick stick-2"></div>
+        <div class="stick stick-3"></div>
+    </div>
     <div class="btn-groupxxx">
         <div class="btnsss">
             <div class="icons">
@@ -44,8 +48,6 @@
                 <p>台南市仁德區文華路二段326號
                 </p>
             </div>
-
-
         </div>
     </div>
     <!-- 漢堡條 -->
@@ -54,13 +56,13 @@
     <div class="swiper-container about-swiper ">
         <div class="swiper-wrapper">
             <div class="swiper-slide about-slide color-B15821">
-                <div class="abouts" >                    
-                        <div class="en-title">About</div>
-                    <div class="cn-title">
-                        <div class="big-size">關</div>於十鼓
+                <div class="abouts">
+                    <div class="en-title">About
+                        <u>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</u>
                     </div>
-                    
-                    
+                    <div class="cn-title">
+                        <div class="big-size">&emsp;<u class="line01">&emsp;</u>關</div>於十鼓
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -137,6 +139,15 @@
                     </div>
                 </div>
             </div>
+            <div class="swiper-slide about-slide color-E9C37C">
+                <div class="abouts ">
+                    <div class="en-title">
+                        About<u class="line02">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</u></div>
+                    <div class="cn-title cn-white">
+                        &emsp; <u class="line01">&emsp;</u>園區主題介紹
+                    </div>
+                </div>
+            </div>
 
         </div>
         <!-- Add Pagination -->
@@ -144,7 +155,8 @@
     </div>
 
 
-    <!-- Swiper JS -->
+    <!-- JS -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -176,6 +188,14 @@
             }
         }
         hamburger.addEventListener('click', handclick)
+        ///3條線變叉叉///
+        $(document).ready(function () {
+            $(".ham-ani").click(function () {
+                $(".stick").toggleClass(function () {
+                    return $(this).is('.open, .close') ? 'open close' : 'open';
+                });
+            });
+        });
         ///漢堡條///
         ///關於的輪播///
         var swiper = new Swiper('.about-swiper', {

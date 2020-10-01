@@ -1,0 +1,240 @@
+$bar-width: 100px;
+$bar-height: 10px;
+$bar-spacing: 25px;
+
+body {
+    background: #efe5cb;
+}
+
+.ham-ani {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .stick {
+    width: 80px;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #0b6c6d;
+    display: inline-block;
+}
+
+.stick:last-child {
+    margin-bottom: 0px;
+}
+
+.stick-1.open {
+    animation: stick-1-open 0.6s ease-out forwards;
+}
+
+.stick-2.open {
+    animation: stick-2-open 0.6s linear forwards;
+}
+
+.stick-3.open {
+    animation: stick-3-open 0.6s linear forwards;
+}
+}
+
+
+
+@keyframes stick-1-open {
+    0% {
+        width: 80px;
+    }
+    40% {
+        background-color:#0B6C6D;
+        width: 8px;
+        transform: translate(40px, 0px);
+    }
+    75% {
+        width: 8px;
+        transform: translate(40px, -50px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    100% {
+        background-color:#0B6C6D;
+        width: 8px;
+        transform: translate(35px, 46px);
+    }
+}
+
+@keyframes stick-2-open {
+    80% {
+        background-color: #0b6c6d;
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        background-color:#0B6C6D;
+        transform: translate(8px, 0px) rotate(40deg);
+    }
+}
+
+@keyframes stick-3-open {
+    80% {
+        background-color: #0b6c6d;
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    100% {
+        background-color:#0B6C6D;
+        transform: translate(8px, -23px) rotate(-40deg);
+    }
+}
+
+.stick-1.close {
+    width: 8px;
+    transform: translate(27px, 26px);
+    animation: stick-1-close 0.6s ease-out forwards;
+}
+
+.stick-2.close {
+    transform: translate(0px, 0px) rotate(40deg);
+    animation: stick-2-close 0.6s ease-out forwards;
+}
+
+.stick-3.close {
+    transform: translate(0px, -23px) rotate(-40deg);
+    animation: stick-3-close 0.6s ease-out forwards;
+}
+
+@keyframes stick-1-close {
+    0%,
+    70% {
+        width: 0px;
+    }
+    100% {
+        width: 80px;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes stick-2-close {
+    0% {
+        background-color:#0B6C6D;
+        width: 80px;
+    }
+    20% {
+        background-color:#0B6C6D;
+        width: 8px;
+        transform: translate(0, 0px) rotate(40deg);
+    }
+    40% {
+        background-color: #0b6c6d;
+        width: 0px;
+    }
+    65% {
+        transform: translate(0, -70px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    80% {
+        width: 0px;
+    }
+    100% {
+        width: 80px;
+        transform: translate(0, 0px);
+    }
+}
+
+@keyframes stick-3-close {
+    0% {
+        background-color:#0B6C6D;
+        width: 80px;
+    }
+    20% {
+        background-color:#0B6C6D;
+        width: 8px;
+        transform: translate(0, -23px) rotate(-40deg);
+    }
+    40% {
+        background-color: #0b6c6d;
+    }
+    65% {
+        transform: translate(0, -93px);
+        animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    }
+    90% {
+        width: 8px;
+    }
+    100% {
+        width: 80px;
+        transform: translate(0, 0px);
+    }
+}
+
+.btn-groupxxx {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #efe5cb;
+    // opacity: 0.9;
+
+    display: none;
+    &.active {
+        display: block;
+    }
+    .btnsss {
+        display: flex;
+        .icons {
+            width: 10%;
+            height:calc(100vh - 80px) ;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            padding: 20px;
+            .icon {
+                width: 100%;
+            }
+        }
+        .btns {
+            width: 85%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+            #btn-index {
+                font-size: 45px;
+            }
+            .btn {
+                padding: 30px;
+                width: 100%;
+                color: #4d483d;
+                font-weight: bolder;
+                line-height: 50%;
+                text-align: center;
+                font-size: 40px;
+                &:hover {
+                    background-color: #d4a63f;
+                }
+            }
+        }
+        .infor {
+            width: 5%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 95px;
+            flex-wrap: wrap;
+            padding: 20px;
+            .top {
+                width: 100%;
+                text-align: right;
+            }
+        }
+        .bott {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+}
