@@ -2,7 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Fredericka the Great", cursive, "Noto Sans HK", 微軟正黑體, sans-serif;
+  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
 
 a {
@@ -23,6 +23,21 @@ html,
 body {
   position: relative;
   height: 100%;
+}
+
+.display-none {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: #B15821;
+  margin: auto;
+  color: #F7F8F8;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
 }
 
 body {
@@ -153,12 +168,6 @@ body {
   background-size: cover;
   width: 100%;
   min-height: 48vh;
-}
-
-.decoration {
-  position: absolute;
-  border-left: 5px solid #0b6c6d;
-  font-size: 35px;
 }
 
 .hamburger {
@@ -632,45 +641,32 @@ body {
   bottom: 20px;
 }
 
-.about-swiper {
+#fullpage .section {
   width: 100%;
   height: 100vh;
+  text-align: center;
 }
 
-.about-swiper .swiper-slide {
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.about-swiper .swiper-slide .abouts {
+#fullpage .section .abouts {
   width: 100%;
 }
 
-.about-swiper .swiper-slide .abouts .en-title {
+#fullpage .section .abouts .en-title {
+  font-family: "Fredericka the Great", cursive;
   width: 50%;
   color: #f7f8f8;
   margin-left: 30%;
 }
 
-.about-swiper .swiper-slide .abouts .en-title u {
+#fullpage .section .abouts .en-title u {
   font-size: 30px;
 }
 
-.about-swiper .swiper-slide .abouts .en-title .line02 {
+#fullpage .section .abouts .en-title .line02 {
   color: #b15821;
 }
 
-.about-swiper .swiper-slide .abouts .cn-title {
+#fullpage .section .abouts .cn-title {
   margin-left: 30%;
   width: 60%;
   display: -webkit-box;
@@ -683,75 +679,134 @@ body {
   color: #f7f8f8;
 }
 
-.about-swiper .swiper-slide .abouts .cn-title .big-size {
+#fullpage .section .abouts .cn-title .big-size {
   font-size: 36px;
 }
 
-.about-swiper .swiper-slide .abouts .cn-title .line01 {
+#fullpage .section .abouts .cn-title .line01 {
   color: #0b6c6d;
 }
 
-.about-swiper .swiper-slide .abouts .cn-white {
+#fullpage .section .abouts .cn-white {
   color: #f7f8f8;
 }
 
-.about-swiper .swiper-slide .abouts .about-text-bacimg {
-  height: 100vh;
-  background-image: url("./img/關於背景1002試用-小-04_工作區域4.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+#fullpage .section .about-text-bacimg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.about-swiper .swiper-slide .abouts .about-text-bacimg .about-title {
-  width: 100%;
-  font-size: 36px;
+#fullpage .section .about-text-bacimg .about-title {
+  width: 75%;
+  font-size: 50px;
   text-align: center;
   line-height: 80px;
+  margin-left: 55%;
+  margin-top: 10%;
 }
 
-.about-swiper .swiper-slide .abouts .about-text-bacimg .about-text {
-  font-size: 16px;
+#fullpage .section .about-text-bacimg .about-text {
+  width: 40%;
+  font-size: 20px;
+  text-align: unset;
+  margin-top: 5%;
+  margin-left: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.about-swiper .swiper-slide .abouts .about-text-bacimg .text-color-F7F8F8 {
+#fullpage .section .about-text-bacimg .about-text .text-wrap {
+  padding: 0 10px;
+  width: 50%;
+}
+
+#fullpage .section .about-text-bacimg .about-text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 35%;
+  text-align: left;
+}
+
+#fullpage .section .about-text-bacimg .about-text .core {
+  color: #F7F8F8;
   width: 60%;
+}
+
+#fullpage .section .about-text-bacimg .about-2-text {
+  margin-top: 0;
+  margin-bottom: 150px;
+  margin-left: 35%;
+}
+
+#fullpage .section .about-text-bacimg .text-color-F7F8F8 {
   color: #f7f8f8;
 }
 
-.about-swiper .color-B15821 {
-  height: 970px;
+#fullpage .sec-00 {
   background-image: url("./img/關於背景1002試用-小-02.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.about-swiper .color-E9C37C {
-  background-color: #e9c37c;
+#fullpage .sec {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.about-swiper .color-D4A63F {
+.sec-01 {
   background-color: #d4a63f;
 }
 
-.swiper-pagination-bullet:active {
-  background: #f7f8f8;
+.sec-01 .sec-01-1 {
+  height: 100vh;
+  background-image: url("./img/關於背景1002試用-小-04_工作區域4.svg");
+}
+
+.sec-02 {
+  background-color: #e9c37c;
+}
+
+.sec-02 .sec-02-1 {
+  background-image: url("./img/設計稿 降轉10-02-沿革_工作區域6.svg");
+}
+
+.sec-03 {
+  background-color: #d0b975;
+}
+
+.sec-03 .sec-03-1 {
+  height: 100vh;
+  background-image: url("./img/設計稿 降轉10-02-核心價值_工作區域7.svg");
+}
+
+.sec-04 {
+  background-color: #e9c37c;
+}
+
+.sec-05 {
+  background-color: #efe5cb;
+  text-align: center;
+}
+
+.sec-05 .sec-05-00 {
+  background-image: url("./img/關於背景1002試用-小-06_工作區域6.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body {
@@ -762,5 +817,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.New .new-title {
+  width: 20%;
 }
 /*# sourceMappingURL=TenDrum.css.map */

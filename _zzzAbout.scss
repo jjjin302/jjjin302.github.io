@@ -1,0 +1,104 @@
+@mixin about() {
+    .about-swiper {
+        width: 100%;
+        height: 100vh;
+        .about-slide {
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .abouts {
+                width: 100%;
+
+                .en-title {
+                    width: 50%;
+                    color: #f7f8f8;
+                    margin-left: 30%;
+
+                    u {
+                        font-size: 30px;
+                    }
+                    .line02 {
+                        color: #b15821;
+                    }
+                }
+                .cn-title {
+                    margin-left: 30%;
+                    width: 60%;
+                    display: flex;
+                    align-items: baseline;
+                    font-size: 30px;
+                    color: #f7f8f8;
+                    .big-size {
+                        font-size: 36px;
+                    }
+
+                    .line01 {
+                        color: #0b6c6d;
+                    }
+                }
+                .cn-white {
+                    color: #f7f8f8;
+                }
+                .about-text-bacimg {
+                    height: 100vh;
+                    background-image: url("./img/關於背景1002試用-小-04_工作區域4.svg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    .about-title {
+                        width: 100%;
+                        font-size: 36px;
+                        text-align: center;
+                        line-height: 80px;
+                    }
+                    .about-text {
+                        font-size: 16px;
+                    }
+                    .text-color-F7F8F8 {
+                        width: 60%;
+                        color: #f7f8f8;
+                    }
+                }
+            }
+            .Infor-swiper-container{
+                width: 100%;
+                height: 100vh;
+                .Infor-swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            }
+            
+        }
+        .color-B15821 {
+            // background-color: #b15821;
+            // width: 100%;
+            height: 970px;
+            background-image: url("./img/關於背景1002試用-小-02.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .color-E9C37C {
+            background-color: #e9c37c;
+        }
+        .color-D4A63F {
+            background-color: #d4a63f;
+        }
+    }
+    .swiper-pagination-bullet {
+        &:active {
+            background: #f7f8f8;
+            // color: #f7f8f8;
+        }
+    }
+}

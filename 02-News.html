@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./TenDrum.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+</head>
+
+<body>
+    <!-- 漢堡條 -->
+    <div class="hamburger">
+        <div class="ham-ani">
+            <div class="stick stick-1"></div>
+            <div class="stick stick-2"></div>
+            <div class="stick stick-3"></div>
+        </div>
+        <div class="ham-menu">MENU</div>
+    </div>
+    <div class="btn-groupxxx">
+        <div class="decoration">&emsp;</div>
+        <div class="btnsss">
+            <div class="icons">
+                <div class="icon">FB</div>
+                <div class="icon">Line</div>
+                <div class="icon">E-mail</div>
+            </div>
+            <div class="btns">
+                <a href="./index.html" class="btn btn-index">Home&nbsp;<i class="far fa-home"></i></a>
+                <a href="./01-About.html" class="btn">
+                    <h1>關於十鼓</h1>
+                </a>
+                <a href="./02-News.html" class="btn">
+                    <h1>最新消息</h1>
+                </a>
+                <a href="./03-Facility.html" class="btn">
+                    <h1>設施體驗</h1>
+                </a>
+                <a href="./04-Drum.html" class="btn">
+                    <h1>鼓樂饗宴</h1>
+                </a>
+                <a href="./05-Information.html" class="btn">
+                    <h1>入園資訊</h1>
+                </a>
+                <a href="./06-Rented.html" class="btn">
+                    <h1>場地租借</h1>
+                </a>
+            </div>
+            <div class="infor">
+                <div class="top">
+                    <div class="lan en">EN</div>
+                    <div class="lan cn">中</div>
+                </div>
+            </div>
+            <div class="bott">
+                <p>TEL06-2662225</p>
+                <p>台南市仁德區文華路二段326號
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 漢堡條 -->
+    <!-- 最新消息 -->
+    <div class="New">
+        <div class="new-title">
+            <div class="new-title-all">
+                <h1>最新消息</h1>
+            </div>
+            <div class="new-title01">
+                <h3>園區公告</h3>
+            </div>
+            <div class="new-title01">
+                <h3>活動公告</h3>
+            </div>
+        </div>
+        <div class="new-context">
+            <div class="new-context-title"></div>
+            <div class="new-context-group">
+                <div class="news">
+                    <div class="new-img">imggg-01</div>
+                    <div class="new-time">2020-XX-XX</div>
+                    <div class="new-name">fjoasdifjosid</div>
+                    <div class="new-more">more</div>
+                </div>
+                <div class="news">
+                    <div class="new-img">imggg-01</div>
+                    <div class="new-time">2020-XX-XX</div>
+                    <div class="new-name">fjoasdifjosid</div>
+                    <div class="new-more">more</div>
+                </div>
+                <div class="news">
+                    <div class="new-img">imggg-01</div>
+                    <div class="new-time">2020-XX-XX</div>
+                    <div class="new-name">fjoasdifjosid</div>
+                    <div class="new-more">more</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>版權聲明</footer>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        ////漢堡條///
+        const hamburger = document.querySelector('.hamburger')
+        const btn_group = document.querySelector('.btn-groupxxx')
+        const btns = btn_group.querySelector('.btn')
+
+        const offclick = () => {
+            btn_group.classList.toggle("active")
+            document.removeEventListener('click', offclick)
+            $(".stick").toggleClass(function () {
+                ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
+                $('.ham-menu').toggle('.display-none')
+                ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
+                return $(this).is('.open, .close') ? 'open close' : 'open';
+            });
+        }
+        const handclick = (e) => {
+            e.stopPropagation()
+            btn_group.classList.toggle("active")
+            if (btn_group.classList.contains("active")) {
+                document.addEventListener('click', offclick)
+            }
+        }
+        hamburger.addEventListener('click', handclick)
+        ///漢堡條任意點即可關閉菜單///
+
+        ///3條線變叉叉///
+        $(document).ready(function () {
+            $(".ham-ani").click(function () {
+                $(".stick").toggleClass(function () {
+                    ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
+                    $('.ham-menu').toggle('.display-none')
+                    ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
+                    return $(this).is('.open, .close') ? 'open close' : 'open';
+                });
+            });
+        });
+        ///3條線變叉叉///
+        ///漢堡條///
+    </script>
+</body>
+
+</html>

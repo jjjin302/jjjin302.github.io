@@ -1,94 +1,135 @@
-@mixin about() {
-    .about-swiper {
+@mixin about01() {
+  #fullpage {
+    .section {
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+
+      .abouts {
         width: 100%;
-        height: 100vh;
-        .swiper-slide {
-            /* Center slide text vertically */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            .abouts {
-                width: 100%;
 
-                .en-title {
-                    width: 50%;
-                    color: #f7f8f8;
-                    margin-left: 30%;
+        .en-title {
+          font-family: "Fredericka the Great", cursive;
+          width: 50%;
+          color: #f7f8f8;
+          margin-left: 30%;
+          u {
+            font-size: 30px;
+          }
+          .line02 {
+            color: #b15821;
+          }
+        }
+        .cn-title {
+          margin-left: 30%;
+          width: 60%;
+          display: flex;
+          align-items: baseline;
+          font-size: 30px;
+          color: #f7f8f8;
+          .big-size {
+            font-size: 36px;
+          }
 
-                    u {
-                        font-size: 30px;
-                    }
-                    .line02 {
-                        color: #b15821;
-                    }
-                }
-                .cn-title {
-                    margin-left: 30%;
-                    width: 60%;
-                    display: flex;
-                    align-items: baseline;
-                    font-size: 30px;
-                    color: #f7f8f8;
-                    .big-size {
-                        
-                        font-size: 36px;
-                    }
+          .line01 {
+            color: #0b6c6d;
+          }
+        }
+        .cn-white {
+          color: #f7f8f8;
+        }
+      }
 
-                    .line01 {
-                        color: #0b6c6d;
-                    }
-                }
-                .cn-white {
-                    color: #f7f8f8;
-                }
-                .about-text-bacimg {
-                    height: 100vh;
-                    background-image: url("./img/關於背景1002試用-小-04_工作區域4.svg");
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    display: flex;
-                    justify-content: start;
-                    align-items: center;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    .about-title {
-                        width: 100%;
-                        font-size: 36px;
-                        text-align: center;
-                        line-height: 80px;
-                    }
-                    .about-text {
-                        font-size: 16px;
-                    }
-                    .text-color-F7F8F8 {
-                        width: 60%;
-                        color: #f7f8f8;
-                    }
-                }
-            }
+      .about-text-bacimg {
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        .about-title {
+          width: 75%;
+          font-size: 50px;
+          text-align: center;
+          line-height: 80px;
+          margin-left: 55%;
+          margin-top: 10%;
         }
-        .color-B15821 {
-            // background-color: #b15821;
-            // width: 100%;
-            height: 970px;
-            background-image: url("./img/關於背景1002試用-小-02.svg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        .about-text {
+          width: 40%;
+          font-size: 20px;
+          text-align: unset;
+          margin-top: 5%;
+          margin-left: 25%;
+          display: flex;
+          .text-wrap {
+            padding: 0 10px;
+            width: 50%;
+          }
         }
-        .color-E9C37C {
-            background-color: #e9c37c;
+        .about-text {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 5%;
+          margin-left: 35%;
+          text-align: left;
+          .core {
+            color: #F7F8F8;
+            width: 60%;
+          }
         }
-        .color-D4A63F {
-            background-color: #d4a63f;
+        .about-2-text {
+          margin-top: 0;
+          margin-bottom: 150px;
+          margin-left: 35%;
         }
+        .text-color-F7F8F8 {
+          color: #f7f8f8;
+        }
+      }
     }
-    .swiper-pagination-bullet {
-        &:active {
-            background: #f7f8f8;
-            // color: #f7f8f8;
-        }
+    .sec-00 {
+      background-image: url("./img/關於背景1002試用-小-02.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
+    .sec {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .sec-01 {
+    background-color: #d4a63f;
+    .sec-01-1 {
+      height: 100vh;
+      background-image: url("./img/關於背景1002試用-小-04_工作區域4.svg");
+      // text-align: center;
+    }
+  }
+  .sec-02 {
+    background-color: #e9c37c;
+    .sec-02-1 {
+      background-image: url("./img/設計稿\ 降轉10-02-沿革_工作區域6.svg");
+    }
+  }
+  .sec-03 {
+    background-color: #d0b975;
+    .sec-03-1 {
+      height: 100vh;
+      background-image: url("./img/設計稿\ 降轉10-02-核心價值_工作區域7.svg");
+    }
+  }
+  .sec-04 {
+    background-color: #e9c37c;
+  }
+  .sec-05 {
+    background-color: #efe5cb;
+    text-align: center;
+    .sec-05-00 {
+      background-image: url("./img/關於背景1002試用-小-06_工作區域6.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
 }

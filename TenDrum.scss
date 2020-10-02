@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Fredericka the Great", cursive, "Noto Sans HK", 微軟正黑體, sans-serif;
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
 a {
     text-decoration: none;
@@ -19,9 +19,24 @@ body {
     position: relative;
     height: 100%;
 }
+.display-none{
+    display: none;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #B15821;
+    margin: auto;
+    color: #F7F8F8;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+
+}
 @import "./TenDrum";
 @import "./index";
 @import "./hamberger";
+
 @import "./About";
 @import "./News";
 @import "./Facility";
@@ -30,7 +45,7 @@ body {
 @import "./Rented";
 @include Index();
 @include hamberger();
-@include about();
+@include about01();
 @include news();
 @include Facility();
 @include Drum();
