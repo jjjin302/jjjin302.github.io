@@ -4,132 +4,205 @@
       width: 100%;
       height: 100vh;
       text-align: center;
-
-      .abouts {
+      ///關於十鼓及園區介紹樣式///
+      .About {
         width: 100%;
-
         .en-title {
-          font-family: "Fredericka the Great", cursive;
-          width: 50%;
-          color: #f7f8f8;
-          margin-left: 30%;
+          .About-t {
+            font-size: 150px;
+            font-family: "Fredericka the Great", cursive;
+            color: #f7f8f8;
+          }
           u {
             font-size: 30px;
           }
-          .line02 {
+          .line01 {
             color: #b15821;
+            font-size: 30px;
           }
         }
+
         .cn-title {
-          margin-left: 30%;
-          width: 60%;
+          margin-left: 33%;
           display: flex;
           align-items: baseline;
-          font-size: 30px;
+          font-size: 120px;
           color: #f7f8f8;
           .big-size {
-            font-size: 36px;
+            font-size: 150px;
           }
 
-          .line01 {
+          .line02 {
             color: #0b6c6d;
+            font-size: 30px;
           }
         }
         .cn-white {
           color: #f7f8f8;
         }
       }
+      ///關於十鼓及園區介紹樣式///
 
+      ///簡介內容///
       .about-text-bacimg {
         display: flex;
         justify-items: center;
         flex-direction: column;
+
         .about-title {
           width: 75%;
           font-size: 50px;
-          text-align: center;
           line-height: 80px;
           margin-left: 55%;
-          margin-top: 10%;
+          margin-top: 9%;
         }
+
         .about-text {
-          width: 40%;
-          font-size: 20px;
-          text-align: unset;
-          margin-top: 5%;
-          margin-left: 25%;
+          width: 100%;
           display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-wrap: wrap;
+          font-size: 24px;
+          text-align: left;
+          .about-con {
+            margin-top: 10%;
+            width: 40%;
+          }
+        }
+
+        ///沿革內容調整完成///
+        .about-2-text {
+          width: 40%;
+          margin-top: 0;
+          margin-bottom: 150px;
+          margin-left: 35%;
+          margin-top: 5%;
+          display: flex;
+
+          font-size: 20px;
+          text-align: left;
+
           .text-wrap {
             padding: 0 10px;
             width: 50%;
           }
         }
-        .about-text {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap;
-          margin-top: 5%;
-          margin-left: 35%;
-          text-align: left;
-          .core {
-            color: #F7F8F8;
-            width: 60%;
-          }
-        }
-        .about-2-text {
-          margin-top: 0;
-          margin-bottom: 150px;
-          margin-left: 35%;
-        }
+        ///沿革內容調整完成///
+
         .text-color-F7F8F8 {
           color: #f7f8f8;
         }
       }
+      .intro-container {
+        width: 100%;
+
+        display: flex;
+
+        .intro-title {
+          width: 20%;
+          font-size: 76px;
+          height: 100px;
+          padding: 1px;
+          border-bottom: 1px solid #b15821;
+        }
+        .con-color-1{
+          background-color: #0b6c6d;
+        }
+        .con-color-2{
+          background: #D4A63F;
+        }
+        .intro-con {
+          text-align: left;
+          width: 50%;
+          height: 50vh;
+          
+          border-radius: 10%;
+          padding: 20px;
+
+          .intro-con-img {
+            margin: auto;
+            width: 95%;
+            height: 150px;
+            
+          }
+          .img-self-1 {
+            width: 95%;
+            background-color: #d0b975;
+          }
+          .img-self-2{
+
+          }
+          .intro-con-box {
+            .intro-con-box-title {
+              font-size: 24px;
+            }
+            .intro-con-box-text {
+              font-size: 20px;
+            }
+            .intro-con-icon-dis {
+              margin-top: 10%;
+              width: 100%;
+              display: flex;
+              justify-content: flex-end;
+
+              .intro-con-icon {
+                width: 10%;
+                height: 30px;
+
+                font-size: 20px;
+                color: #f7f8f8;
+                line-height: 30px;
+
+                text-align: center;
+                background: #d4a63f;
+                border-radius: 10px;
+              }
+            }
+          }
+        }
+      }
+      ///中間背景圖樣式///
+      .sec {
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      ///中間背景圖樣式///
     }
+
+    ///下方各區背景圖///
     .sec-00 {
       background-image: url("./img/關於背景1002試用-小-02.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
     }
-    .sec {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+    .sec-01 {
+      background-color: #d4a63f;
+      .sec-01-1 {
+        background-image: url("./img/關於背景1002試用-小-04_工作區域4.svg");
+      }
     }
-  }
-  .sec-01 {
-    background-color: #d4a63f;
-    .sec-01-1 {
-      height: 100vh;
-      background-image: url("./img/關於背景1002試用-小-04_工作區域4.svg");
+    .sec-02 {
+      background-color: #e9c37c;
+      .sec-02-1 {
+        background-image: url("./img/設計稿\ 降轉10-02-沿革_工作區域6.svg");
+      }
+    }
+    .sec-03 {
+      background-color: #d0b975;
+      .sec-03-1 {
+        background-image: url("./img/設計稿\ 降轉10-02-核心價值_工作區域7.svg");
+      }
+    }
+    .sec-04 {
+      background-color: #e9c37c;
+    }
+    .sec-05 {
+      background-color: #efe5cb;
       // text-align: center;
-    }
-  }
-  .sec-02 {
-    background-color: #e9c37c;
-    .sec-02-1 {
-      background-image: url("./img/設計稿\ 降轉10-02-沿革_工作區域6.svg");
-    }
-  }
-  .sec-03 {
-    background-color: #d0b975;
-    .sec-03-1 {
-      height: 100vh;
-      background-image: url("./img/設計稿\ 降轉10-02-核心價值_工作區域7.svg");
-    }
-  }
-  .sec-04 {
-    background-color: #e9c37c;
-  }
-  .sec-05 {
-    background-color: #efe5cb;
-    text-align: center;
-    .sec-05-00 {
-      background-image: url("./img/關於背景1002試用-小-06_工作區域6.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+      .sec-05-00 {
+        background-image: url("./img/關於背景1002試用-小-06_工作區域6.svg");
+      }
     }
   }
 }
