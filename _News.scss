@@ -1,33 +1,110 @@
 @mixin news() {
-    body {
-        background-color: #efe5cb;
-    }
     .New {
+        width: 100%;
         display: flex;
-        
+
+        background-color: #efe5cb;
         .new-title {
+            margin-left: 10px;            
+            padding: 25px;
             width: 20%;
             .new-title-all {
-                
+                font-size: 54px;
+                font-weight: bold;
+                margin-bottom: 60px;
             }
             .new-title01 {
+                margin-top: 10%;
+                padding-left: 10px;
+                font-size: 26px;
+                color: #b15821;
+                border-bottom: 1px solid #b15821;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            .act {
+                border-bottom: none;
+                color: #231815;
             }
         }
+        .new-contexts {
+            width: 80%;
+            height: calc(100vh - 30px);
+            .new-context {
+                display: none;
+                .new-contain {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .fas.fa-circle {
+                        font-size: 12px;
+                        line-height: 100px;
+                        color: #0b6c6d;
+                        padding: 0 5px;
+                    }
+                    .new-context-title {
+                        width: 50%;
+                        margin-bottom: 10%;
+                        font-size: 36px;
+                        font-weight: bold;
+                        color: #3E3A39;
+                        text-align: center;
+                        border-bottom: 1px solid #727171;
+                        height: 50px;
+                    }
+                    .new-context-group {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
 
-        .new-context {
-            .new-context-title {
-            }
-            .new-context-group {
-                .news {
-                    .new-img {
-                    }
-                    .new-time {
-                    }
-                    .new-name {
-                    }
-                    .new-more {
+                        .news {
+                            height: auto;
+                            padding: 25px;
+                            margin: 1%;
+                            width: calc(33.33% - 5%);
+                            border: 1px solid #b15821;
+                            .new-img {
+                                width: 90%;
+                                margin-bottom: 10px;
+                            }
+                            .new-time {
+                                margin-bottom: 10px;
+                                font-size: 14px;
+                            }
+                            .new-name {
+                                width: 90%;
+                                font-size: 18px;
+                            }
+                            .new-mores {
+                                width: 90%;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-content: flex-end;
+                                align-items: flex-end;
+                                .new-more {
+                                    width: 30%;
+                                    font-family: "Fredericka the Great", cursive;
+                                    font-size: 20px;
+                                    color: #f7f8f8;
+                                    background: #b15821;
+                                    border-radius: 10px;
+                                    text-align: center;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    &:hover {
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
+            }
+            .actt {
+                display: block;
             }
         }
     }
