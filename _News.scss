@@ -5,7 +5,7 @@
 
         background-color: #efe5cb;
         .new-title {
-            margin-left: 10px;            
+            margin-left: 10px;
             padding: 25px;
             width: 20%;
             .new-title-all {
@@ -49,22 +49,27 @@
                         margin-bottom: 10%;
                         font-size: 36px;
                         font-weight: bold;
-                        color: #3E3A39;
+                        color: #3e3a39;
                         text-align: center;
                         border-bottom: 1px solid #727171;
                         height: 50px;
                     }
                     .new-context-group {
                         width: 100%;
+                        padding: 0 30px;
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: center;
-
+                        .col-sm-12,
+                        .col-lg-4 {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
                         .news {
                             height: auto;
-                            padding: 25px;
+                            padding: 15px;
                             margin: 1%;
-                            width: calc(33.33% - 5%);
+
                             border: 1px solid #b15821;
                             .new-img {
                                 width: 90%;
@@ -92,8 +97,8 @@
                                     background: #b15821;
                                     border-radius: 10px;
                                     text-align: center;
-                                    height: 30px;
-                                    line-height: 30px;
+                                    height: 25px;
+                                    line-height: 25px;
                                     &:hover {
                                         cursor: pointer;
                                     }

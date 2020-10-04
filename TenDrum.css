@@ -586,6 +586,7 @@ body {
   font-weight: bolder;
   line-height: 50%;
   text-align: center;
+  border: 0;
 }
 
 .btn-groupxxx .btnsss .btns .btn:hover {
@@ -947,7 +948,7 @@ body {
   margin-bottom: 10%;
   font-size: 36px;
   font-weight: bold;
-  color: #3E3A39;
+  color: #3e3a39;
   text-align: center;
   border-bottom: 1px solid #727171;
   height: 50px;
@@ -955,6 +956,7 @@ body {
 
 .New .new-contexts .new-context .new-contain .new-context-group {
   width: 100%;
+  padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -965,11 +967,16 @@ body {
           justify-content: center;
 }
 
+.New .new-contexts .new-context .new-contain .new-context-group .col-sm-12,
+.New .new-contexts .new-context .new-contain .new-context-group .col-lg-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .New .new-contexts .new-context .new-contain .new-context-group .news {
   height: auto;
-  padding: 25px;
+  padding: 15px;
   margin: 1%;
-  width: calc(33.33% - 5%);
   border: 1px solid #b15821;
 }
 
@@ -1011,8 +1018,8 @@ body {
   background: #b15821;
   border-radius: 10px;
   text-align: center;
-  height: 30px;
-  line-height: 30px;
+  height: 25px;
+  line-height: 25px;
 }
 
 .New .new-contexts .new-context .new-contain .new-context-group .news .new-mores .new-more:hover {
