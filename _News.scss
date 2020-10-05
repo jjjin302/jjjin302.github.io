@@ -1,9 +1,10 @@
 @mixin news() {
     .New {
         width: 100%;
+        height: 100vh;
         display: flex;
-
-        background-color: #efe5cb;
+        background-image: url("./img/主頁背景/news\ 背景.jpg");
+        // background-color: #efe5cb;
         .new-title {
             margin-left: 10px;
             padding: 25px;
@@ -52,6 +53,7 @@
                         color: #3e3a39;
                         text-align: center;
                         border-bottom: 1px solid #727171;
+
                         height: 50px;
                     }
                     .new-context-group {

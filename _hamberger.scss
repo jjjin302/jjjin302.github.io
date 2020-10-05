@@ -220,12 +220,17 @@
                     line-height: 50%;
                     text-align: center;
                     border: 0;
+                    transition: 0.1s;
 
                     &:hover {
                         background-color: #d4a63f;
+                        color: #efefef;
                     }
                     h1 {
                         color: #4d483d;
+                        &:hover{
+                            color: #efefef;
+                        }
                     }
                 }
             }
