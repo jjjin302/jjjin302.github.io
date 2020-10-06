@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .button-bar {
+            height: calc(100vh - 30px);
+            width: 20%;
+            background-color: antiquewhite;
+            display: flex;
+        }
+
+        .photo-R {
+            height: calc(100vh - 30px);
+            width: 80%;
+            background-color: rgb(233, 95, 40);
+            display: flex;
+            align-items: center;
+        }
+
+        .button-g {
+            height: 50%;
+            width: 50%;
+            background-color: rgb(40, 53, 233);
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center; 
+        }
+
+        .tittle {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(79, 233, 40);
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lease-box {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(233, 40, 159);
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(140, 40, 233);
+        }
+
+        /* ---輪播CSS--- */
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: rgb(167, 68, 68);           
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-pagination-bullet {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(216, 150, 150);
+        }
+
+        .text-box {
+            width: 80%;
+            background-color: chocolate;
+            line-height: 36px;
+            font-size: 30px;
+            text-align: start;
+            margin: auto;
+        }
+
+        footer {
+            width: 100%;
+            height: 30px;
+            background-color: #B15821;
+            margin: auto;
+            color: #F7F8F8;
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="button-bar">
+        <div class="button-g">
+            <div class="tittle">場地出租</div>
+            <!-- 標題 -->
+            <div class="lease-box">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <h2>租借要點</h2>
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title" id="exampleModalLabel">租借要點</h1>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text-box">
+                                    一般租借/婚宴租借
+                                    <br>不得隨意拿走園區物品或損壞物品。(違反者依原價賠償及歸還)
+                                    <br>使用完成後必須陪同園區人員檢查確定無誤，
+                                    <br>如垃圾與回收物品清運不乾淨，酌收垃圾清理費。七日(工作天數)內退回押金
+                                    <br>電話號碼：06-266-2225#710
+                                    <br>傳真號碼：06-2661413
+                                    <br>訂金(確認時)與押金(確認時)及尾款(當天)繳款方式現金或匯款。
+                                    <br>訂金退費機制：
+                                    <br>退訂於一個月內取消，則退訂金金額，恕不退還
+                                    <br>退訂於二個月以上至三個月取消，則退訂金金額 30%
+                                    <br>退訂於三個月以上至五個月取消，則退訂金金額 50%
+                                    <br>尾款需於宴會當日以現金繳清金額
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 場地租借 -->
+            <a class="lease-box "  href="https://tendrum.com.tw/venueOnlinecontact/zt">
+                線上預約</a>
+            
+        </div>
+    </div>
+    <div class="photo-R">
+        <div class="photo">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src=" "alt="">十鼓會議廳</div>
+                    <div class="swiper-slide">永不出軌</div>
+                    <div class="swiper-slide">齒輪舞台</div>
+                    <div class="swiper-slide">水槽劇場</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <footer>版權聲明</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+
+
+</body>
+
+</html>
