@@ -40,8 +40,9 @@ footer {
   line-height: 30px;
 }
 
-body {
+.index {
   background-color: #e9e1d2;
+  z-index: -10;
 }
 
 .Nav {
@@ -694,10 +695,14 @@ body {
   width: 100%;
 }
 
+#fullpage .section .About .en-title {
+  margin-left: 1%;
+}
+
 #fullpage .section .About .en-title .About-t {
   font-size: 150px;
   font-family: "Fredericka the Great", cursive;
-  color: #f7f8f8;
+  color: #231815;
 }
 
 #fullpage .section .About .en-title u {
@@ -718,7 +723,7 @@ body {
       -ms-flex-align: baseline;
           align-items: baseline;
   font-size: 120px;
-  color: #f7f8f8;
+  color: #231815;
 }
 
 #fullpage .section .About .cn-title .big-size {
@@ -728,10 +733,6 @@ body {
 #fullpage .section .About .cn-title .line02 {
   color: #0b6c6d;
   font-size: 30px;
-}
-
-#fullpage .section .About .cn-white {
-  color: #f7f8f8;
 }
 
 #fullpage .section .about-title {
@@ -866,7 +867,13 @@ body {
 }
 
 #fullpage .sec-00 {
-  background-image: url("./img/關於背景1002試用-小-02.svg");
+  background-color: #ebe3d4;
+}
+
+#fullpage .sec-00 .sec-00-1 {
+  width: 100%;
+  background-image: url("./img/插圖/兩人尬鼓.png");
+  background-repeat: no-repeat;
 }
 
 #fullpage .sec-01 {
@@ -898,11 +905,13 @@ body {
 }
 
 #fullpage .sec-05 {
-  background-color: #efe5cb;
+  background-color: #ebe3d4;
 }
 
 #fullpage .sec-05 .sec-05-00 {
-  background-image: url("./img/關於背景1002試用-小-06_工作區域6.svg");
+  background-image: url("./img/插圖/飛人 上色.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .New {
@@ -1056,6 +1065,132 @@ body {
 
 .New .new-contexts .actt {
   display: block;
+}
+
+.Facility {
+  width: 100%;
+  min-height: calc(100vh - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  background-color: #EAB854;
+  opacity: 0.8;
+}
+
+.Facility .bag-img {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  background-image: url("./img/插圖/雙飛飛人.png");
+  background-repeat: no-repeat;
+}
+
+.Facility .margin-use {
+  width: 8%;
+}
+
+.Facility .facility-title {
+  width: 15%;
+  height: 80px;
+  font-size: 54px;
+  text-align: center;
+  color: #f7f8f8;
+  border-bottom: 2px solid #f7f8f8;
+}
+
+.Facility .img-groups {
+  width: 70%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Facility .img-groups .img-team {
+  width: 33.33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: flex-end;
+  position: relative;
+}
+
+.Facility .img-groups .img-team:hover {
+  cursor: pointer;
+}
+
+.Facility .img-groups .img-team .image-circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border-top: 2px dashed #ffcc00;
+  border-right: 2px dashed #0b6c6d;
+  border-left: 2px dashed #f7f8f8;
+  border-bottom: 2px dashed #571212;
+  margin: 10px;
+  padding: 10px;
+  -webkit-animation: spin 10s infinite linear;
+          animation: spin 10s infinite linear;
+  overflow: hidden;
+}
+
+.Facility .img-groups .img-team .image-circle img {
+  animation: spin 10s infinite reverse linear;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Facility .img-groups .img-team .imgg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.Facility .img-groups .img-team .img01 {
+  background-image: url("/團體專題/3.程式/img/設施/天空上的鞦韆.jpg");
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+.Facility .img-groups .img-team .img-name {
+  position: absolute;
+  bottom: 90px;
+  left: -60px;
+  width: 50%;
+  height: 90px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 110px;
+  background-image: url("./img/插圖/設施體驗的雲2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Facility .img-groups .img-team .img-name:hover {
+  color: #b15821;
 }
 
 .Rented {

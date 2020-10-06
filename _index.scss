@@ -8,8 +8,9 @@
     $btn-background-hover: $color-gray;
     $border-color: $color-gray;
     $border-color-hover: $color-black;
-    body {
-        background-color: #e9e1d2;
+    .index {
+        background-color: #e9e1d2;        
+        z-index: -10;
     }
 
     .Nav {

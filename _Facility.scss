@@ -1,3 +1,96 @@
 @mixin Facility() {
-    
+    .Facility {
+        width: 100%;
+        min-height: calc(100vh - 30px);
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        background-color: #EAB854;
+        opacity: 0.8;
+        .bag-img {
+            position: absolute;
+            width: 100%;
+            height: 90vh;
+            background-image: url("./img/插圖/雙飛飛人.png");
+            background-repeat: no-repeat;
+        }
+        .margin-use {
+            width: 8%;
+        }
+        .facility-title {
+            width: 15%;
+            height: 80px;
+            font-size: 54px;
+            text-align: center;
+            color: #f7f8f8;
+            border-bottom: 2px solid #f7f8f8;
+        }
+        .img-groups {
+            width: 70%;
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            .img-team {
+                width: 33.33%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-items: flex-end;
+                position: relative;
+                &:hover {
+                    cursor: pointer;
+                }
+                .image-circle {
+                    width: 350px;
+                    height: 350px;
+
+                    border-radius: 50%;
+                    border-top: 2px dashed #ffcc00;
+                    border-right: 2px dashed #0b6c6d;
+                    border-left: 2px dashed #f7f8f8;
+                    border-bottom: 2px dashed #571212;
+                    margin: 10px;
+                    padding: 10px;
+                    animation: spin 10s infinite linear;
+                    overflow: hidden;
+                }
+                .image-circle img {
+                    animation: spin 10s infinite reverse linear;
+                    width: 100%;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                .imgg {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+                .img01 {
+                    background-image: url("/團體專題/3.程式/img/設施/天空上的鞦韆.jpg");
+                }
+                @keyframes spin {
+                    100% {
+                        transform: rotate(1turn);
+                    }
+                }
+                .img-name {
+                    position: absolute;
+                    bottom: 90px;
+                    left: -60px;
+                    width: 50%;
+                    height: 90px;
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 110px;
+                    background-image: url("./img/插圖/設施體驗的雲2.png");
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    transition: 0.5s;
+                    &:hover {
+                        color: #b15821;
+                    }
+                }
+            }
+        }
+    }
 }

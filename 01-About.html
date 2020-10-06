@@ -110,7 +110,8 @@
 
     <div id="fullpage">
         <div class="section sec-00 sec">
-            <div class=" About">
+            <div class="sec-00-1">
+                <div class=" About">
                 <div class="en-title">
                     <div class="About-t">About
                         <u class="line01">
@@ -121,6 +122,8 @@
                     <div class="big-size">&emsp;<u class="line02">&emsp;</u>關</div>於十鼓
                 </div>
             </div>
+            </div>
+            
         </div>
         <div class="section sec-01" data-anchor="firstPage">
             <div class="sec sec-01-1">
@@ -288,76 +291,77 @@
                 </div>
             </div>
             <div class="slide horizontal-slide" data-anchor="ninthPage">特色餐飲</div>
-            <div class="slide horizontal-slide" data-anchor="tenthPage">文創空間</div>
+            <div class="slide horizontal-slide" data-anchor="tenthPage">
+                文創空間</div>
+        </div><footer>版權聲明</footer>
+    </div>
+    <footer>版權聲明</footer>
 
-        </div>
-        <footer>版權聲明</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.extensions.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        ////漢堡條///
+        const hamburger = document.querySelector('.hamburger')
+        const btn_group = document.querySelector('.btn-groupxxx')
+        const btns = btn_group.querySelector('.btn')
 
-        <script>
-            ////漢堡條///
-            const hamburger = document.querySelector('.hamburger')
-            const btn_group = document.querySelector('.btn-groupxxx')
-            const btns = btn_group.querySelector('.btn')
+        const offclick = () => {
+            btn_group.classList.toggle("active")
+            document.removeEventListener('click', offclick)
+            $(".stick").toggleClass(function () {
+                ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
+                $('.ham-menu').toggle('.display-none')
+                ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
+                return $(this).is('.open, .close') ? 'open close' : 'open';
+            });
+        }
+        const handclick = (e) => {
+            e.stopPropagation()
+            btn_group.classList.toggle("active")
+            if (btn_group.classList.contains("active")) {
+                document.addEventListener('click', offclick)
+            }
+        }
+        hamburger.addEventListener('click', handclick)
+        ///漢堡條任意點即可關閉菜單///
 
-            const offclick = () => {
-                btn_group.classList.toggle("active")
-                document.removeEventListener('click', offclick)
+        ///3條線變叉叉///
+        $(document).ready(function () {
+            $(".ham-ani").click(function () {
                 $(".stick").toggleClass(function () {
                     ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
                     $('.ham-menu').toggle('.display-none')
                     ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
                     return $(this).is('.open, .close') ? 'open close' : 'open';
                 });
-            }
-            const handclick = (e) => {
-                e.stopPropagation()
-                btn_group.classList.toggle("active")
-                if (btn_group.classList.contains("active")) {
-                    document.addEventListener('click', offclick)
-                }
-            }
-            hamburger.addEventListener('click', handclick)
-            ///漢堡條任意點即可關閉菜單///
-
-            ///3條線變叉叉///
-            $(document).ready(function () {
-                $(".ham-ani").click(function () {
-                    $(".stick").toggleClass(function () {
-                        ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
-                        $('.ham-menu').toggle('.display-none')
-                        ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
-                        return $(this).is('.open, .close') ? 'open close' : 'open';
-                    });
-                });
             });
-            ///3條線變叉叉///
-            ///漢堡條///
+        });
+        ///3條線變叉叉///
+        ///漢堡條///
 
-            new fullpage('#fullpage', {
-                menu: '#menu',
-                lockAnchors: false,
-                anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage', 'ninthPage', 'tenPage'],
-                navigation: true,
-                navigationColor: '#F7F8F8',
-                navigationPosition: 'right',
-                navigationTooltips: ['關於十鼓', '簡介', '沿革', '核心價值', '發展年表', '園區主題介紹'],
-                showActiveTooltip: true,
-                slidesNavigation: true,
-                slidesNavPosition: 'bottom',
-            });
-        </script>
+        new fullpage('#fullpage', {
+            menu: '#menu',
+            lockAnchors: false,
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'forthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage', 'ninthPage', 'tenPage'],
+            navigation: true,
+            navigationColor: '#F7F8F8',
+            navigationPosition: 'right',
+            navigationTooltips: ['關於十鼓', '簡介', '沿革', '核心價值', '發展年表', '園區主題介紹'],
+            showActiveTooltip: true,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+        });
+    </script>
 </body>
 
 </html>

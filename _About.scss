@@ -8,10 +8,11 @@
       .About {
         width: 100%;
         .en-title {
+          margin-left: 1%;
           .About-t {
             font-size: 150px;
             font-family: "Fredericka the Great", cursive;
-            color: #f7f8f8;
+            color: #231815;
           }
           u {
             font-size: 30px;
@@ -27,7 +28,7 @@
           display: flex;
           align-items: baseline;
           font-size: 120px;
-          color: #f7f8f8;
+          color: #231815;
           .big-size {
             font-size: 150px;
           }
@@ -38,7 +39,7 @@
           }
         }
         .cn-white {
-          color: #f7f8f8;
+          // color: #f7f8f8;
         }
       }
       ///關於十鼓及園區介紹樣式///
@@ -167,12 +168,16 @@
 
     ///下方各區背景圖///
     .sec-00 {
-      background-image: url("./img/關於背景1002試用-小-02.svg");
+      background-color: #ebe3d4;
+      .sec-00-1 {
+        width: 100%;
+        background-image: url("./img/插圖/兩人尬鼓.png");
+        background-repeat: no-repeat;
+      }
     }
     .sec-01 {
       background-color: #d4a63f;
       .sec-01-1 {
-        // background-image: url('./img/簡介背景-02.png');
         background-image: url("./img/主頁背景/簡介_工作區域\ 1.jpg");
       }
     }
@@ -192,10 +197,12 @@
       background-color: #e9c37c;
     }
     .sec-05 {
-      background-color: #efe5cb;
+      background-color: #ebe3d4;
       // text-align: center;
       .sec-05-00 {
-        background-image: url("./img/關於背景1002試用-小-06_工作區域6.svg");
+        background-image: url("./img/插圖/飛人\ 上色.png");
+        background-position: center;
+        background-repeat: no-repeat;
       }
     }
   }
