@@ -37,10 +37,7 @@
             color: #0b6c6d;
             font-size: 30px;
           }
-        }
-        .cn-white {
-          // color: #f7f8f8;
-        }
+        }        
       }
       ///關於十鼓及園區介紹樣式///
       .about-title {
@@ -123,8 +120,8 @@
             width: 95%;
             background-color: #d0b975;
           }
-          .img-self-2 {
-          }
+          // .img-self-2 {
+          // }
           .intro-con-box {
             .intro-con-box-title {
               font-size: 24px;
@@ -171,26 +168,26 @@
       background-color: #ebe3d4;
       .sec-00-1 {
         width: 100%;
-        background-image: url("./img/插圖/兩人尬鼓.png");
+        background-image: url("../img/插圖/兩人尬鼓.png");
         background-repeat: no-repeat;
       }
     }
     .sec-01 {
       background-color: #d4a63f;
       .sec-01-1 {
-        background-image: url("./img/主頁背景/簡介_工作區域\ 1.jpg");
+        background-image: url("../img/主頁背景/簡介_工作區域\ 1.jpg");
       }
     }
     .sec-02 {
       background-color: #e9c37c;
       .sec-02-1 {
-        background-image: url("./img/設計稿\ 降轉10-02-沿革_工作區域6.svg");
+        background-image: url("../img/關於背景1002試用-小-06_工作區域6.svg");
       }
     }
     .sec-03 {
       background-color: #d0b975;
       .sec-03-1 {
-        background-image: url("./img/設計稿\ 降轉10-02-核心價值_工作區域7.svg");
+        background-image: url("../img/設計稿\ 降轉10-02-核心價值_工作區域7.svg");
       }
     }
     .sec-04 {
@@ -200,7 +197,7 @@
       background-color: #ebe3d4;
       // text-align: center;
       .sec-05-00 {
-        background-image: url("./img/插圖/飛人\ 上色.png");
+        background-image: url("../img/插圖/飛人\ 上色.png");
         background-position: center;
         background-repeat: no-repeat;
       }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/TenDrum.css">
+    <style>
+        .menu-trigger,
+        .menu-trigger span {
+            display: inline-block;
+            transition: all .4s;
+            box-sizing: border-box;
+        }
+
+        .menu-trigger {
+            position: relative;
+            width: 50px;
+            height: 44px;
+        }
+
+        .menu-trigger span {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #231815;
+            border-radius: 4px;
+        }
+
+        .menu-trigger span:nth-of-type(1) {
+            top: 0;
+        }
+
+        .menu-trigger span:nth-of-type(2) {
+            top: 20px;
+        }
+
+        .menu-trigger span:nth-of-type(3) {
+            bottom: 0;
+        }
+
+        #menu07::after {
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            content: 'MENU';
+            display: block;
+            width: 100%;
+            color: #231815;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            transition: all .4s;
+        }
+
+        #menu07.active::after {
+            content: 'CLOSE';
+            bottom: -25px;
+        }
+
+        #menu07.active span:nth-of-type(1) {
+            -webkit-transform: translateY(20px) rotate(-45deg);
+            transform: translateY(20px) rotate(-45deg);
+        }
+
+        #menu07.active span:nth-of-type(2) {
+            opacity: 0;
+        }
+
+        #menu07.active span:nth-of-type(3) {
+            -webkit-transform: translateY(-20px) rotate(45deg);
+            transform: translateY(-20px) rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="hamburger">
+            <a href="#" class="menu-trigger" id="menu07">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="btn-groupxxx">
+            <div class="decoration">&emsp;</div>
+            <div class="btnsss">
+                <div class="icons">
+                    <div class="icon">FB</div>
+                    <div class="icon">Line</div>
+                    <div class="icon">E-mail</div>
+                </div>
+                <div class="btns">
+                    <a href="./index.html" class="btn btn-index">Home&nbsp;<i class="far fa-home"></i></a>
+                    <a href="./01-About.html" class="btn">
+                        <h1>關於十鼓</h1>
+                    </a>
+                    <a href="./02-News.html" class="btn">
+                        <h1>最新消息</h1>
+                    </a>
+                    <a href="./03-Facility.html" class="btn">
+                        <h1>設施體驗</h1>
+                    </a>
+                    <a href="./04-Drum.html" class="btn">
+                        <h1>鼓樂饗宴</h1>
+                    </a>
+                    <a href="./05-Information.html" class="btn">
+                        <h1>入園資訊</h1>
+                    </a>
+                    <a href="./06-Rented.html" class="btn">
+                        <h1>場地租借</h1>
+                    </a>
+                </div>
+                <div class="infor">
+                    <div class="top">
+                        <div class="lan en">EN</div>
+                        <div class="lan cn">中</div>
+                    </div>
+                </div>
+                <div class="bott">
+                    <p>TEL06-2662225</p>
+                    <p>台南市仁德區文華路二段326號
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger')
+        const btn_group = document.querySelector('.btn-groupxxx')
+        const btns = btn_group.querySelector('.btn')
+
+        const offclick = () => {
+            btn_group.classList.toggle("active")
+            document.removeEventListener('click', offclick)
+            $(".stick").toggleClass(function () {
+                ///當點到漢堡條時MENU跟著被偵測顯示即隱藏///
+                
+            });
+        }
+        const handclick = (e) => {
+            e.stopPropagation()
+            btn_group.classList.toggle("active")
+            if (btn_group.classList.contains("active")) {
+                document.addEventListener('click', offclick)
+            }
+        }
+        hamburger.addEventListener('click', handclick)
+        ///漢堡條任意點即可關閉菜單///
+        $(function () {
+            $('.menu-trigger').on('click', function () {
+                $(this).toggleClass('active');
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
