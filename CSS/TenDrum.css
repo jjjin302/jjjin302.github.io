@@ -1193,6 +1193,10 @@ footer {
   color: #b15821;
 }
 
+a {
+  color: #000;
+}
+
 .Drum {
   width: 100%;
   min-height: 100%;
@@ -1202,9 +1206,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 2em 0;
   line-height: 1.5em;
 }
@@ -1220,7 +1221,7 @@ footer {
 
 .page {
   width: 30vw;
-  height: 50vw;
+  height: 40vw;
   background-color: #111111;
   float: left;
   margin-bottom: 0.5em;
@@ -1230,7 +1231,7 @@ footer {
 
 .page .page-text {
   width: 100%;
-  padding: 10px;
+  padding: 30px;
 }
 
 .page .page-text h3 {
@@ -1250,6 +1251,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 10px 0;
 }
 
 .page .page-text h6 .text-time {
@@ -1266,18 +1268,31 @@ footer {
   height: 100%;
 }
 
+.page .page-img-01 {
+  width: 30%;
+}
+
 .page:nth-child(even) {
   clear: both;
 }
 
-.book {
+.Book {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.Book .book {
   -webkit-perspective: 250vw;
           perspective: 250vw;
 }
 
 .book .pages {
   width: 60vw;
-  height: 50vw;
+  height: 40vw;
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -1294,7 +1309,7 @@ footer {
   position: absolute;
   top: 0;
   width: 30vw;
-  height: 50vw;
+  height: 40vw;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transition: -webkit-transform 1.4s;
