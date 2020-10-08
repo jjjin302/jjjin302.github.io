@@ -9,155 +9,173 @@
     $border-color: $color-gray;
     $border-color-hover: $color-black;
     .index {
-        background-color: #e9e1d2;        
-        z-index: -10;
-    }
+        .Nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
 
-    .Nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
+            .Logo-pic {
+                width: 45%;
+            }
+            .left-group {
+                width: 55%;
 
-        .Logo-pic {
-            width: 45%;
-        }
-        .left-group {
-            width: 55%;
-
-            .Menu-group {
-                width: 100%;
-                margin-right: 30px;
-                text-align: center;
-                font-size: 20px;
-                font-weight: 540;
-                display: flex;
-                justify-items: flex-end;
-                padding-top: 20px;
-                padding-bottom: 20px;
-
-                text-transform: uppercase;
-                text-rendering: optimizeLegibility;
-                .index-btn {
+                .Menu-group {
                     width: 100%;
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-                @keyframes stripe-slide {
-                    0% {
-                        background-position: 0% 0;
-                    }
-                    100% {
-                        background-position: 100% 0;
-                    }
-                }
-                .btn {
-                    // @include reset-button;
-                    overflow: visible;
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    background: transparent;
+                    margin-right: 30px;
+                    text-align: center;
+                    font-size: 20px;
+                    font-weight: 540;
+                    display: flex;
+                    justify-items: flex-end;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
 
-                    line-height: calc(50px);
-                    cursor: pointer;
-                    -moz-user-select: text;
-
-                    &:-moz-focus-inner {
+                    text-transform: uppercase;
+                    text-rendering: optimizeLegibility;
+                    .index-btn {
+                        width: 100%;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                    @keyframes stripe-slide {
+                        0% {
+                            background-position: 0% 0;
+                        }
+                        100% {
+                            background-position: 100% 0;
+                        }
+                    }
+                    .btn {
+                        overflow: visible;
+                        margin: 0;
                         padding: 0;
                         border: 0;
-                    }
-                    //
-                    display: block;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    padding: 5px;
-                    margin: 0 5px;
-                    background-color: $btn-background;
-                    color: $btn-color;
-                    font-weight: 540;
-                    border: 2px solid $border-color;
-                    border-radius: 10px;
-                    transition: all 0.5s ease;
+                        background: transparent;
 
-                    &--stripe {
-                        overflow: hidden;
-                        position: relative;
+                        line-height: calc(50px);
+                        cursor: pointer;
+                        -moz-user-select: text;
 
-                        &:after {
-                            content: "";
-                            display: block;
-                            height: $stripe-height;
-                            width: 100%;
-                            background-image: repeating-linear-gradient(
-                                45deg,
-                                $border-color,
-                                $border-color 1px,
-                                transparent 2px,
-                                transparent 5px
-                            );
-
-                            backface-visibility: hidden;
-                            border-top: 1px solid $border-color;
-                            position: absolute;
-                            left: 0;
-                            bottom: 0;
-                            background-size: $stripe-height $stripe-height;
+                        &:-moz-focus-inner {
+                            padding: 0;
+                            border: 0;
                         }
+                        //
+                        display: block;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        padding: 5px;
+                        margin: 0 5px;
+                        background-color: $btn-background;
+                        color: $btn-color;
+                        font-weight: 540;
+                        border: 2px solid $border-color;
+                        border-radius: 10px;
+                        transition: all 0.5s ease;
 
-                        &:hover {
-                            background-color: $btn-background-hover;
-                            color: $btn-color-hover;
-                            border-color: $border-color-hover;
+                        &--stripe {
+                            overflow: hidden;
+                            position: relative;
 
                             &:after {
+                                content: "";
+                                display: block;
+                                height: $stripe-height;
+                                width: 100%;
                                 background-image: repeating-linear-gradient(
                                     45deg,
-                                    $btn-color-hover,
-                                    $btn-color-hover 1px,
+                                    $border-color,
+                                    $border-color 1px,
                                     transparent 2px,
                                     transparent 5px
                                 );
-                                border-top: 1px solid $border-color-hover;
-                                animation: stripe-slide 12s infinite linear forwards;
+
+                                backface-visibility: hidden;
+                                border-top: 1px solid $border-color;
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                background-size: $stripe-height $stripe-height;
+                            }
+
+                            &:hover {
+                                background-color: $btn-background-hover;
+                                color: $btn-color-hover;
+                                border-color: $border-color-hover;
+
+                                &:after {
+                                    background-image: repeating-linear-gradient(
+                                        45deg,
+                                        $btn-color-hover,
+                                        $btn-color-hover 1px,
+                                        transparent 2px,
+                                        transparent 5px
+                                    );
+                                    border-top: 1px solid $border-color-hover;
+                                    animation: stripe-slide 12s infinite linear forwards;
+                                }
                             }
                         }
                     }
                 }
-            }
-            .cloud-group{
-                position: relative;
-                width: 100%;
-                display: flex;
-                
-                .cloud{
-                    width: 20%;
-                    position: absolute;
-                }
-                .cloud01{
-                    right: 60%;
-                    top: 150px;
-                }
-                .cloud02{
-                  right: 40%;
-                 top: 300px;
-                    
+                .cloud-group {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+
+                    .cloud {
+                        width: 20%;
+                        position: absolute;
+                    }
+                    .cloud01 {
+                        right: 60%;
+                        top: 150px;
+                    }
+                    .cloud02 {
+                        right: 30%;
+                        top: 300px;
+                    }
                 }
             }
         }
-    }
-    .big-img {
-        position: absolute;
-        bottom: 0;
-        z-index: -1;
-        background-image: url("./img/首頁圖-02.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        // background-size: contain;
-        background-size: cover;
-        // opacity: 0.5;
-        width: 100%;
-        height: 50vh;
-        // min-height: 48vh;
+        .big-img {
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+            background-image: url("../img/主頁背景/主頁背景_工作區域\ 1.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            // 狗狗向右走
+            overflow: hidden;
+            .img-group {
+                width: 100%;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: bannermove 15s linear infinite;
+                .img-group img {
+                    margin: 0 0.5em;
+                }
+            }
+        }
+        @keyframes bannermove {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(100%, 0);
+            }
+        }
+        // 狗狗向右走
     }
 }

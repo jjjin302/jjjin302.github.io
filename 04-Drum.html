@@ -17,6 +17,9 @@
     <!-- 中文字體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- 思源仿宋體 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css">
+    <!-- 思源仿宋體 -->
     <!-- 中文字體 -->
     <!-- 英文字體 -->
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
@@ -25,60 +28,65 @@
 </head>
 
 <body>
-    <nav>
-        <!-- 漢堡條 -->
-        <div class="hamburger">
-            <div class="ham-ani">
-                <div class="stick stick-1"></div>
-                <div class="stick stick-2"></div>
-                <div class="stick stick-3"></div>
+    <header>
+        <nav>
+            <!-- 漢堡條 -->
+            <div class="hamburger">
+                <div class="ham-ani">
+                    <div class="stick stick-1"></div>
+                    <div class="stick stick-2"></div>
+                    <div class="stick stick-3"></div>
+                </div>
+                <div class="ham-menu">MENU</div>
             </div>
-            <div class="ham-menu">MENU</div>
-        </div>
-        <div class="btn-groupxxx">
-            <div class="decoration">&emsp;</div>
-            <div class="btnsss">
-                <div class="icons">
-                    <div class="icon">FB</div>
+            <div class="btn-groupxxx">
+                <div class="decoration">&emsp;</div>
+                <div class="btn-bacimg">
+                    <div class="btnsss">
+                        <div class="icons">
+                            <!-- <div class="icon">FB</div>
                     <div class="icon">Line</div>
-                    <div class="icon">E-mail</div>
-                </div>
-                <div class="btns">
-                    <a href="./index.html" class="btn btn-index">Home&nbsp;<i class="far fa-home"></i></a>
-                    <a href="./01-About.html" class="btn">
-                        <h1>關於十鼓</h1>
-                    </a>
-                    <a href="./02-News.html" class="btn">
-                        <h1>最新消息</h1>
-                    </a>
-                    <a href="./03-Facility.html" class="btn">
-                        <h1>設施體驗</h1>
-                    </a>
-                    <a href="./04-Drum.html" class="btn">
-                        <h1>鼓樂饗宴</h1>
-                    </a>
-                    <a href="./05-Information.html" class="btn">
-                        <h1>入園資訊</h1>
-                    </a>
-                    <a href="./06-Rented.html" class="btn">
-                        <h1>場地租借</h1>
-                    </a>
-                </div>
-                <div class="infor">
-                    <div class="top">
-                        <div class="lan en">EN</div>
-                        <div class="lan cn">中</div>
+                    <div class="icon">E-mail</div> -->
+                        </div>
+                        <div class="btns">
+                            <a href="./index.html" class="btn btn-index">Home&nbsp;<i class="far fa-home"></i></a>
+                            <a href="./01-About.html" class="btn">
+                                <h1>關於十鼓</h1>
+                            </a>
+                            <a href="./02-News.html" class="btn">
+                                <h1>最新消息</h1>
+                            </a>
+                            <a href="./03-Facility.html" class="btn">
+                                <h1>設施體驗</h1>
+                            </a>
+                            <a href="./04-Drum.html" class="btn">
+                                <h1>鼓樂饗宴</h1>
+                            </a>
+                            <a href="./05-Information.html" class="btn">
+                                <h1>入園資訊</h1>
+                            </a>
+                            <a href="./06-Rented.html" class="btn">
+                                <h1>場地租借</h1>
+                            </a>
+                        </div>
+                        <div class="infor">
+                            <div class="top">
+                                <div class="icon">FB</div>
+                                <div class="icon">Line</div>
+                                <div class="icon">E-mail</div>
+                            </div>
+                        </div>
+                        <div class="bott">
+                            <p>TEL06-2662225</p>
+                            <p>台南市仁德區文華路二段326號
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="bott">
-                    <p>TEL06-2662225</p>
-                    <p>台南市仁德區文華路二段326號
-                    </p>
-                </div>
             </div>
-        </div>
-        <!-- 漢堡條 -->
-    </nav>
+            <!-- 漢堡條 -->
+        </nav>
+    </header>
 
     <!-- 內文 -->
     <section>
@@ -89,10 +97,10 @@
                 <a href="#fake01">
                     <h2 class="drum-mid-title">關於十鼓樂團</h2>
                 </a>
-                <a href="">
+                <a onclick="flipTo(30)">
                     <h2 class="drum-mid-title">演出紀錄&事記</h2>
                 </a>
-                <a href="">
+                <a onclick="flipTo(28)">
                     <h2 class="drum-mid-title">得獎作品</h2>
                 </a>
                 <a href="">
@@ -324,6 +332,28 @@
                 }
             }
         })
+
+        function flipTo(_pageIndex) {
+            clearFlip()
+            for (let index = 0; index < pages.length; index++) {
+                const element = pages[index];
+
+                if (element.style.zIndex >= _pageIndex || element.style.zIndex == 0) {
+                    element.classList.add("flipped")
+                } else {
+                    break;
+                }
+            }
+        }
+
+        function clearFlip() {
+            for (let index = 0; index < pages.length; index++) {
+                const element = pages[index];
+                if (element.classList.contains("flipped")) {
+                    element.classList.remove("flipped")
+                }
+            }
+        }
 ///翻書效果///
 
     </script>

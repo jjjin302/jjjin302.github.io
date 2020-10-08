@@ -4,7 +4,7 @@
         position: fixed;
         right: 10px;
         top: 10px;
-        z-index: 50;
+        z-index: 500;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -180,96 +180,106 @@
         height: 100vh;
         background-color: #efe5cb;
         opacity: 1;
-        z-index: 49;
+        z-index: 499;
         display: none;
         &.active {
             display: block;
         }
-        .btnsss {
-            display: flex;
-            .icons {
-                width: 10%;
-                height: 100vh;
+        .btn-bacimg {
+            position: absolute;
+            left: 0;            
+            width: 100%;
+            height: 100vh;
+            background-image: url("../img/打鼓人/打鼓人調色1.png");
+            background-position: left;
+            background-repeat: no-repeat;
+            .btnsss {
                 display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                flex-wrap: wrap;
-                padding: 20px;
-                .icon {
-                    width: 100%;
-                }
-            }
-            .btns {
-                width: 85%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                margin-top: 50px;
-                .btn-index {
-                    font-size: 46px;
-                    margin-bottom: 30px;
-                    color: #595757;
-                    font-family: "Fredericka the Great", cursive;
-                }
-                .btn {
-                    padding: 20px;
-                    width: 100%;
-                    font-weight: bolder;
-                    line-height: 50%;
-                    text-align: center;
-                    border: 0;
-                    transition: 0.1s;
 
-                    &:hover {
-                        background-color: #d4a63f;
-                        color: #efefef;
-                    }
-                    h1 {
-                        color: #4d483d;
-                        &:hover{
-                            color: #efefef;
-                        }
+                .icons {
+                    width: 10%;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                    .icon {
+                        width: 100%;
                     }
                 }
-            }
-            .infor {
-                width: 5%;
-                display: flex;
-                flex-direction: column;
-                margin-top: 150px;
-                flex-wrap: wrap;
-                padding: 20px;
-                .top {
-                    width: 100%;
-                    text-align: center;
-                    .lan {
-                        width: 35px;
-                        height: 35px;
-                        margin: 10px 0;
-                        font-size: 16px;
-                        text-align: center;
-                        line-height: 35px;
-                        &:hover {
-                            cursor: pointer;
-                        }
-                    }
-                    .en {
-                        color: #d4a63f;
-                        border: 1px solid #d4a63f;
+                .btns {
+                    width: 85%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: 50px;
+                    .btn-index {
+                        font-size: 46px;
+                        margin-bottom: 30px;
+                        color: #595757;
                         font-family: "Fredericka the Great", cursive;
                     }
-                    .cn {
-                        color: #595757;
-                        border: 1px solid #595757;
+                    .btn {
+                        padding: 20px;
+                        width: 50%;
+                        font-weight: bolder;
+                        line-height: 50%;
+                        text-align: center;
+                        border: 0;
+                        transition: 0.1s;
+
+                        &:hover {
+                            background-color: rgba(212, 166, 63, 0.8);
+                            color: #efefef;
+                        }
+                        h1 {
+                            color: #4d483d;
+                            &:hover {
+                                color: #efefef;
+                            }
+                        }
                     }
                 }
-            }
-            .bott {
-                position: absolute;
-                right: 20px;
-                bottom: 20px;
+                .infor {
+                    width: 5%;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 150px;
+                    flex-wrap: wrap;
+                    padding: 20px;
+                    .top {
+                        width: 100%;
+                        text-align: center;
+                        .lan {
+                            width: 35px;
+                            height: 35px;
+                            margin: 10px 0;
+                            font-size: 16px;
+                            text-align: center;
+                            line-height: 35px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                        .en {
+                            color: #d4a63f;
+                            border: 1px solid #d4a63f;
+                            font-family: "Fredericka the Great", cursive;
+                        }
+                        .cn {
+                            color: #595757;
+                            border: 1px solid #595757;
+                        }
+                    }
+                }
+                .bott {
+                    position: absolute;
+                    right: 20px;
+                    bottom: 20px;
+                }
             }
         }
     }

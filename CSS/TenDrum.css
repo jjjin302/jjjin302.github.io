@@ -2,7 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+  font-family: 'cwTeXFangSong','cwTeXKai', 'Noto Sans TC', '微軟正黑體', sans-serif;
 }
 
 a {
@@ -40,12 +40,7 @@ footer {
   line-height: 30px;
 }
 
-.index {
-  background-color: #e9e1d2;
-  z-index: -10;
-}
-
-.Nav {
+.index .Nav {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,15 +50,15 @@ footer {
           justify-content: space-between;
 }
 
-.Nav .Logo-pic {
+.index .Nav .Logo-pic {
   width: 45%;
 }
 
-.Nav .left-group {
+.index .Nav .left-group {
   width: 55%;
 }
 
-.Nav .left-group .Menu-group {
+.index .Nav .left-group .Menu-group {
   width: 100%;
   margin-right: 30px;
   text-align: center;
@@ -79,11 +74,11 @@ footer {
   text-rendering: optimizeLegibility;
 }
 
-.Nav .left-group .Menu-group .index-btn {
+.index .Nav .left-group .Menu-group .index-btn {
   width: 100%;
 }
 
-.Nav .left-group .Menu-group .index-btn:hover {
+.index .Nav .left-group .Menu-group .index-btn:hover {
   cursor: pointer;
 }
 
@@ -105,7 +100,7 @@ footer {
   }
 }
 
-.Nav .left-group .Menu-group .btn {
+.index .Nav .left-group .Menu-group .btn {
   overflow: visible;
   margin: 0;
   padding: 0;
@@ -128,17 +123,17 @@ footer {
   transition: all 0.5s ease;
 }
 
-.Nav .left-group .Menu-group .btn:-moz-focus-inner {
+.index .Nav .left-group .Menu-group .btn:-moz-focus-inner {
   padding: 0;
   border: 0;
 }
 
-.Nav .left-group .Menu-group .btn--stripe {
+.index .Nav .left-group .Menu-group .btn--stripe {
   overflow: hidden;
   position: relative;
 }
 
-.Nav .left-group .Menu-group .btn--stripe:after {
+.index .Nav .left-group .Menu-group .btn--stripe:after {
   content: "";
   display: block;
   height: 7px;
@@ -153,20 +148,20 @@ footer {
   background-size: 7px 7px;
 }
 
-.Nav .left-group .Menu-group .btn--stripe:hover {
+.index .Nav .left-group .Menu-group .btn--stripe:hover {
   background-color: #7f5f43;
   color: #ffffff;
   border-color: #d3a53f;
 }
 
-.Nav .left-group .Menu-group .btn--stripe:hover:after {
+.index .Nav .left-group .Menu-group .btn--stripe:hover:after {
   background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 1px, transparent 2px, transparent 5px);
   border-top: 1px solid #d3a53f;
   -webkit-animation: stripe-slide 12s infinite linear forwards;
           animation: stripe-slide 12s infinite linear forwards;
 }
 
-.Nav .left-group .cloud-group {
+.index .Nav .left-group .cloud-group {
   position: relative;
   width: 100%;
   display: -webkit-box;
@@ -174,31 +169,75 @@ footer {
   display: flex;
 }
 
-.Nav .left-group .cloud-group .cloud {
+.index .Nav .left-group .cloud-group .cloud {
   width: 20%;
   position: absolute;
 }
 
-.Nav .left-group .cloud-group .cloud01 {
+.index .Nav .left-group .cloud-group .cloud01 {
   right: 60%;
   top: 150px;
 }
 
-.Nav .left-group .cloud-group .cloud02 {
-  right: 40%;
+.index .Nav .left-group .cloud-group .cloud02 {
+  right: 30%;
   top: 300px;
 }
 
-.big-img {
+.index .big-img {
   position: absolute;
   bottom: 0;
   z-index: -1;
-  background-image: url("./img/首頁圖-02.png");
+  background-image: url("../img/主頁背景/主頁背景_工作區域 1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 50vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+}
+
+.index .big-img .img-group {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-animation: bannermove 15s linear infinite;
+          animation: bannermove 15s linear infinite;
+}
+
+.index .big-img .img-group .img-group img {
+  margin: 0 0.5em;
+}
+
+@-webkit-keyframes bannermove {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+}
+
+@keyframes bannermove {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
 }
 
 .hamburger {
@@ -206,7 +245,7 @@ footer {
   position: fixed;
   right: 10px;
   top: 10px;
-  z-index: 50;
+  z-index: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -549,7 +588,7 @@ footer {
   height: 100vh;
   background-color: #efe5cb;
   opacity: 1;
-  z-index: 49;
+  z-index: 499;
   display: none;
 }
 
@@ -557,13 +596,23 @@ footer {
   display: block;
 }
 
-.btn-groupxxx .btnsss {
+.btn-groupxxx .btn-bacimg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/打鼓人/打鼓人調色1.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.btn-groupxxx .btn-bacimg .btnsss {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.btn-groupxxx .btnsss .icons {
+.btn-groupxxx .btn-bacimg .btnsss .icons {
   width: 10%;
   height: 100vh;
   display: -webkit-box;
@@ -581,11 +630,11 @@ footer {
   padding: 20px;
 }
 
-.btn-groupxxx .btnsss .icons .icon {
+.btn-groupxxx .btn-bacimg .btnsss .icons .icon {
   width: 100%;
 }
 
-.btn-groupxxx .btnsss .btns {
+.btn-groupxxx .btn-bacimg .btnsss .btns {
   width: 85%;
   height: 100%;
   display: -webkit-box;
@@ -604,16 +653,16 @@ footer {
   margin-top: 50px;
 }
 
-.btn-groupxxx .btnsss .btns .btn-index {
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn-index {
   font-size: 46px;
   margin-bottom: 30px;
   color: #595757;
   font-family: "Fredericka the Great", cursive;
 }
 
-.btn-groupxxx .btnsss .btns .btn {
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn {
   padding: 20px;
-  width: 100%;
+  width: 50%;
   font-weight: bolder;
   line-height: 50%;
   text-align: center;
@@ -622,20 +671,20 @@ footer {
   transition: 0.1s;
 }
 
-.btn-groupxxx .btnsss .btns .btn:hover {
-  background-color: #d4a63f;
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn:hover {
+  background-color: rgba(212, 166, 63, 0.8);
   color: #efefef;
 }
 
-.btn-groupxxx .btnsss .btns .btn h1 {
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn h1 {
   color: #4d483d;
 }
 
-.btn-groupxxx .btnsss .btns .btn h1:hover {
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn h1:hover {
   color: #efefef;
 }
 
-.btn-groupxxx .btnsss .infor {
+.btn-groupxxx .btn-bacimg .btnsss .infor {
   width: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,12 +699,12 @@ footer {
   padding: 20px;
 }
 
-.btn-groupxxx .btnsss .infor .top {
+.btn-groupxxx .btn-bacimg .btnsss .infor .top {
   width: 100%;
   text-align: center;
 }
 
-.btn-groupxxx .btnsss .infor .top .lan {
+.btn-groupxxx .btn-bacimg .btnsss .infor .top .lan {
   width: 35px;
   height: 35px;
   margin: 10px 0;
@@ -664,22 +713,22 @@ footer {
   line-height: 35px;
 }
 
-.btn-groupxxx .btnsss .infor .top .lan:hover {
+.btn-groupxxx .btn-bacimg .btnsss .infor .top .lan:hover {
   cursor: pointer;
 }
 
-.btn-groupxxx .btnsss .infor .top .en {
+.btn-groupxxx .btn-bacimg .btnsss .infor .top .en {
   color: #d4a63f;
   border: 1px solid #d4a63f;
   font-family: "Fredericka the Great", cursive;
 }
 
-.btn-groupxxx .btnsss .infor .top .cn {
+.btn-groupxxx .btn-bacimg .btnsss .infor .top .cn {
   color: #595757;
   border: 1px solid #595757;
 }
 
-.btn-groupxxx .btnsss .bott {
+.btn-groupxxx .btn-bacimg .btnsss .bott {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -689,6 +738,7 @@ footer {
   width: 100%;
   height: 100vh;
   text-align: center;
+  background-color: #d0b975;
 }
 
 #fullpage .section .About {
@@ -1553,5 +1603,175 @@ a {
   font-size: 16px;
   text-align: center;
   line-height: 30px;
+}
+
+#apple_effect {
+  width: 100%;
+  height: 10000vh;
+  background-color: #ebe3d4;
+  position: relative;
+}
+
+#apple_effect .parallax_window {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+
+#apple_effect .parallax_window .effect_box {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#apple_effect .parallax_window .effect_box .About {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#apple_effect .parallax_window .effect_box .About .cn-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 80px;
+  color: #231815;
+}
+
+#apple_effect .parallax_window .effect_box .About .cn-title .big-size {
+  font-size: 100px;
+}
+
+#apple_effect .parallax_window .effect_box .about-title {
+  width: 75%;
+  font-size: 40px;
+  height: 60px;
+  line-height: 60px;
+}
+
+#apple_effect .parallax_window .effect_box .about-text {
+  width: 65%;
+  font-size: 24px;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .about-2-text {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .about-2-text .text-wrap {
+  padding: 0 10px;
+  width: 50%;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .intro-title {
+  width: 20%;
+  font-size: 76px;
+  height: 100px;
+  padding: 1px;
+  border-bottom: 1px solid #b15821;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .con-color-1 {
+  background-color: #0b6c6d;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .con-color-2 {
+  background: #d4a63f;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .intro-con {
+  text-align: left;
+  width: 50%;
+  height: 50vh;
+  border-radius: 10%;
+  padding: 20px;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .intro-con .intro-con-img {
+  margin: auto;
+  width: 95%;
+  height: 150px;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .intro-con .img-self-1 {
+  width: 95%;
+  background-color: #d0b975;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .intro-con .intro-con-box .intro-con-box-title {
+  font-size: 24px;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .intro-con .intro-con-box .intro-con-box-text {
+  font-size: 20px;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .intro-con .intro-con-box .intro-con-icon-dis {
+  margin-top: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#apple_effect .parallax_window .effect_box .intro-container .intro-con .intro-con-box .intro-con-icon-dis .intro-con-icon {
+  width: 10%;
+  height: 30px;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  background: #d4a63f;
+  border-radius: 10px;
+}
+
+#apple_effect .parallax_window .effect_box .sec {
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#apple_effect .parallax_window .effect_box .sec-00 {
+  background-image: url("../img/插圖/關於十鼓-修正.jpg");
+}
+
+#apple_effect .parallax_window .effect_box .sec-05 {
+  background-image: url("../img/插圖/飛人 上色.png");
 }
 /*# sourceMappingURL=TenDrum.css.map */
