@@ -734,6 +734,236 @@ footer {
   bottom: 20px;
 }
 
+#fullpage .section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color: #d0b975;
+}
+
+#fullpage .section .About {
+  width: 100%;
+}
+
+#fullpage .section .About .en-title {
+  margin-left: 1%;
+}
+
+#fullpage .section .About .en-title .About-t {
+  font-size: 150px;
+  font-family: "Fredericka the Great", cursive;
+  color: #231815;
+}
+
+#fullpage .section .About .en-title u {
+  font-size: 30px;
+}
+
+#fullpage .section .About .en-title .line01 {
+  color: #b15821;
+  font-size: 30px;
+}
+
+#fullpage .section .About .cn-title {
+  margin-left: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 120px;
+  color: #231815;
+}
+
+#fullpage .section .About .cn-title .big-size {
+  font-size: 150px;
+}
+
+#fullpage .section .About .cn-title .line02 {
+  color: #0b6c6d;
+  font-size: 30px;
+}
+
+#fullpage .section .about-title {
+  width: 75%;
+  font-size: 40px;
+  line-height: 80px;
+  margin-left: 55%;
+  margin-top: 9%;
+}
+
+#fullpage .section .about-text-bacimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#fullpage .section .about-text-bacimg .about-text {
+  width: 900px;
+  font-size: 24px;
+  text-align: left;
+  margin-top: 10%;
+}
+
+#fullpage .section .about-text-bacimg .about-2-text {
+  width: 40%;
+  margin-top: 0;
+  margin-bottom: 150px;
+  margin-left: 10%;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  text-align: left;
+}
+
+#fullpage .section .about-text-bacimg .about-2-text .text-wrap {
+  padding: 0 10px;
+  width: 50%;
+}
+
+#fullpage .section .about-text-bacimg .text-color-F7F8F8 {
+  color: #f7f8f8;
+}
+
+#fullpage .section .intro-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fullpage .section .intro-container .intro-title {
+  width: 20%;
+  font-size: 76px;
+  height: 100px;
+  padding: 1px;
+  border-bottom: 1px solid #b15821;
+}
+
+#fullpage .section .intro-container .con-color-1 {
+  background-color: #0b6c6d;
+}
+
+#fullpage .section .intro-container .con-color-2 {
+  background: #d4a63f;
+}
+
+#fullpage .section .intro-container .intro-con {
+  text-align: left;
+  width: 50%;
+  height: 50vh;
+  border-radius: 10%;
+  padding: 20px;
+}
+
+#fullpage .section .intro-container .intro-con .intro-con-img {
+  margin: auto;
+  width: 95%;
+  height: 150px;
+}
+
+#fullpage .section .intro-container .intro-con .img-self-1 {
+  width: 95%;
+  background-color: #d0b975;
+}
+
+#fullpage .section .intro-container .intro-con .intro-con-box .intro-con-box-title {
+  font-size: 24px;
+}
+
+#fullpage .section .intro-container .intro-con .intro-con-box .intro-con-box-text {
+  font-size: 20px;
+}
+
+#fullpage .section .intro-container .intro-con .intro-con-box .intro-con-icon-dis {
+  margin-top: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#fullpage .section .intro-container .intro-con .intro-con-box .intro-con-icon-dis .intro-con-icon {
+  width: 10%;
+  height: 30px;
+  font-size: 20px;
+  color: #f7f8f8;
+  line-height: 30px;
+  text-align: center;
+  background: #d4a63f;
+  border-radius: 10px;
+}
+
+#fullpage .section .sec {
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fullpage .sec-00 {
+  background-color: #ebe3d4;
+}
+
+#fullpage .sec-00 .sec-00-1 {
+  width: 100%;
+  background-image: url("../img/插圖/兩人尬鼓.png");
+  background-repeat: no-repeat;
+}
+
+#fullpage .sec-01 {
+  background-color: #d4a63f;
+}
+
+#fullpage .sec-01 .sec-01-1 {
+  background-image: url("../img/主頁背景/簡介_工作區域 1.jpg");
+}
+
+#fullpage .sec-02 {
+  background-color: #e9c37c;
+}
+
+#fullpage .sec-02 .sec-02-1 {
+  background-image: url("../img/關於背景1002試用-小-06_工作區域6.svg");
+}
+
+#fullpage .sec-03 {
+  background-color: #d0b975;
+}
+
+#fullpage .sec-03 .sec-03-1 {
+  background-image: url("../img/設計稿 降轉10-02-核心價值_工作區域7.svg");
+}
+
+#fullpage .sec-04 {
+  background-color: #e9c37c;
+}
+
+#fullpage .sec-05 {
+  background-color: #ebe3d4;
+}
+
+#fullpage .sec-05 .sec-05-00 {
+  background-image: url("../img/插圖/飛人 上色.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .New {
   width: 100%;
   height: 100vh;
@@ -1377,7 +1607,7 @@ a {
 
 #apple_effect {
   width: 100%;
-  height: 10000vh;
+  height: 5000vh;
   background-color: #ebe3d4;
   position: relative;
 }
@@ -1397,6 +1627,38 @@ a {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+#apple_effect .parallax_window .effect_box .sec {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#apple_effect .parallax_window .effect_box .sec-01 {
+  background-image: url("../img/插圖/關於十鼓-修正.jpg");
+}
+
+#apple_effect .parallax_window .effect_box .sec-02 {
+  background-image: url("../img/主頁背景/關於十鼓-背景.jpg");
+}
+
+#apple_effect .parallax_window .effect_box .sec-03 {
+  background-image: url("../img/主頁背景/沿革-背景.jpg");
+}
+
+#apple_effect .parallax_window .effect_box .sec-04 {
+  background-image: url("../img/主頁背景/發展年表-背景.jpg");
+}
+
+#apple_effect .parallax_window .effect_box .sec-05 {
+  background-image: url("../img/主頁背景/核心價值-背景.jpg");
+}
+
+#apple_effect .parallax_window .effect_box .sec-06 {
+  background-image: url("../img/插圖/飛人 上色.png");
 }
 
 #apple_effect .parallax_window .effect_box .footer {
@@ -1444,6 +1706,28 @@ a {
           align-items: flex-start;
 }
 
+#apple_effect .parallax_window .effect_box .About-06 {
+  color: #231815;
+  padding-top: 10%;
+  padding-left: 30%;
+}
+
+#apple_effect .parallax_window .effect_box .About-06 .en-title {
+  width: 70%;
+  font-size: 150px;
+  font-family: "Fredericka the Great", cursive;
+}
+
+#apple_effect .parallax_window .effect_box .About-06 .en-title .line-01 {
+  color: #b15821;
+  font-size: 20px;
+}
+
+#apple_effect .parallax_window .effect_box .About-06 .cn-title {
+  width: 70%;
+  font-size: 120px;
+}
+
 #apple_effect .parallax_window .effect_box .about-title {
   margin-top: 15%;
   width: 50%;
@@ -1469,12 +1753,12 @@ a {
 }
 
 #apple_effect .parallax_window .effect_box .about-text-5-team .color-gray {
-  width: 8%;
+  width: 7%;
   height: 30px;
   line-height: 30px;
+  text-align: center;
   font-size: 12px;
   color: #b5b5b6;
-  margin-left: 10px;
 }
 
 #apple_effect .parallax_window .effect_box .about-text-5-team .about-text-5-text {
@@ -1538,7 +1822,6 @@ a {
   color: #231815;
   /* Container around time-content */
   /* The circles on the timeline */
-  /* Place the time-container to the left */
   /* Place the time-container to the right */
   /* Add arrows to the right time-container (pointing left) */
   /* Fix the circle for time-containers on the right side */
@@ -1583,9 +1866,6 @@ a {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #6a3906;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
 }
 
 #apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline .right::after {
@@ -1634,31 +1914,109 @@ a {
   }
 }
 
-#apple_effect .parallax_window .effect_box .sec {
+#apple_effect .parallax_window .effect_box .sec-07 {
   width: 100%;
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#apple_effect .parallax_window .effect_box .sec-01 {
-  background-image: url("../img/插圖/關於十鼓-修正.jpg");
+#apple_effect .parallax_window .effect_box .sec-07 .img-bac-01 {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  z-index: -1;
 }
 
-#apple_effect .parallax_window .effect_box .sec-02 {
-  background-image: url("../img/主頁背景/關於十鼓-背景.jpg");
+#apple_effect .parallax_window .effect_box .sec-07 .img-bac-02 {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  z-index: -1;
 }
 
-#apple_effect .parallax_window .effect_box .sec-03 {
-  background-image: url("../img/主頁背景/沿革-背景.jpg");
+#apple_effect .parallax_window .effect_box .sec-07 .title-07 {
+  width: 50%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-#apple_effect .parallax_window .effect_box .sec-04 {
-  background-image: url("../img/主頁背景/發展年表-背景.jpg");
+#apple_effect .parallax_window .effect_box .sec-07 .title-07 .fas.fa-circle {
+  color: #595757;
+  font-size: 14px;
+  line-height: 100px;
 }
 
-#apple_effect .parallax_window .effect_box .sec-05 {
-  background-image: url("../img/主頁背景/核心價值-背景.jpg");
+#apple_effect .parallax_window .effect_box .sec-07 .title-07 .sec-07-line {
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #b15821;
+}
+
+#apple_effect .parallax_window .effect_box .sec-07 .title-07 .sec-07-line .sec-07-title {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  color: #673a1b;
+}
+
+#apple_effect .parallax_window .effect_box .sec-07 .sec-07-context {
+  width: 60%;
+  height: 80%;
+  background-color: #0b6c6d;
+  border-radius: 150px;
+  color: #f7f8f8;
+  text-align: left;
+  padding: 50px;
+  position: relative;
+}
+
+#apple_effect .parallax_window .effect_box .sec-07 .sec-07-context .img-group {
+  padding: 30px;
+  margin: auto;
+  height: 50%;
+  margin-bottom: 5%;
+}
+
+#apple_effect .parallax_window .effect_box .sec-07 .sec-07-context .sty-bol {
+  font-weight: bolder;
+}
+
+#apple_effect .parallax_window .effect_box .sec-07 .sec-07-context .sec-07-text {
+  font-size: 24px;
+}
+
+#apple_effect .parallax_window .effect_box .sec-07 .sec-07-context .sec-07-more {
+  width: 10%;
+  color: #f7f8f8;
+  text-align: center;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  background-color: #d4a63f;
+  border-radius: 10px;
+  font-family: "Fredericka the Great", cursive;
+  padding: 5px;
+}
+
+#apple_effect .parallax_window .effect_box .sec-07 .sec-07-context .sec-07-more:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=TenDrum.css.map */

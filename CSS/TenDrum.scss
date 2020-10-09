@@ -37,7 +37,7 @@ footer{
 @import "./index";
 @import "./hamberger";
 @import "./apple-about";
-// @import "./About";
+@import "./no-use/About";
 @import "./News";
 @import "./Facility";
 @import "./Drum";
@@ -45,7 +45,7 @@ footer{
 @import "./Rented";
 @include Index();
 @include hamberger();
-// @include about01();
+@include about01();
 @include news();
 @include Facility();
 @include Drum();
