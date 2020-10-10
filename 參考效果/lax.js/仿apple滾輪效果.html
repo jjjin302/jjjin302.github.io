@@ -53,8 +53,19 @@
         <div id="apple_effect">
             <div class="parallax_window">
                 <div class="effect_box lax" 
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop) 0, (document.querySelector('#apple_effect').offsetTop+1000) 1, (document.querySelector('#apple_effect').offsetTop+1000) 1, (document.querySelector('#apple_effect').offsetTop+2000) 1, (document.querySelector('#apple_effect').offsetTop+3000) 0"
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+500) 1, (document.querySelector('#apple_effect').offsetTop+1500) 3"></div>
+
+                data-lax-opacity="
+                (document.querySelector('#apple_effect').offsetTop) 0
+                , (document.querySelector('#apple_effect').offsetTop+1000) 1
+                , (document.querySelector('#apple_effect').offsetTop+3000) 1
+                , (document.querySelector('#apple_effect').offsetTop+3000) 1
+                , (document.querySelector('#apple_effect').offsetTop+5000) 0"
+                
+                data-lax-scale="
+                (document.querySelector('#apple_effect').offsetTop) 0.2
+                , (document.querySelector('#apple_effect').offsetTop+1000) 1.5
+                , (document.querySelector('#apple_effect').offsetTop+3000) 1.5
+                , (document.querySelector('#apple_effect').offsetTop+5000) 8"></div>
             </div>
         </div>
 
