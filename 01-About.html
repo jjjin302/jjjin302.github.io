@@ -25,6 +25,44 @@
     <!-- 英文字體 -->
 
     <style>
+        .img-09 {
+            width: 25%;
+            position: relative;
+        }
+
+        .img-09:hover .overlay {
+            width: 100%;
+        }
+
+        .img-09-01 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #BC6821;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .5s ease;
+        }
+
+        .img-09-text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
     </style>
 </head>
 
@@ -346,17 +384,46 @@
                     </div>
                     <div class="sec-09-context">
                         <div class="img-group-09">
-                            <div class="img-09 "><img src="./img/關於頁面/特色/打鼓餅.jpg" alt=""></div>
-                            <div class="img-09 pic02"></div>
-                            <div class="img-09 pic03"></div>
-                            <div class="img-09 pic04"></div>
-                            <div class="img-09 pic05"></div>
-                            <div class="img-09 pic06"></div>
+                            <div class="img-09">
+                                <img src="./img/關於頁面/特色/cookies.jpg" alt="cookies" class="img-09-01">
+                                <div class="overlay">
+                                    <div class="img-09-text">打鼓餅</div>
+                                </div>
+                            </div>
+                            <div class="img-09">
+                                <img src="./img/關於頁面/特色/egg.jpg" alt="cookies" class="img-09-01">
+                                <div class="overlay">
+                                    <div class="img-09-text">鼓找蛋</div>
+                                </div>
+                            </div>
+                            <div class="img-09">
+                                <img src="./img/關於頁面/特色/noodles-set.jpg" alt="cookies" class="img-09-01">
+                                <div class="overlay">
+                                    <div class="img-09-text">麵線套餐</div>
+                                </div>
+                            </div>
+                            <div class="img-09">
+                                <img src="./img/關於頁面/特色/sugar-juice_工作區域 1.png" alt="cookies" class="img-09-01">
+                                <div class="overlay">
+                                    <div class="img-09-text">甘蔗汁</div>
+                                </div>
+                            </div>
+                            <div class="img-09">
+                                <img src="./img/關於頁面/特色/1005hk114zq7ctzi8D1BF.webp" alt="鼓追燒" class="img-09-01">
+                                <div class="overlay">
+                                    <div class="img-09-text">鼓追燒</div>
+                                </div>
+                            </div><div class="img-09">
+                                <img src="./img/關於頁面/特色/58.jpg.pagespeed.ce.fQXR-UfwWI.jpg" alt="十鼓套餐" class="img-09-01">
+                                <div class="overlay">
+                                    <div class="img-09-text">十鼓套餐</div>
+                                </div>
+                            </div>
                             <div class="img-09-team">
                                 <img src="./img/關於頁面/特色/打鼓餅.jpg" class="img-09-01" alt="">
-                            <img src="./img/關於頁面/特色/打鼓餅.jpg" class="img-09-01" alt="">
+                                <img src="./img/關於頁面/特色/打鼓餅.jpg" class="img-09-01" alt="">
                             </div>
-                            
+
 
                         </div>
                     </div>

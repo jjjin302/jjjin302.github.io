@@ -1677,7 +1677,7 @@ a {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  bottom: 0;
+  bottom: 42px;
   background-color: rgba(177, 88, 33, 0.1);
   height: 42px;
   color: #595757;
@@ -2155,8 +2155,41 @@ a {
 
 #apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 {
   width: 25%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  position: relative;
+}
+
+#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-01 {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #BC6821;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 .overlay .img-09-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay {
+  width: 100%;
 }
 
 #apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09-team {
