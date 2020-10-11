@@ -3,9 +3,10 @@
         width: 100%;
         height: 100vh;
         display: flex;
-        background-image: url("./img/主頁背景/news\ 背景.jpg");
+        background-image: url("../img/主頁背景/news-降_工作區域\ 1.jpg");
         // background-color: #efe5cb;
         .new-title {
+            margin-top: 5%;
             margin-left: 10px;
             padding: 25px;
             width: 20%;
@@ -13,6 +14,7 @@
                 font-size: 54px;
                 font-weight: bold;
                 margin-bottom: 60px;
+                color: #673a1b;
             }
             .new-title01 {
                 margin-top: 10%;
@@ -32,6 +34,7 @@
         .new-contexts {
             width: 80%;
             height: calc(100vh - 30px);
+            margin-top: 5%;
             .new-context {
                 display: none;
                 .new-contain {
@@ -47,7 +50,7 @@
                     }
                     .new-context-title {
                         width: 50%;
-                        margin-bottom: 10%;
+                        margin-bottom: 5%;
                         font-size: 36px;
                         font-weight: bold;
                         color: #3e3a39;
@@ -68,41 +71,56 @@
                             padding-right: 0;
                         }
                         .news {
-                            height: auto;
+                            height: 90%;
                             padding: 15px;
                             margin: 1%;
-
-                            border: 1px solid #b15821;
-                            .new-img {
-                                width: 90%;
-                                margin-bottom: 10px;
+                            background-color: rgba(64, 34, 15, 0.55);
+                            border-radius: 20px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            .new-imgs {
+                                display: flex;
+                                justify-content: center;
+                                .new-img {
+                                    width: 90%;
+                                    margin-bottom: 10px;
+                                    height: 70%;
+                                }
                             }
+
                             .new-time {
+                                width: 100%;
+                                text-align: left;
                                 margin-bottom: 10px;
                                 font-size: 14px;
                             }
                             .new-name {
-                                width: 90%;
+                                width: 100%;
                                 font-size: 18px;
+                                text-align: left;
                             }
                             .new-mores {
-                                width: 90%;
+                                width: 100%;
                                 display: flex;
                                 justify-content: flex-end;
                                 align-content: flex-end;
-                                align-items: flex-end;
                                 .new-more {
-                                    width: 30%;
+                                    widows: 90%;
                                     font-family: "Fredericka the Great", cursive;
                                     font-size: 20px;
                                     color: #f7f8f8;
                                     background: #b15821;
                                     border-radius: 10px;
                                     text-align: center;
-                                    height: 25px;
-                                    line-height: 25px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    padding: 1px;
+                                    letter-spacing: 5px;
                                     &:hover {
                                         cursor: pointer;
+                                        letter-spacing: 3px;
+                                        transition: 0.3s;
                                     }
                                 }
                             }
@@ -114,5 +132,9 @@
                 display: block;
             }
         }
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
     }
 }
