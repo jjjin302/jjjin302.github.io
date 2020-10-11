@@ -87,6 +87,48 @@
             <!-- 漢堡條 -->
         </nav>
     </header>
+
+    <div class="park_pag">
+        <div class="park_button_bar">
+            <div class="park_button_g">
+                <div class="park_tittle">入園資訊</div>
+                <div class="park_lease_box">開園時間</div>
+                <div class="park_lease_box">票價資訊</div>
+                <div class="park_lease_box">交通資訊</div>
+                <div class="park_lease_box">園區導覽</div>
+                <a class="park_show" href="./04-Drum.html">定目劇演出</a>
+
+            </div>
+
+        </div>
+        <div class="park_photo_R">
+            <div class="park_photobox">
+                <div class="park_inf park_active">
+                    <div class="park_inf_photo">
+                        <img src="./img/入園資訊/開園時間-02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="park_inf">
+                    <div class="park_inf_photo">
+                        <img src="img/票價資訊_工作區域 1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="park_inf">
+                    <div class="park_inf_photo">
+                        <img src="img/開園時間.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="park_inf">
+                    <div class="park_inf_photo">
+                        <img src="img/票價資訊_工作區域 1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>版權聲明</footer>
     <!-- JS -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -140,6 +182,35 @@
         });
         ///3條線變叉叉///
         ///漢堡條///
+
+        var park_lease_boxs = document.querySelectorAll('.park_lease_box')
+        var park_infs = document.querySelectorAll('.park_inf')
+
+        for (var i = 0; i < park_lease_boxs.length; i++) {
+
+            const park_lease_box = park_lease_boxs[i];
+            const park_inf = park_infs[i];
+
+
+            park_lease_box.onclick = function () {
+                remove_park_active()
+
+                park_lease_box.classList.add('park_active');
+                park_inf.classList.add('park_active');
+
+            }
+        }
+
+        function remove_park_active() {
+            for (var i = 0; i < park_lease_boxs.length; i++) {
+                const park_lease_box = park_lease_boxs[i];
+                const park_inf = park_infs[i]
+
+                park_lease_box.classList.remove('park_active')
+                park_inf.classList.remove('park_active')
+
+            }
+        }
     </script>
 </body>
 
