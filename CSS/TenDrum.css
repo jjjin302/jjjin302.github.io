@@ -1605,9 +1605,13 @@ a {
   line-height: 30px;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 #apple_effect {
   width: 100%;
-  height: 2000vh;
+  height: 1650vh;
   background-color: #ebe3d4;
   position: relative;
 }
@@ -1677,7 +1681,7 @@ a {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  bottom: 42px;
+  bottom: 0;
   background-color: rgba(177, 88, 33, 0.1);
   height: 42px;
   color: #595757;
@@ -1689,7 +1693,7 @@ a {
 #apple_effect .parallax_window .effect_box .About {
   padding: 50px;
   width: 90%;
-  height: 100%;
+  height: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1700,6 +1704,191 @@ a {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+#apple_effect .parallax_window .effect_box .About .about-title-00 {
+  margin-top: 15%;
+  width: 50%;
+  font-size: 40px;
+  height: 60px;
+  line-height: 60px;
+  color: #673a1b;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .About .about-text-00 {
+  width: 50%;
+  font-size: 24px;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .About .about-title-01 {
+  margin-top: 5%;
+  width: 50%;
+  font-size: 40px;
+  height: 60px;
+  line-height: 60px;
+  color: #673a1b;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .About .about-text-01 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .About .about-text-01 .text-wrap {
+  padding: 0 10px;
+  width: 50%;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 {
+  padding: 50px;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-title-02 {
+  margin-top: 5%;
+  width: 15%;
+  font-size: 40px;
+  height: 60px;
+  line-height: 60px;
+  color: #673a1b;
+  text-align: right;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 {
+  width: 85%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 20px;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 {
+  width: 37.5%;
+  /* The actual timeline (the vertical ruler) */
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 h6 {
+  font-family: "Fredericka the Great", cursive;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline {
+  position: relative;
+  width: 100%;
+  color: #231815;
+  /* Container around time-content */
+  /* The circles on the timeline */
+  /* Place the time-container to the right */
+  /* Add arrows to the right time-container (pointing left) */
+  /* Fix the circle for time-containers on the right side */
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline .time-container {
+  padding: 10px 40px;
+  position: relative;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline .time-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #6a3906;
+  border: 4px solid #ff9f55;
+  top: 40px;
+  border-radius: 50%;
+  z-index: 1;
+  /* The actual time-content */
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline .time-container::after .time-content {
+  width: 100%;
+  padding: 20px 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline .right {
+  left: 50%;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline .right::after {
+  left: -16px;
+}
+
+#apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #6a3906;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+@media screen and (max-width: 600px) {
+  #apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 {
+    /* Place the timelime to the left */
+    /* Full-width time-containers */
+    /* Make sure that all arrows are pointing leftwards */
+    /* Make sure all circles are at the same spot */
+    /* Make all right time-containers behave like the left ones */
+  }
+  #apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .timeline::after {
+    left: 31px;
+  }
+  #apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .time-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  #apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .time-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  #apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .left::after,
+  #apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .right::after {
+    left: 15px;
+  }
+  #apple_effect .parallax_window .effect_box .About-02 .about-text-02 .text-wrap-02 .right {
+    left: 0%;
+  }
 }
 
 #apple_effect .parallax_window .effect_box .About-03 {
@@ -1716,6 +1905,46 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+#apple_effect .parallax_window .effect_box .About-03 .about-title-00 {
+  margin-top: 15%;
+  width: 50%;
+  font-size: 40px;
+  height: 60px;
+  line-height: 60px;
+  color: #673a1b;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .About-03 .about-text-00 {
+  width: 50%;
+  font-size: 24px;
+  text-align: left;
+}
+
+#apple_effect .parallax_window .effect_box .About-03 .about-text-00 .about-text-5-team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#apple_effect .parallax_window .effect_box .About-03 .about-text-00 .about-text-5-team .color-gray {
+  width: 7%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #b5b5b6;
+}
+
+#apple_effect .parallax_window .effect_box .About-03 .about-text-00 .about-text-5-team .about-text-5-text {
+  width: 90%;
+  color: #231815;
+  height: 30px;
+  line-height: 30px;
 }
 
 #apple_effect .parallax_window .effect_box .About-06 {
@@ -1738,192 +1967,6 @@ a {
 #apple_effect .parallax_window .effect_box .About-06 .cn-title {
   width: 70%;
   font-size: 120px;
-}
-
-#apple_effect .parallax_window .effect_box .about-title {
-  margin-top: 15%;
-  width: 50%;
-  font-size: 40px;
-  height: 60px;
-  line-height: 60px;
-  color: #673a1b;
-  text-align: left;
-}
-
-#apple_effect .parallax_window .effect_box .about-text {
-  width: 50%;
-  font-size: 24px;
-  text-align: left;
-}
-
-#apple_effect .parallax_window .effect_box .about-text-5-team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#apple_effect .parallax_window .effect_box .about-text-5-team .color-gray {
-  width: 7%;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  font-size: 12px;
-  color: #b5b5b6;
-}
-
-#apple_effect .parallax_window .effect_box .about-text-5-team .about-text-5-text {
-  width: 90%;
-  color: #231815;
-  height: 30px;
-  line-height: 30px;
-}
-
-#apple_effect .parallax_window .effect_box .about-2-text {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 20px;
-  text-align: left;
-}
-
-#apple_effect .parallax_window .effect_box .about-2-text .text-wrap {
-  padding: 0 10px;
-  width: 50%;
-}
-
-#apple_effect .parallax_window .effect_box .About-02 {
-  padding: 50px;
-  width: 90%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#apple_effect .parallax_window .effect_box .About-02 .about-title-02 {
-  margin-top: 0;
-  width: 15%;
-  font-size: 40px;
-  height: 60px;
-  line-height: 60px;
-  color: #673a1b;
-  text-align: left;
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text {
-  width: 75%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 20px;
-  text-align: left;
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap {
-  width: 37.5%;
-  /* The actual timeline (the vertical ruler) */
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline {
-  position: relative;
-  width: 100%;
-  color: #231815;
-  /* Container around time-content */
-  /* The circles on the timeline */
-  /* Place the time-container to the right */
-  /* Add arrows to the right time-container (pointing left) */
-  /* Fix the circle for time-containers on the right side */
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline .time-container {
-  padding: 10px 40px;
-  position: relative;
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline .time-container::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: #6a3906;
-  border: 4px solid #ff9f55;
-  top: 40px;
-  border-radius: 50%;
-  z-index: 1;
-  /* The actual time-content */
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline .time-container::after .time-content {
-  width: 100%;
-  padding: 20px 20px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline .right {
-  left: 50%;
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline .right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline .right::after {
-  left: -16px;
-}
-
-#apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  background-color: #6a3906;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-@media screen and (max-width: 600px) {
-  #apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap {
-    /* Place the timelime to the left */
-    /* Full-width time-containers */
-    /* Make sure that all arrows are pointing leftwards */
-    /* Make sure all circles are at the same spot */
-    /* Make all right time-containers behave like the left ones */
-  }
-  #apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .timeline::after {
-    left: 31px;
-  }
-  #apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .time-container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-  #apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .time-container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  #apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .left::after,
-  #apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .right::after {
-    left: 15px;
-  }
-  #apple_effect .parallax_window .effect_box .about-3-text .text-3-wrap .right {
-    left: 0%;
-  }
 }
 
 #apple_effect .parallax_window .effect_box .sec-07 {
@@ -2169,12 +2212,12 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #BC6821;
+  background-color: #bc6821;
   overflow: hidden;
   width: 0;
   height: 100%;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 #apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 .overlay .img-09-text {
@@ -2211,5 +2254,37 @@ a {
 #apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09-team .img-09-01:hover {
   height: 50%;
   opacity: 1;
+}
+
+#apple_effect .parallax_window .effect_box .sec-10 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#apple_effect .parallax_window .effect_box .sec-10 .sec-10-container {
+  width: 80%;
+  height: 90%;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#apple_effect .parallax_window .effect_box .sec-10 .sec-10-container .sec10-img {
+  width: 33.33%;
+  height: 50%;
 }
 /*# sourceMappingURL=TenDrum.css.map */
