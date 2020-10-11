@@ -50,11 +50,30 @@
 
 
         <!-- 仿apple官網效果 -->
+        <!-- data-lax-opacity == 透明度 -->
+        <!-- 
+        0~1000的距離透明度從0變到1
+        1000~3000的距離透明度都是1
+        3000~5000的距離透明度1變到0 -->
+        <!-- data-lax-scale == 放大 -->
+
+
         <div id="apple_effect">
             <div class="parallax_window">
                 <div class="effect_box lax" 
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop) 0, (document.querySelector('#apple_effect').offsetTop+1000) 1, (document.querySelector('#apple_effect').offsetTop+1000) 1, (document.querySelector('#apple_effect').offsetTop+2000) 1, (document.querySelector('#apple_effect').offsetTop+3000) 0"
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+500) 1, (document.querySelector('#apple_effect').offsetTop+1500) 3"></div>
+                data-lax-opacity="
+                (document.querySelector('#apple_effect').offsetTop) 0
+                , (document.querySelector('#apple_effect').offsetTop+1000) 1 
+                , (document.querySelector('#apple_effect').offsetTop+3000) 1
+                , (document.querySelector('#apple_effect').offsetTop+3000) 1
+                , (document.querySelector('#apple_effect').offsetTop+5000) 0"
+                
+                data-lax-scale="
+                (document.querySelector('#apple_effect').offsetTop) 0.2
+                , (document.querySelector('#apple_effect').offsetTop+1000) 1.5
+                , (document.querySelector('#apple_effect').offsetTop+3000) 1.5
+                , (document.querySelector('#apple_effect').offsetTop+5000) 8"></div>
+                
             </div>
         </div>
 
