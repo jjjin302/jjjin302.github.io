@@ -583,7 +583,7 @@ footer {
 }
 
 .btn-groupxxx {
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: #efe5cb;
@@ -1067,7 +1067,7 @@ footer {
   height: 90%;
   padding: 15px;
   margin: 1%;
-  background-color: rgba(64, 34, 15, 0.55);
+  background-color: rgba(64, 34, 15, 0.3);
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1194,7 +1194,7 @@ footer {
 }
 
 .Facility .img-groups .img-teams {
-  width: 100%;
+  width: 33.33%;
   position: relative;
 }
 
@@ -1207,7 +1207,7 @@ footer {
 
 .Facility .img-groups .img-teams .overlay {
   position: absolute;
-  z-index: 0;
+  z-index: 10;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1238,7 +1238,7 @@ footer {
 }
 
 .Facility .img-groups .img-team {
-  width: 33.33%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1274,10 +1274,17 @@ footer {
   overflow: hidden;
 }
 
-.Facility .img-groups .img-team .imgg {
+.Facility .img-groups .img-team .imggg {
+  width: 100%;
+  height: 100%;
+}
+
+.Facility .img-groups .img-team .imggg .imgg {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  background-image: url("../img/設施/煙囪滑梯.jpg");
+  background-position: center;
 }
 
 .Facility .img-groups .img-team .img01 {
@@ -1553,26 +1560,38 @@ a {
 }
 
 .park_pag {
-  background-image: url("../img/主頁背景/入園資訊 背景_工作區域 1.png");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /* --------開關顯示---- */
 }
 
-.park_pag .park_button_bar {
+.park_button_bar {
   height: calc(100vh - 30px);
   width: 20%;
+  background-color: antiquewhite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.park_pag .park_button_bar .park_button_g {
+.park_photo_R {
+  height: calc(100vh - 30px);
+  width: 80%;
+  background-color: #e95f28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.park_button_g {
   height: 50%;
   width: 50%;
+  background-color: #2835e9;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1582,11 +1601,11 @@ a {
   text-align: center;
 }
 
-.park_pag .park_button_bar .park_button_g .park_tittle {
+.park_tittle {
   height: 20%;
   width: 100%;
-  color: #673a1b;
-  font-size: 46px;
+  background-color: #4fe928;
+  font-size: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1598,9 +1617,10 @@ a {
           justify-content: center;
 }
 
-.park_pag .park_button_bar .park_button_g .park_lease_box {
+.park_lease_box {
   height: 20%;
   width: 100%;
+  background-color: #e9289f;
   font-size: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1613,9 +1633,10 @@ a {
           justify-content: center;
 }
 
-.park_pag .park_button_bar .park_button_g .park_show {
+.park_show {
   height: 20%;
   width: 100%;
+  background-color: #e9289f;
   font-size: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1629,31 +1650,23 @@ a {
   color: black;
 }
 
-.park_pag .park_photo_R {
-  height: calc(100vh - 30px);
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.park_pag .park_photo_R .park_photobox {
+.park_photobox {
   height: 100%;
   width: 100%;
+  background-color: #8c28e9;
 }
 
-.park_pag .park_photo_R .park_photobox .park_inf {
+.park_inf {
   height: 100%;
   width: 100%;
+  background-color: cornflowerblue;
   display: none;
 }
 
-.park_pag .park_photo_R .park_photobox .park_inf .park_inf_photo {
+.park_inf_photo {
   height: 100%;
   width: 100%;
+  /* background-color: darksalmon; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1665,11 +1678,23 @@ a {
           align-items: center;
 }
 
-.park_pag .park_active {
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: #B15821;
+  margin: auto;
+  color: #F7F8F8;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* --------開關顯示---- */
+.park_active {
   display: block;
 }
 
-.park_pag .park_lease_box.park_active {
+.park_lease_box.park_active {
   background-color: #d61e1e;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1831,7 +1856,7 @@ a {
 
 #apple_effect {
   width: 100%;
-  height: 1650vh;
+  height: 1280vh;
   background-color: #ebe3d4;
   position: relative;
 }
@@ -1895,19 +1920,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-#apple_effect .parallax_window .effect_box .footer {
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  background-color: rgba(177, 88, 33, 0.1);
-  height: 42px;
-  color: #595757;
-  text-align: center;
-  line-height: 42px;
-  z-index: 10;
 }
 
 #apple_effect .parallax_window .effect_box .About {
@@ -2393,7 +2405,9 @@ a {
   transition: 0.5s;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 {
+.sec-09 {
+  width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2404,11 +2418,45 @@ a {
           justify-content: center;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context {
+.sec-09 .title-09 {
+  margin-top: 100px;
+  width: 50%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.sec-09 .title-09 .fas.fa-circle {
+  color: #595757;
+  font-size: 14px;
+  line-height: 100px;
+}
+
+.sec-09 .title-09 .sec-09-line {
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #b15821;
+}
+
+.sec-09 .title-09 .sec-09-line .sec-09-title {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  color: #673a1b;
+}
+
+.sec-09 .sec-09-context {
   width: 80%;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 {
+.sec-09 .sec-09-context .img-group-09 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2416,18 +2464,18 @@ a {
       flex-wrap: wrap;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 {
+.sec-09 .sec-09-context .img-group-09 .img-09 {
   width: 25%;
   position: relative;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-01 {
+.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-01 {
   display: block;
   width: 100%;
   height: 50%;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 .overlay {
+.sec-09 .sec-09-context .img-group-09 .img-09 .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2440,7 +2488,7 @@ a {
   transition: 0.5s ease;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09 .overlay .img-09-text {
+.sec-09 .sec-09-context .img-group-09 .img-09 .overlay .img-09-text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -2451,11 +2499,11 @@ a {
   white-space: nowrap;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay {
+.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay {
   width: 100%;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09-team {
+.sec-09 .sec-09-context .img-group-09 .img-09-team {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2464,19 +2512,19 @@ a {
       flex-wrap: wrap;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09-team .img-09-01 {
+.sec-09 .sec-09-context .img-group-09 .img-09-team .img-09-01 {
   width: 100%;
   opacity: 0.5;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-#apple_effect .parallax_window .effect_box .sec-09 .sec-09-context .img-group-09 .img-09-team .img-09-01:hover {
+.sec-09 .sec-09-context .img-group-09 .img-09-team .img-09-01:hover {
   height: 50%;
   opacity: 1;
 }
 
-#apple_effect .parallax_window .effect_box .sec-10 {
+.sec-10 {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -2489,7 +2537,41 @@ a {
       flex-wrap: wrap;
 }
 
-#apple_effect .parallax_window .effect_box .sec-10 .sec-10-container {
+.sec-10 .title-10 {
+  margin-top: 100px;
+  width: 50%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.sec-10 .title-10 .fas.fa-circle {
+  color: #595757;
+  font-size: 14px;
+  line-height: 100px;
+}
+
+.sec-10 .title-10 .sec-10-line {
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #b15821;
+}
+
+.sec-10 .title-10 .sec-10-line .sec-10-title {
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  color: #673a1b;
+}
+
+.sec-10 .sec-10-container {
   width: 80%;
   height: 90%;
   padding-bottom: 50px;
@@ -2503,8 +2585,21 @@ a {
       flex-wrap: wrap;
 }
 
-#apple_effect .parallax_window .effect_box .sec-10 .sec-10-container .sec10-img {
+.sec-10 .sec-10-container .sec10-img {
   width: 33.33%;
   height: 50%;
+}
+
+.footer {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: rgba(177, 88, 33, 0.1);
+  height: 42px;
+  color: #595757;
+  text-align: center;
+  line-height: 42px;
+  z-index: 10;
 }
 /*# sourceMappingURL=TenDrum.css.map */
