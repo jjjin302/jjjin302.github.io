@@ -89,25 +89,25 @@
     </header>
 
     <!-- 內文 -->
-    <section>
+    <section id="Drum_page">
         <div class="Drum">
             <!-- 項目清單 -->
             <div class="Drum-title-group">
-                <h1 class="drum--big-title">鼓樂饗宴</h1>
-                <a href="#fake01">
+                <h1 class="drum-big-title">鼓樂饗宴</h1>
+                <a onclick="flipTo(9)">
                     <h2 class="drum-mid-title">關於十鼓樂團</h2>
                 </a>
-                <a onclick="flipTo(30)">
+                <a onclick="flipTo(7)">
                     <h2 class="drum-mid-title">演出紀錄&事記</h2>
                 </a>
-                <a onclick="flipTo(28)">
+                <a onclick="flipTo(7)">
                     <h2 class="drum-mid-title">得獎作品</h2>
                 </a>
-                <a href="">
+                <a onclick="flipTo(5)">
                     <h2 class="drum-mid-title">主要成員</h2>
                 </a>
-                <a href="">
-                    <h2 class="drum-mid-title">演出時間</h2>
+                <a onclick="flipTo(3)">
+                    <h2 class="drum-mid-title">固定演出時間</h2>
                 </a>
 
             </div>
@@ -120,15 +120,14 @@
                         <div class="page">
                             <div class="page-text">翻我</div>
                         </div>
+                        <!-- 第一頁 -->
                         <div class="page">
-                            <div class="page-fake01">
-                                <div id="fake01"></div>
-                            </div>
                             <img src="./img/5b84e4aeaa904.jpg" class="page-img" alt="">
                         </div>
+                        <!-- 第一頁 -->
+                        <!-- 第二頁 關於 -->
                         <div class="page">
-
-                            <div class="page-text">
+                            <div class="page-text-about">
                                 <h3>關於十鼓樂團</h3>
                                 <h6>成立於2000年春天，『傳創台灣土本文化，發揚鼓樂藝術
                                     薪傳』是樂團最大發展目標。而「十」字代表著鼓棒交疊，
@@ -147,8 +146,11 @@
                                     、為推廣鼓樂藝術之宗旨目標。</h6>
                             </div>
                         </div>
+                        <!-- 第二頁 -->
+                        <!-- 第三頁 演出紀錄 -->
                         <div class="page">
-                            <div class="page-text">
+                            <div class="page-text-note">
+                                <span class="line01">&nbsp;</span>
                                 <h3>演出紀錄&事記</h3>
                                 <h6>
                                     <div class="text-time">2017&emsp;</div>
@@ -201,9 +203,11 @@
                                 </h6>
                             </div>
                         </div>
+                        <!-- 第三頁 -->
+                        <!-- 第四頁 作品 -->
                         <div class="page">
-                            <div class="page-text">
-                                <h3>得獎作品&emsp;一</h3>
+                            <div class="page-text-award">
+                                <h3>得獎作品&emsp;－</h3>
                                 <h6>
                                     <div class="text-time">2007&emsp;</div>
                                     <div class="text-con">入圍第18屆金曲獎《民族樂曲專輯獎》</div>
@@ -216,36 +220,149 @@
                                     <div class="text-time">2009&emsp;</div>
                                     <div class="text-con">「鼓之島」專輯入圍第52屆葛萊美獎《最佳世界傳統音樂專輯》</div>
                                 </h6>
+                                <img src="./img/鼓樂饗宴/3張合併_工作區域 1.png" class="page-img-01" alt="">
+                                <span class="line02">&nbsp;</span>
                             </div>
-                            <img src="./img/鼓樂饗宴/神秘東方.png" class="page-img-01" alt="">
+
                         </div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
-                        <div class="page"></div>
+                        <!-- 第四頁 -->
+                        <!-- 第五頁 成員-1 -->
+                        <div class="page">
+                            <div class="page-text-artist">
+                                <span class="line03">&nbsp;</span>
+                                <h3>主要成員</h3>
+                                <div class="img-groups">
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/王昱淇-截圖.png" class="art-img" alt="王昱淇">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">王昱淇</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/林孟緯拷貝.png" class="art-img" alt="林孟緯">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">林孟緯</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/李意瑩.png" class="art-img" alt="李意瑩">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">李意瑩</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/許瑋庭.png" class="art-img" alt="許瑋庭">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">許瑋庭</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/吳鴻村.png" class="art-img" alt="吳鴻村">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">吳鴻村</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/江逸芹.png" class="art-img" alt="江逸芹">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">江逸芹</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第五頁 -->
+                        <!-- 第六頁 成員-2 -->
+                        <div class="page">
+                            <div class="page-text-artist">
+                                <div class="img-groups">
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/林薏軒.png" class="art-img" alt="林薏軒">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">林薏軒</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/張嘉方.png" class="art-img" alt="張嘉方">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">張嘉方</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/徐霈純.png" class="art-img" alt="徐霈純">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">徐霈純</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/黃士芬.png" class="art-img" alt="黃士芬">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">黃士芬</div>
+                                        </div>
+                                    </div>
+                                    <div class="art">
+                                        <img src="./img/樂團成員/成員去背/黃志荃.png" class="art-img" alt="黃志荃">
+                                        <div class="overlay-zoom">
+                                            <div class="art-name">黃志荃</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第六頁 -->
+                        <!-- 第七頁 定目劇-1 -->
+                        <div class="page">
+                            <div class="page-text-drama">
+                                <span class="line04">&nbsp;</span>
+                                <div class="drama-con">
+                                    <h3>夢糖劇場十鼓擊樂團鼓樂定目劇演出</h3>
+                                    <h4 class="pl-text">演出曲目</h4>
+                                    <h5 class="pl-text">天空斬</h5>
+                                    <h5 class="pl-text">風馳雷擎</h5>
+                                    <h5 class="pl-text">祈天現日</h5>
+                                </div>
+                                <img src="./img/插圖/海報人物10-12.png" class="drama-img" alt="">
+                            </div>
+                        </div>
+                        <!-- 第七頁 -->
+                        <!-- 第八頁 定目劇-2 -->
+                        <div class="page">
+                            <div class="video">
+                                <div class="video-01">
+                                    <div class="dvd"><iframe src="https://www.youtube.com/embed/kYaGHkVS_4o"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe></div>
+                                    <div class="dvd-text">
+                                        <h4>天空斬</h4>
+                                        <h6>十鼓以鼓樂結合武術動作，於十鼓橋頭水劇場，以長棍再現偃月刀橫掃瘟疫及困境。鼓樂合奏詮釋忠.義.勇.武呈現出穿梭時空的對話。</h6>
+                                    </div>
+                                </div>
+                                <div class="video-02">
+                                    <div class="dvd"><iframe src="https://www.youtube.com/embed/0k0zzgGx1-0"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe></div>
+                                    <div class="dvd-text">
+                                        <h4>風馳雷擎</h4>
+                                        <h6>十鼓以鼓樂結合武術動作，於十鼓橋頭水劇場，以長棍再現偃月刀橫掃瘟疫及
+                                            困境。鼓樂合奏詮釋忠.義.勇.武呈現出穿梭時空的對話。</h6>
+                                    </div>
+                                </div>
+                                <div class="video-01">
+                                    <div class="dvd"><iframe src="https://www.youtube.com/embed/VfUWusw3xUo"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe></div>
+                                    <div class="dvd-text">
+                                        <h4>祈天現日</h4>
+                                        <h6>十鼓以鼓樂結合武術動作，於十鼓橋頭水劇場，以長棍再現偃月刀橫掃瘟疫及
+                                            困境。鼓樂合奏詮釋忠、義、勇、武呈現出穿梭時空的對話。</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第八頁 -->
                     </div>
                 </div>
             </div>
