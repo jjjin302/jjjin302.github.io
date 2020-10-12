@@ -30,6 +30,8 @@ body {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
   height: 30px;
   background-color: #B15821;
@@ -245,7 +247,7 @@ footer {
   position: fixed;
   right: 10px;
   top: 10px;
-  z-index: 500;
+  z-index: 11;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +590,7 @@ footer {
   height: 100vh;
   background-color: #efe5cb;
   opacity: 1;
-  z-index: 499;
+  z-index: 10;
   display: none;
 }
 
@@ -1854,9 +1856,13 @@ footer {
   display: none;
 }
 
+.About-bac {
+  background-color: #ebe3d4;
+}
+
 #apple_effect {
   width: 100%;
-  height: 1280vh;
+  height: 1300vh;
   background-color: #ebe3d4;
   position: relative;
 }
@@ -2419,7 +2425,8 @@ footer {
 }
 
 .sec-09 .title-09 {
-  margin-top: 100px;
+  margin-top: 250px;
+  margin-bottom: 60px;
   width: 50%;
   height: 10%;
   display: -webkit-box;
@@ -2466,21 +2473,31 @@ footer {
 
 .sec-09 .sec-09-context .img-group-09 .img-09 {
   width: 25%;
+  height: 50%;
   position: relative;
+  /*to right */
+  /*to right */
+  /* to down */
+  /* to down */
+  /* to left */
+  /* to right */
+  /* to top */
+  /* to top */
 }
 
 .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-01 {
   display: block;
   width: 100%;
-  height: 50%;
+  height: 100%;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .overlay {
+.sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToRight {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #bc6821;
+  opacity: 0.8;
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -2488,7 +2505,11 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .overlay .img-09-text {
+.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToRight {
+  width: 100%;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-right {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -2499,8 +2520,93 @@ footer {
   white-space: nowrap;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay {
+.sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToDown {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #bc6821;
+  opacity: 0.8;
+  overflow: hidden;
   width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToDown {
+  bottom: 0;
+  height: 100%;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-down {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToLeft {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #bc6821;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToLeft {
+  width: 100%;
+  left: 0;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-left {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToTop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #bc6821;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToTop {
+  height: 100%;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-top {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .sec-09 .sec-09-context .img-group-09 .img-09-team {
@@ -2535,10 +2641,13 @@ footer {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 250px;
+  margin-bottom: 50px;
+  position: relative;
 }
 
 .sec-10 .title-10 {
-  margin-top: 100px;
+  margin-top: 250px;
   width: 50%;
   height: 10%;
   display: -webkit-box;
@@ -2573,7 +2682,7 @@ footer {
 
 .sec-10 .sec-10-container {
   width: 80%;
-  height: 90%;
+  height: 100%;
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2585,15 +2694,155 @@ footer {
       flex-wrap: wrap;
 }
 
-.sec-10 .sec-10-container .sec10-img {
+.sec-10 .sec-10-container .sec-10-img-group {
   width: 33.33%;
   height: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*to right */
+  /*to right */
+  /* to down */
+  /* to down */
+  /* to left */
+  /* to right */
+  /* to top */
+  /* to top */
 }
 
-.footer {
+.sec-10 .sec-10-container .sec-10-img-group .sec10-img {
+  display: block;
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
+  height: 100%;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group .overlay-ToRight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6A3906;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group:hover .overlay-ToRight {
+  width: 100%;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group .img-10-text-right {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group .overlay-ToDown {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #6A3906;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group:hover .overlay-ToDown {
+  bottom: 0;
+  height: 100%;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group .img-10-text-down {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group .overlay-ToLeft {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #6A3906;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group:hover .overlay-ToLeft {
+  width: 100%;
+  left: 0;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group .img-10-text-left {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group .overlay-ToTop {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6A3906;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group .overlay-ToTop .img-10-text-top {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.sec-10 .sec-10-container .sec-10-img-group:hover .overlay-ToTop {
+  height: 100%;
+}
+
+.sec-10 .footer {
+  width: 100%;
+  position: absolute;
   bottom: 0;
   background-color: rgba(177, 88, 33, 0.1);
   height: 42px;

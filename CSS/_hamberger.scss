@@ -4,7 +4,7 @@
         position: fixed;
         right: 10px;
         top: 10px;
-        z-index: 500;
+        z-index: 11;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -180,7 +180,7 @@
         height: 100vh;
         background-color: #efe5cb;
         opacity: 1;
-        z-index: 499;
+        z-index: 10;
         display: none;
         &.active {
             display: block;

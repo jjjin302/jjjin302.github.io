@@ -26,47 +26,6 @@
     <!-- 英文字體 -->
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <!-- 英文字體 -->
-
-    <style>
-        .img-09 {
-            width: 25%;
-            position: relative;
-        }
-
-        .img-09:hover .overlay {
-            width: 100%;
-        }
-
-        .img-09-01 {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: #BC6821;
-            overflow: hidden;
-            width: 0;
-            height: 100%;
-            transition: .5s ease;
-        }
-
-        .img-09-text {
-            color: white;
-            font-size: 20px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            white-space: nowrap;
-        }
-    </style>
 </head>
 
 <body>
@@ -129,324 +88,364 @@
             <!-- 漢堡條 -->
         </nav>
     </header>
-    <!-- 仿apple官網效果 -->
-    <div id="apple_effect">
-        <!-- 關於十鼓標題 -->
-        <div class="parallax_window">
-            <div class="effect_box lax"
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop) 1, (document.querySelector('#apple_effect').offsetTop+550) 0 "
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+400) 1, (document.querySelector('#apple_effect').offsetTop+550) 2">
-                <div class="sec-01 sec">
-                </div>
-            </div>
-        </div>
-        <!-- 關於十鼓標題 -->
-
-        <!-- 關於十鼓簡介 -->
-        <div class="parallax_window">
-            <div class="effect_box lax "
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+550) 0,(document.querySelector('#apple_effect').offsetTop+1100) 1,(document.querySelector('#apple_effect').offsetTop+2100) 0,"
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+550) 3, (document.querySelector('#apple_effect').offsetTop+1100) 1,(document.querySelector('#apple_effect').offsetTop+1800) 1, (document.querySelector('#apple_effect').offsetTop+2100) 0,">
-                <div class="sec-02 sec ">
-                    <div class="About ">
-                        <div class="about-title-00">關於十鼓</div>
-                        <div class="about-text-00">
-                            十鼓仁糖文創園區(仁德糖廠)前身為臺南車路墘糖廠為一處百年糖廠建築，一座親近文化藝術的新天地。園區佔地約7.5公頃，共有22座日治時代建築及自然生態空間，改成多樣空間規劃的文化場域，除了會議室、共同工作空間、駐村藝術創作外，也包括婚宴派對、表演場地、藝廊、劇場、製糖機器互動空間等，創造多元化主題體驗。
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- 關於十鼓簡介 -->
-
-        <!-- 沿革 -->
-        <div class="parallax_window">
-            <div class="effect_box lax"
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+2100) 0,(document.querySelector('#apple_effect').offsetTop+2650) 1,(document.querySelector('#apple_effect').offsetTop+3650) 0,"
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+2100) 3, (document.querySelector('#apple_effect').offsetTop+2650) 1,(document.querySelector('#apple_effect').offsetTop+3350) 1, (document.querySelector('#apple_effect').offsetTop+3650) 0,">
-                <div class="sec-03 sec">
-                    <div class="About">
-                        <div class="about-title-01">沿革</div>
-                        <div class="about-text-01">
-                            <div class="text-wrap">
-                                本廠前身為「車路墘製糖所」，1909年由日資「臺灣製糖株式會社」創立，1910年開工生產。民國34年11月由國民政府資源委員會監理，並於次年接收。34/35年期製糖在資源委員會監理下，由原日人製糖會社人員完成。在太平洋戰爭期間，本廠雖未直接受到盟機轟炸，但間接影響設備失修及蔗作廢耕，製糖設備雖尚完整，但廠房等設備乃屬殘破不堪，尤其蔗園荒蕪、原料生產失調更為嚴重。民國35年5月1日「台灣糖業公司」成立，本廠隸屬「第二區分公司」管轄，民國39年7月本公司撤銷區分公司制，本廠劃歸「總爺總廠」督導。
-                            </div>
-                            <div class="text-wrap">
-                                民國47年7月總爺糖廠改為「麻佳總廠」，為推行大廠制將「三崁店糖廠」併入本廠，改稱「車崁糖廠」，仍歸麻佳總廠督導。民國56年7月本廠組織調整，三崁店部份業務劃出獨立，本廠恢復「車路墘糖廠」，改隸高雄總廠管轄。民國58年8月配合所在地鄉名更改廠名為仁德糖廠，組織照舊。民國64年6月高雄糖廠撤銷，本廠改隸屏東總廠督導。在日治時代，工場日壓榨量為1,500公噸，民國60年提升為日壓2,600公噸。民國92年7月本廠關廠併入善化糖廠，93年9月由台南區處接管。廠區部分倉庫出租給十鼓文創股份有限公司。(文字來源台灣糖業台南區處)
-                            </div>
-                        </div>
+    <div class="About-bac">
+        <!-- 仿apple官網效果 -->
+        <div id="apple_effect">
+            <!-- 關於十鼓標題 -->
+            <div class="parallax_window">
+                <div class="effect_box lax"
+                    data-lax-opacity="(document.querySelector('#apple_effect').offsetTop) 1, (document.querySelector('#apple_effect').offsetTop+550) 0 "
+                    data-lax-scale="(document.querySelector('#apple_effect').offsetTop+400) 1, (document.querySelector('#apple_effect').offsetTop+550) 2">
+                    <div class="sec-01 sec">
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 沿革 -->
+            <!-- 關於十鼓標題 -->
 
-        <!-- 發展年表 -->
-        <div class="parallax_window">
-            <div class="effect_box lax "
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+3650) 0,(document.querySelector('#apple_effect').offsetTop+4200) 1,(document.querySelector('#apple_effect').offsetTop+5200) 0,"
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+3650) 3, (document.querySelector('#apple_effect').offsetTop+4200) 1,(document.querySelector('#apple_effect').offsetTop+4900) 1,(document.querySelector('#apple_effect').offsetTop+5200) 0,">
-                <div class="sec-04 sec ">
-                    <div class="About-02">
-                        <div class="about-title-02">發展年表</div>
-                        <div class="about-text-02">
-                            <div class="text-wrap-02">
-                                <div class="timeline">
-                                    <div class="time-container right">
-                                        <div class="time-content">
-                                            <h6>2018</h6>
-                                            <p>成立說茶、說菜、說書 台南市永樂町鼓茶樓</p>
-                                        </div>
-                                    </div>
-                                    <div class="time-container right">
-                                        <div class="time-content">
-                                            <h6>2016</h6>
-                                            <p>文創園區入圍WAF世界建築獎舊創新獎項</p>
-                                        </div>
-                                    </div>
-                                    <div class="time-container right">
-                                        <div class="time-content">
-                                            <h6>2014</h6>
-                                            <p>英國愛丁堡藝穗節; 評選9.5顆星音樂團隊</p>
-                                        </div>
-                                    </div>
-                                    <div class="time-container right">
-                                        <div class="time-content">
-                                            <h6>2012</h6>
-                                            <p>公視報導，定目劇成功案例</p>
-                                        </div>
-                                    </div>
-                                    <div class="time-container right">
-                                        <div class="time-content">
-                                            <h6>2011</h6>
-                                            <p>第二文創園區 十鼓高雄橋糖文創園區</p>
-                                        </div>
-                                    </div>
+            <!-- 關於十鼓簡介 -->
+            <div class="parallax_window">
+                <div class="effect_box lax "
+                    data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+550) 0,(document.querySelector('#apple_effect').offsetTop+1100) 1,(document.querySelector('#apple_effect').offsetTop+2100) 0,"
+                    data-lax-scale="(document.querySelector('#apple_effect').offsetTop+550) 3, (document.querySelector('#apple_effect').offsetTop+1100) 1,(document.querySelector('#apple_effect').offsetTop+1800) 1, (document.querySelector('#apple_effect').offsetTop+2100) 0,">
+                    <div class="sec-02 sec ">
+                        <div class="About ">
+                            <div class="about-title-00">關於十鼓</div>
+                            <div class="about-text-00">
+                                十鼓仁糖文創園區(仁德糖廠)前身為臺南車路墘糖廠為一處百年糖廠建築，一座親近文化藝術的新天地。園區佔地約7.5公頃，共有22座日治時代建築及自然生態空間，改成多樣空間規劃的文化場域，除了會議室、共同工作空間、駐村藝術創作外，也包括婚宴派對、表演場地、藝廊、劇場、製糖機器互動空間等，創造多元化主題體驗。
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 關於十鼓簡介 -->
+
+            <!-- 沿革 -->
+            <div class="parallax_window">
+                <div class="effect_box lax"
+                    data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+2100) 0,(document.querySelector('#apple_effect').offsetTop+2650) 1,(document.querySelector('#apple_effect').offsetTop+3650) 0,"
+                    data-lax-scale="(document.querySelector('#apple_effect').offsetTop+2100) 3, (document.querySelector('#apple_effect').offsetTop+2650) 1,(document.querySelector('#apple_effect').offsetTop+3350) 1, (document.querySelector('#apple_effect').offsetTop+3650) 0,">
+                    <div class="sec-03 sec">
+                        <div class="About">
+                            <div class="about-title-01">沿革</div>
+                            <div class="about-text-01">
+                                <div class="text-wrap">
+                                    本廠前身為「車路墘製糖所」，1909年由日資「臺灣製糖株式會社」創立，1910年開工生產。民國34年11月由國民政府資源委員會監理，並於次年接收。34/35年期製糖在資源委員會監理下，由原日人製糖會社人員完成。在太平洋戰爭期間，本廠雖未直接受到盟機轟炸，但間接影響設備失修及蔗作廢耕，製糖設備雖尚完整，但廠房等設備乃屬殘破不堪，尤其蔗園荒蕪、原料生產失調更為嚴重。民國35年5月1日「台灣糖業公司」成立，本廠隸屬「第二區分公司」管轄，民國39年7月本公司撤銷區分公司制，本廠劃歸「總爺總廠」督導。
                                 </div>
-                            </div>
-                            <div class="text-wrap-02">
-                                <div class="timeline">
-                                    <div class="time-container right">
-                                        <div class="time-content">
-                                            <h6>2009</h6>
-                                            <p>入圍第52屆葛萊美獎; 第9屆美國獨立音樂獎</p>
-                                        </div>
-                                    </div>
-                                    <div class="time-container right">
-                                        <div class="time-content">
-                                            <h6>2007</h6>
-                                            <p>正式開幕，第一屆十鼓節</p>
-                                        </div>
-                                    </div>
-                                    <div class="time-container right">
-                                        <div class="time-content">
-                                            <h6>2000</h6>
-                                            <p>台南創立十鼓擊樂團 受邀至澳洲雪梨奧運聖火傳遞巡演</p>
-                                        </div>
-                                    </div>
+                                <div class="text-wrap">
+                                    民國47年7月總爺糖廠改為「麻佳總廠」，為推行大廠制將「三崁店糖廠」併入本廠，改稱「車崁糖廠」，仍歸麻佳總廠督導。民國56年7月本廠組織調整，三崁店部份業務劃出獨立，本廠恢復「車路墘糖廠」，改隸高雄總廠管轄。民國58年8月配合所在地鄉名更改廠名為仁德糖廠，組織照舊。民國64年6月高雄糖廠撤銷，本廠改隸屏東總廠督導。在日治時代，工場日壓榨量為1,500公噸，民國60年提升為日壓2,600公噸。民國92年7月本廠關廠併入善化糖廠，93年9月由台南區處接管。廠區部分倉庫出租給十鼓文創股份有限公司。(文字來源台灣糖業台南區處)
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 發展年表 -->
+            <!-- 沿革 -->
 
-        <!-- 核心價值 -->
-        <div class="parallax_window">
-            <div class="effect_box lax"
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+5200) 0,(document.querySelector('#apple_effect').offsetTop+5750) 1,(document.querySelector('#apple_effect').offsetTop+6750) 0,"
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+5200) 3, (document.querySelector('#apple_effect').offsetTop+5750) 1, (document.querySelector('#apple_effect').offsetTop+6450) 1, (document.querySelector('#apple_effect').offsetTop+6750) 0,">
-                <div class="sec-05 sec">
-                    <div class=" About-03">
-                        <div class="about-title-00">核心價值</div>
-                        <div class="about-text-00">
-                            <div class="about-text-5-team">
-                                <i class="fas fa-circle color-gray"></i>
-                                <div class="about-text-5-text">傳創台灣本土擊樂，廣納世界文化</div>
-                                <i class="fas fa-circle color-gray"></i>
-                                <div class="about-text-5-text">尊重歷史文化與之共存、共榮</div><i
-                                    class="fas fa-circle color-gray"></i>
-                                <div class="about-text-5-text">傳承和演奏無價的工業遺產和台灣本土的樂音</div><i
-                                    class="fas fa-circle color-gray"></i>
-                                <div class="about-text-5-text">一雙鼓棒為台灣寫下歷史之原創鼓團「十」代表鼓棒的交疊 並象徵十方力量的匯集</div>
+            <!-- 發展年表 -->
+            <div class="parallax_window">
+                <div class="effect_box lax "
+                    data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+3650) 0,(document.querySelector('#apple_effect').offsetTop+4200) 1,(document.querySelector('#apple_effect').offsetTop+5200) 0,"
+                    data-lax-scale="(document.querySelector('#apple_effect').offsetTop+3650) 3, (document.querySelector('#apple_effect').offsetTop+4200) 1,(document.querySelector('#apple_effect').offsetTop+4900) 1,(document.querySelector('#apple_effect').offsetTop+5200) 0,">
+                    <div class="sec-04 sec ">
+                        <div class="About-02">
+                            <div class="about-title-02">發展年表</div>
+                            <div class="about-text-02">
+                                <div class="text-wrap-02">
+                                    <div class="timeline">
+                                        <div class="time-container right">
+                                            <div class="time-content">
+                                                <h6>2018</h6>
+                                                <p>成立說茶、說菜、說書 台南市永樂町鼓茶樓</p>
+                                            </div>
+                                        </div>
+                                        <div class="time-container right">
+                                            <div class="time-content">
+                                                <h6>2016</h6>
+                                                <p>文創園區入圍WAF世界建築獎舊創新獎項</p>
+                                            </div>
+                                        </div>
+                                        <div class="time-container right">
+                                            <div class="time-content">
+                                                <h6>2014</h6>
+                                                <p>英國愛丁堡藝穗節; 評選9.5顆星音樂團隊</p>
+                                            </div>
+                                        </div>
+                                        <div class="time-container right">
+                                            <div class="time-content">
+                                                <h6>2012</h6>
+                                                <p>公視報導，定目劇成功案例</p>
+                                            </div>
+                                        </div>
+                                        <div class="time-container right">
+                                            <div class="time-content">
+                                                <h6>2011</h6>
+                                                <p>第二文創園區 十鼓高雄橋糖文創園區</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-wrap-02">
+                                    <div class="timeline">
+                                        <div class="time-container right">
+                                            <div class="time-content">
+                                                <h6>2009</h6>
+                                                <p>入圍第52屆葛萊美獎; 第9屆美國獨立音樂獎</p>
+                                            </div>
+                                        </div>
+                                        <div class="time-container right">
+                                            <div class="time-content">
+                                                <h6>2007</h6>
+                                                <p>正式開幕，第一屆十鼓節</p>
+                                            </div>
+                                        </div>
+                                        <div class="time-container right">
+                                            <div class="time-content">
+                                                <h6>2000</h6>
+                                                <p>台南創立十鼓擊樂團 受邀至澳洲雪梨奧運聖火傳遞巡演</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 核心價值 -->
+            <!-- 發展年表 -->
 
-        <!-- 園區主題介紹 -->
-        <div class="parallax_window">
-            <div class="effect_box lax"
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+6750) 0, (document.querySelector('#apple_effect').offsetTop+7300) 1,(document.querySelector('#apple_effect').offsetTop+8300) 0, "
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+6750) 3, (document.querySelector('#apple_effect').offsetTop+7300) 1, (document.querySelector('#apple_effect').offsetTop+8000) 1, (document.querySelector('#apple_effect').offsetTop+8300) 0,">
-                <div class="sec-06 sec">
-                    <div class="About-06">
-                        <div class="en-title">ABOUT <u
-                                class="line-01">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</u>
+            <!-- 核心價值 -->
+            <div class="parallax_window">
+                <div class="effect_box lax"
+                    data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+5200) 0,(document.querySelector('#apple_effect').offsetTop+5750) 1,(document.querySelector('#apple_effect').offsetTop+6750) 0,"
+                    data-lax-scale="(document.querySelector('#apple_effect').offsetTop+5200) 3, (document.querySelector('#apple_effect').offsetTop+5750) 1, (document.querySelector('#apple_effect').offsetTop+6450) 1, (document.querySelector('#apple_effect').offsetTop+6750) 0,">
+                    <div class="sec-05 sec">
+                        <div class=" About-03">
+                            <div class="about-title-00">核心價值</div>
+                            <div class="about-text-00">
+                                <div class="about-text-5-team">
+                                    <i class="fas fa-circle color-gray"></i>
+                                    <div class="about-text-5-text">傳創台灣本土擊樂，廣納世界文化</div>
+                                    <i class="fas fa-circle color-gray"></i>
+                                    <div class="about-text-5-text">尊重歷史文化與之共存、共榮</div><i
+                                        class="fas fa-circle color-gray"></i>
+                                    <div class="about-text-5-text">傳承和演奏無價的工業遺產和台灣本土的樂音</div><i
+                                        class="fas fa-circle color-gray"></i>
+                                    <div class="about-text-5-text">一雙鼓棒為台灣寫下歷史之原創鼓團「十」代表鼓棒的交疊 並象徵十方力量的匯集</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cn-title">園區主題介紹</div>
                     </div>
-
                 </div>
             </div>
-        </div>
-        <!-- 園區主題介紹 -->
+            <!-- 核心價值 -->
 
-        <!-- 鼓樂饗宴 -->
-        <div class="parallax_window">
-            <div class="effect_box lax"
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+8300) 0,(document.querySelector('#apple_effect').offsetTop+8850) 1,(document.querySelector('#apple_effect').offsetTop+9850) 0,"
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+8300) 3, (document.querySelector('#apple_effect').offsetTop+8850) 1, (document.querySelector('#apple_effect').offsetTop+9550) 1, (document.querySelector('#apple_effect').offsetTop+9850) 0,">
-                <div class="sec-07">
-                    <img src="./img/插圖/雙人鼓-鼓樂饗宴背景用_工作區域 1.png" class="img-bac-01" alt="背景左">
-                    <img src="./img/插圖/雙人鼓-鼓樂饗宴背景用_工作區域 1.png" class="img-bac-02" alt="背景右">
-                    <div class="title-07">
-                        <i class="fas fa-circle"></i>
-                        <div class="sec-07-line">
-                            <div class="sec-07-title">鼓樂饗宴</div>
-                        </div><i class="fas fa-circle"></i>
+            <!-- 園區主題介紹 -->
+            <div class="parallax_window">
+                <div class="effect_box lax"
+                    data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+6750) 0, (document.querySelector('#apple_effect').offsetTop+7300) 1,(document.querySelector('#apple_effect').offsetTop+8300) 0, "
+                    data-lax-scale="(document.querySelector('#apple_effect').offsetTop+6750) 3, (document.querySelector('#apple_effect').offsetTop+7300) 1, (document.querySelector('#apple_effect').offsetTop+8000) 1, (document.querySelector('#apple_effect').offsetTop+8300) 0,">
+                    <div class="sec-06 sec">
+                        <div class="About-06">
+                            <div class="en-title">ABOUT <u
+                                    class="line-01">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</u>
+                            </div>
+                            <div class="cn-title">園區主題介紹</div>
+                        </div>
+
                     </div>
-                    <div class="sec-07-context">
-                        <div class="img-group">
-                            <img src="./img/十鼓樂團/3張合併_工作區域 1.png" alt="">
-                            <!-- <img src="./img/十鼓樂團/有水的打鼓照片.jpg" class="img-down" alt="">
+                </div>
+            </div>
+            <!-- 園區主題介紹 -->
+
+            <!-- 鼓樂饗宴 -->
+            <div class="parallax_window">
+                <div class="effect_box lax"
+                    data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+8300) 0,(document.querySelector('#apple_effect').offsetTop+8850) 1,(document.querySelector('#apple_effect').offsetTop+9850) 0,"
+                    data-lax-scale="(document.querySelector('#apple_effect').offsetTop+8300) 3, (document.querySelector('#apple_effect').offsetTop+8850) 1, (document.querySelector('#apple_effect').offsetTop+9550) 1, (document.querySelector('#apple_effect').offsetTop+9850) 0,">
+                    <div class="sec-07">
+                        <img src="./img/插圖/雙人鼓-鼓樂饗宴背景用_工作區域 1.png" class="img-bac-01" alt="背景左">
+                        <img src="./img/插圖/雙人鼓-鼓樂饗宴背景用_工作區域 1.png" class="img-bac-02" alt="背景右">
+                        <div class="title-07">
+                            <i class="fas fa-circle"></i>
+                            <div class="sec-07-line">
+                                <div class="sec-07-title">鼓樂饗宴</div>
+                            </div><i class="fas fa-circle"></i>
+                        </div>
+                        <div class="sec-07-context">
+                            <div class="img-group">
+                                <img src="./img/十鼓樂團/3張合併_工作區域 1.png" alt="">
+                                <!-- <img src="./img/十鼓樂團/有水的打鼓照片.jpg" class="img-down" alt="">
                             <img src="./img/十鼓樂團/海報.jpg" class="img-center" alt="">
                             <img src="./img/十鼓樂團/海報2.jpg" class="img-top" alt=""> -->
-                        </div>
-                        <h3 class="sec-07-subtitle">十鼓擊樂團</h3>
-                        <div class="sec-07-text sty-bol">獲海內外金曲獎、葛萊美獎、美國獨立獎三項大獎提名
-                        </div>
-                        <div class="sec-07-text">以在地的題材、風景、多樣化民族擊樂的元素，豐富了傳統擊樂原有面貌，震撼的
-                            鼓樂和視覺效果一直以來深受觀眾喜愛。團長期望藉此喚起國人對傳統鼓樂的重視，
-                            企圖為台灣開創出一個熱鬧、多元兼具本土，且具有前瞻性的鼓術文化風格
-                            ，更期望能使台灣在世界上成為著名的【鼓樂之島】。 </div>
-                        <a href="./04-Drum.html" class="sec-07-more">more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 鼓樂饗宴 -->
-
-        <!-- 極限體驗 -->
-        <div class="parallax_window">
-            <div class="effect_box lax"
-                data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+9850) 0, (document.querySelector('#apple_effect').offsetTop+10400) 1,"
-                data-lax-scale="(document.querySelector('#apple_effect').offsetTop+9850) 3, (document.querySelector('#apple_effect').offsetTop+10400) 1, (document.querySelector('#apple_effect').offsetTop+11000) 1,">
-                <div class="sec-08 sec">
-                    <div class="title-08">
-                        <i class="fas fa-circle"></i>
-                        <div class="sec-08-line">
-                            <div class="sec-08-title">極限體驗</div>
-                        </div><i class="fas fa-circle"></i>
-                    </div>
-                    <div class="sec-08-context">
-                        <div class="img-group">
-                            <img src="./img/主頁背景/關於-極限體驗.jpg" class="sec-08-img" alt="">
-
-                        </div>
-                        <div class="sec-08-textbox">
-                            <h3 class="sec-08-subtitle">十鼓仁糖文創園區
-                            </h3>
-                            <div class="sec-08-text">
-                                是日治時代老糖廠改建而成的藝術文化村，園區內有刺激的煙囪溜滑梯、飛天宅急便，還可以欣賞夢糖劇場鼓樂表演，就像來到「大人版的遊樂園」！十鼓仁糖文創園區鄰近奇美博物館，推薦大家可以安排順遊兩個台南景點的行程！
                             </div>
-                            <a href="./03-Facility.html" class="sec-08-more">more</a>
+                            <h3 class="sec-07-subtitle">十鼓擊樂團</h3>
+                            <div class="sec-07-text sty-bol">獲海內外金曲獎、葛萊美獎、美國獨立獎三項大獎提名
+                            </div>
+                            <div class="sec-07-text">以在地的題材、風景、多樣化民族擊樂的元素，豐富了傳統擊樂原有面貌，震撼的
+                                鼓樂和視覺效果一直以來深受觀眾喜愛。團長期望藉此喚起國人對傳統鼓樂的重視，
+                                企圖為台灣開創出一個熱鬧、多元兼具本土，且具有前瞻性的鼓術文化風格
+                                ，更期望能使台灣在世界上成為著名的【鼓樂之島】。 </div>
+                            <a href="./04-Drum.html" class="sec-07-more">more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 鼓樂饗宴 -->
+
+            <!-- 極限體驗 -->
+            <div class="parallax_window">
+                <div class="effect_box lax"
+                    data-lax-opacity="(document.querySelector('#apple_effect').offsetTop+9850) 0, (document.querySelector('#apple_effect').offsetTop+10400) 1,"
+                    data-lax-scale="(document.querySelector('#apple_effect').offsetTop+9850) 3, (document.querySelector('#apple_effect').offsetTop+10400) 1, (document.querySelector('#apple_effect').offsetTop+11000) 1,">
+                    <div class="sec-08 sec">
+                        <div class="title-08">
+                            <i class="fas fa-circle"></i>
+                            <div class="sec-08-line">
+                                <div class="sec-08-title">極限體驗</div>
+                            </div><i class="fas fa-circle"></i>
+                        </div>
+                        <div class="sec-08-context">
+                            <div class="img-group">
+                                <img src="./img/主頁背景/關於-極限體驗.jpg" class="sec-08-img" alt="">
+
+                            </div>
+                            <div class="sec-08-textbox">
+                                <h3 class="sec-08-subtitle">十鼓仁糖文創園區
+                                </h3>
+                                <div class="sec-08-text">
+                                    是日治時代老糖廠改建而成的藝術文化村，園區內有刺激的煙囪溜滑梯、飛天宅急便，還可以欣賞夢糖劇場鼓樂表演，就像來到「大人版的遊樂園」！十鼓仁糖文創園區鄰近奇美博物館，推薦大家可以安排順遊兩個台南景點的行程！
+                                </div>
+                                <a href="./03-Facility.html" class="sec-08-more">more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 極限體驗 -->
+        </div>
+        <!-- 特色餐飲 -->
+        <div class="sec-09 sec">
+            <div class="title-09" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <i class="fas fa-circle"></i>
+                <div class="sec-09-line">
+                    <div class="sec-09-title">特色餐飲</div>
+                </div><i class="fas fa-circle"></i>
+            </div>
+            <div class="sec-09-context" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="img-group-09">
+                    <div class="img-09">
+                        <img src="./img/關於頁面/特色餐飲/打鼓餅.png" alt="打鼓餅" class="img-09-01">
+                        <div class="overlay-ToRight">
+                            <div class="img-09-text-right">打鼓餅</div>
+                        </div>
+                    </div>
+
+                    <div class="img-09">
+                        <img src="./img/關於頁面/特色餐飲/找鼓蛋.jpg" alt="鼓找蛋" class="img-09-01">
+                        <div class="overlay-ToDown">
+                            <div class="img-09-text-down">鼓找蛋</div>
+                        </div>
+                    </div>
+                    <div class="img-09">
+                        <img src="./img/關於頁面/特色餐飲/麵線套餐.jpg" alt="麵線套餐" class="img-09-01">
+                        <div class="overlay-ToDown">
+                            <div class="img-09-text-down">麵線套餐</div>
+                        </div>
+                    </div>
+                    <div class="img-09">
+                        <img src="./img/關於頁面/特色餐飲/甘蔗汁.jpg" alt="甘蔗汁" class="img-09-01">
+                        <div class="overlay-ToLeft">
+                            <div class="img-09-text-left">甘蔗汁</div>
+                        </div>
+                    </div>
+
+                    <div class="img-09">
+                        <img src="./img/關於頁面/特色餐飲/古追燒.jpg" alt="鼓追燒" class="img-09-01">
+                        <div class="overlay-ToRight">
+                            <div class="img-09-text-right">鼓追燒</div>
+                        </div>
+                    </div>
+                    <div class="img-09">
+                        <img src="./img/關於頁面/特色餐飲/石鼓套餐.jpg" alt="十鼓套餐" class="img-09-01">
+                        <div class="overlay-ToTop">
+                            T<div class="img-09-text-top">十鼓套餐</div>
+                        </div>
+                    </div>
+                    <div class="img-09">
+                        <img src="./img/關於頁面/特色餐飲/下午茶.jpg" alt="下午茶" class="img-09-01">
+                        <div class="overlay-ToTop">
+                            T<div class="img-09-text-top">下午茶</div>
+                        </div>
+                    </div>
+
+                    <div class="img-09">
+                        <img src="./img/關於頁面/特色餐飲/調酒.jpg" alt="微量調酒" class="img-09-01">
+                        <div class="overlay-ToLeft">
+                            <div class="img-09-text-left">微量調酒</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 極限體驗 -->
-    </div>
-    <!-- 特色餐飲 -->
-    <div class="sec-09 sec" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-        <div class="title-09">
-            <i class="fas fa-circle"></i>
-            <div class="sec-09-line">
-                <div class="sec-09-title">特色餐飲</div>
-            </div><i class="fas fa-circle"></i>
-        </div>
-        <div class="sec-09-context">
-            <div class="img-group-09">
-                <div class="img-09">
-                    <img src="./img/關於頁面/特色/cookies.jpg" alt="cookies" class="img-09-01">
-                    <div class="overlay">
-                        <div class="img-09-text">打鼓餅</div>
-                    </div>
-                </div>
-                <div class="img-09">
-                    <img src="./img/關於頁面/特色/egg.jpg" alt="cookies" class="img-09-01">
-                    <div class="overlay">
-                        <div class="img-09-text">鼓找蛋</div>
-                    </div>
-                </div>
-                <div class="img-09">
-                    <img src="./img/關於頁面/特色/noodles-set.jpg" alt="cookies" class="img-09-01">
-                    <div class="overlay">
-                        <div class="img-09-text">麵線套餐</div>
-                    </div>
-                </div>
-                <div class="img-09">
-                    <img src="./img/關於頁面/特色/sugar-juice_工作區域 1.png" alt="cookies" class="img-09-01">
-                    <div class="overlay">
-                        <div class="img-09-text">甘蔗汁</div>
-                    </div>
-                </div>
-                <div class="img-09">
-                    <img src="./img/關於頁面/特色/1005hk114zq7ctzi8D1BF.webp" alt="鼓追燒" class="img-09-01">
-                    <div class="overlay">
-                        <div class="img-09-text">鼓追燒</div>
-                    </div>
-                </div>
-                <div class="img-09">
-                    <img src="./img/關於頁面/特色/58.jpg.pagespeed.ce.fQXR-UfwWI.jpg" alt="十鼓套餐" class="img-09-01">
-                    <div class="overlay">
-                        <div class="img-09-text">十鼓套餐</div>
-                    </div>
-                </div>
-                <div class="img-09-team">
-                    <img src="./img/關於頁面/特色/打鼓餅.jpg" class="img-09-01" alt="下午茶">
-                    <img src="./img/關於頁面/特色/打鼓餅.jpg" class="img-09-01" alt="微量調酒">
-                </div>
+        <!-- 特色餐飲 -->
 
-
+        <!-- 文創空間 -->
+        <div class="sec-10 sec">
+            <div class="title-10" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <i class=" fas fa-circle"></i>
+                <div class="sec-10-line">
+                    <div class="sec-10-title">文創空間</div>
+                </div><i class="fas fa-circle"></i>
             </div>
+            <div class="sec-10-container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="sec-10-img-group">
+                    <img src="https://pic.pimg.tw/car0126/1499060525-4218239850.jpg" class="sec10-img" alt="台版天空之城">
+                    <div class="overlay-ToRight">
+                        <div class="img-10-text-right">台版天空之城</div>
+                    </div>
+                </div>
+                <div class="sec-10-img-group">
+                    <img src="https://tendrum.com.tw/userfiles/images/%E5%A4%A2%E7%B3%96%E5%8A%87%E5%A0%B4.JPG"
+                        class="sec10-img" alt="夢糖劇場">
+                    <div class="overlay-ToDown">
+                        <div class="img-10-text-down">夢糖劇場</div>
+                    </div>
+                </div>
+                <div class="sec-10-img-group">
+                    <img src="https://4.bp.blogspot.com/-Yt2ya6JDw4Q/WIlwI0FiLTI/AAAAAAAAAZc/vG2BKWcjW2w9bR5DTqLFhk_-TU7pCy1AACPcB/s640/DSC01273%25E5%2584%25AA.JPG"
+                        class="sec10-img" alt="齒輪舞台">
+                    <div class="overlay-ToLeft">
+                        <div class="img-10-text-left">齒輪舞台</div>
+                    </div>
+                </div>
+                <div class="sec-10-img-group">
+                    <img src="https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/53698446_2035164049870931_960115960218386432_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=vJxT8UzrJg4AX_SFcHb&_nc_ht=scontent.frmq2-1.fna&oh=767f344476aa44d42fd7f8462820bf5d&oe=5FA8E661"
+                        class="sec10-img" alt="永不出軌">
+                    <div class="overlay-ToRight">
+                        <div class="img-10-text-right">永不出軌</div>
+                    </div>
+                </div>
+                <div class="sec-10-img-group">
+                    <img src="https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/1546149_245354755641215_1890074086_n.jpg?_nc_cat=106&_nc_sid=cdbe9c&_nc_ohc=6YnhIBLqRngAX8CZvku&_nc_ht=scontent.frmq2-1.fna&oh=20902ed9058fbb40d048a22bdc7c70cd&oe=5FA7E82F"
+                        class="sec10-img" alt="制鼓廠">
+                    <div class="overlay-ToTop">
+                        <div class="img-10-text-top">制鼓廠</div>
+                    </div>
+                </div>
+                <div class="sec-10-img-group">
+                    <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t31.0-8/13568759_627617080748312_8856479280367360089_o.jpg?_nc_cat=101&_nc_sid=730e14&_nc_ohc=jBo7ZywhPagAX9LedrG&_nc_ht=scontent.frmq2-2.fna&oh=a144b38bcbb6e3bc5e234569930a6d8e&oe=5FA685A2"
+                        class="sec10-img" alt="天空步道">
+                    <div class="overlay-ToLeft">
+                        <div class="img-10-text-left">天空步道</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">此網頁純練習及測試用，若有侵權疑慮請告知。</div>
         </div>
+
     </div>
-    <!-- 特色餐飲 -->
-
-    <!-- 文創空間 -->
-    <div class="sec-10 sec" data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom">
-        <div class="title-10">
-            <i class="fas fa-circle"></i>
-            <div class="sec-10-line">
-                <div class="sec-10-title">文創空間</div>
-            </div><i class="fas fa-circle"></i>
-        </div>
-        <div class="sec-10-container">
-            <img src="https://images.chinatimes.com/newsphoto/2016-07-06/900/B30A00_P_02_02.jpg" class="sec10-img"
-                alt="台版天空之城">
-            <img src="https://tendrum.com.tw/userfiles/images/%E5%A4%A2%E7%B3%96%E5%8A%87%E5%A0%B4.JPG"
-                class="sec10-img" alt="夢糖劇場">
-            <img src="https://4.bp.blogspot.com/-Yt2ya6JDw4Q/WIlwI0FiLTI/AAAAAAAAAZc/vG2BKWcjW2w9bR5DTqLFhk_-TU7pCy1AACPcB/s640/DSC01273%25E5%2584%25AA.JPG"
-                class="sec10-img" alt="齒輪舞台">
-            <img src="https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/53698446_2035164049870931_960115960218386432_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=vJxT8UzrJg4AX_SFcHb&_nc_ht=scontent.frmq2-1.fna&oh=767f344476aa44d42fd7f8462820bf5d&oe=5FA8E661"
-                class="sec10-img" alt="永不出軌">
-            <img src="https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/1546149_245354755641215_1890074086_n.jpg?_nc_cat=106&_nc_sid=cdbe9c&_nc_ohc=6YnhIBLqRngAX8CZvku&_nc_ht=scontent.frmq2-1.fna&oh=20902ed9058fbb40d048a22bdc7c70cd&oe=5FA7E82F"
-                class="sec10-img" alt="制鼓廠">
-            <img src="https://scontent.frmq2-2.fna.fbcdn.net/v/t31.0-8/13568759_627617080748312_8856479280367360089_o.jpg?_nc_cat=101&_nc_sid=730e14&_nc_ohc=jBo7ZywhPagAX9LedrG&_nc_ht=scontent.frmq2-2.fna&oh=a144b38bcbb6e3bc5e234569930a6d8e&oe=5FA685A2"
-                class="sec10-img" alt="天空步道">
-
-        </div>
-        <div class="footer">版權聲明</div>
 
     </div>
     <!-- 文創空間 -->
