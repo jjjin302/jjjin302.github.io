@@ -2199,7 +2199,7 @@ footer {
 
 #apple_effect {
   width: 100%;
-  height: 1300vh;
+  min-height: 850vh;
   background-color: #ebe3d4;
   position: relative;
 }
@@ -2210,7 +2210,7 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   text-align: center;
 }
@@ -2223,7 +2223,7 @@ footer {
 
 #apple_effect .parallax_window .effect_box .sec {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2284,7 +2284,7 @@ footer {
 #apple_effect .parallax_window .effect_box .About .about-title-00 {
   margin-top: 15%;
   width: 50%;
-  font-size: 40px;
+  font-size: 48px;
   height: 60px;
   line-height: 60px;
   color: #673a1b;
@@ -2293,14 +2293,14 @@ footer {
 
 #apple_effect .parallax_window .effect_box .About .about-text-00 {
   width: 50%;
-  font-size: 24px;
+  font-size: 30px;
   text-align: left;
 }
 
 #apple_effect .parallax_window .effect_box .About .about-title-01 {
   margin-top: 5%;
   width: 50%;
-  font-size: 40px;
+  font-size: 48px;
   height: 60px;
   line-height: 60px;
   color: #673a1b;
@@ -2338,7 +2338,7 @@ footer {
 #apple_effect .parallax_window .effect_box .About-02 .about-title-02 {
   margin-top: 5%;
   width: 15%;
-  font-size: 40px;
+  font-size: 48px;
   height: 60px;
   line-height: 60px;
   color: #673a1b;
@@ -2354,7 +2354,7 @@ footer {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font-size: 20px;
+  font-size: 30px;
   text-align: left;
 }
 
@@ -2485,7 +2485,7 @@ footer {
 #apple_effect .parallax_window .effect_box .About-03 .about-title-00 {
   margin-top: 15%;
   width: 50%;
-  font-size: 40px;
+  font-size: 48px;
   height: 60px;
   line-height: 60px;
   color: #673a1b;
@@ -2511,7 +2511,7 @@ footer {
   height: 30px;
   line-height: 30px;
   text-align: center;
-  font-size: 12px;
+  font-size: 20px;
   color: #b5b5b6;
 }
 
@@ -2602,7 +2602,7 @@ footer {
 
 #apple_effect .parallax_window .effect_box .sec-07 .title-07 .sec-07-line .sec-07-title {
   width: 100%;
-  font-size: 40px;
+  font-size: 48px;
   text-align: center;
   color: #673a1b;
 }
@@ -2630,7 +2630,7 @@ footer {
 }
 
 #apple_effect .parallax_window .effect_box .sec-07 .sec-07-context .sec-07-text {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 #apple_effect .parallax_window .effect_box .sec-07 .sec-07-context .sec-07-more {
@@ -2678,7 +2678,7 @@ footer {
 
 #apple_effect .parallax_window .effect_box .title-08 .sec-08-line .sec-08-title {
   width: 100%;
-  font-size: 40px;
+  font-size: 48px;
   text-align: center;
   color: #673a1b;
 }
@@ -2725,7 +2725,7 @@ footer {
 
 #apple_effect .parallax_window .effect_box .sec-08-context .sec-08-textbox .sec-08-text {
   width: 80%;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 #apple_effect .parallax_window .effect_box .sec-08-context .sec-08-textbox .sec-08-more {
@@ -2791,13 +2791,14 @@ footer {
 
 .sec-09 .title-09 .sec-09-line .sec-09-title {
   width: 100%;
-  font-size: 40px;
+  font-size: 48px;
   text-align: center;
   color: #673a1b;
 }
 
 .sec-09 .sec-09-context {
   width: 80%;
+  height: 100vh;
 }
 
 .sec-09 .sec-09-context .img-group-09 {
@@ -2806,11 +2807,48 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09-01 {
+  background-image: url("../img/特色餐飲/打鼓餅-正方形.jpg");
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09-02 {
+  background-image: url("../img/特色餐飲/找鼓蛋-正方形.jpg");
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09-03 {
+  background-image: url("../img/特色餐飲/麵線套餐-正方形.jpg");
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09-04 {
+  background-image: url("../img/特色餐飲/甘蔗汁-正方形.jpg");
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09-05 {
+  background-image: url("../img/特色餐飲/古追燒-正方形.jpg");
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09-06 {
+  background-image: url("../img/特色餐飲/石鼓套餐-正方形.jpg");
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09-07 {
+  background-image: url("../img/特色餐飲/下午茶-正方形.jpg");
+}
+
+.sec-09 .sec-09-context .img-group-09 .img-09-08 {
+  background-image: url("../img/特色餐飲/調酒-正方形.jpg");
 }
 
 .sec-09 .sec-09-context .img-group-09 .img-09 {
   width: 25%;
   height: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   /*to right */
   /*to right */
@@ -2820,12 +2858,6 @@ footer {
   /* to right */
   /* to top */
   /* to top */
-}
-
-.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-01 {
-  display: block;
-  width: 100%;
-  height: 100%;
 }
 
 .sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToRight {
@@ -2848,12 +2880,12 @@ footer {
 
 .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-right {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 
@@ -2878,12 +2910,12 @@ footer {
 
 .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-down {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -2908,12 +2940,12 @@ footer {
 
 .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-left {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 
@@ -2937,34 +2969,13 @@ footer {
 
 .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-top {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.sec-09 .sec-09-context .img-group-09 .img-09-team {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.sec-09 .sec-09-context .img-group-09 .img-09-team .img-09-01 {
-  width: 100%;
-  opacity: 0.5;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.sec-09 .sec-09-context .img-group-09 .img-09-team .img-09-01:hover {
-  height: 50%;
-  opacity: 1;
 }
 
 .sec-10 {
@@ -3018,7 +3029,7 @@ footer {
 
 .sec-10 .sec-10-container {
   width: 80%;
-  height: 100%;
+  height: 100vh;
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3030,7 +3041,31 @@ footer {
       flex-wrap: wrap;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group {
+.sec-10 .sec-10-container .img10-01 {
+  background-image: url("https://p1-news.hfcdn.com/p1-news/MTkyOTgxOG5ld3M,/0625bb5d8dd31c0f_1600x892.jpg/qs/w=600&h=600&r=16888");
+}
+
+.sec-10 .sec-10-container .img10-02 {
+  background-image: url("https://tendrum.com.tw/userfiles/images/%E5%A4%A2%E7%B3%96%E5%8A%87%E5%A0%B4.JPG");
+}
+
+.sec-10 .sec-10-container .img10-03 {
+  background-image: url("https://4.bp.blogspot.com/-Yt2ya6JDw4Q/WIlwI0FiLTI/AAAAAAAAAZc/vG2BKWcjW2w9bR5DTqLFhk_-TU7pCy1AACPcB/s640/DSC01273%25E5%2584%25AA.JPG");
+}
+
+.sec-10 .sec-10-container .img10-04 {
+  background-image: url("https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/53698446_2035164049870931_960115960218386432_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=vJxT8UzrJg4AX_SFcHb&_nc_ht=scontent.frmq2-1.fna&oh=767f344476aa44d42fd7f8462820bf5d&oe=5FA8E661");
+}
+
+.sec-10 .sec-10-container .img10-05 {
+  background-image: url("https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/1546149_245354755641215_1890074086_n.jpg?_nc_cat=106&_nc_sid=cdbe9c&_nc_ohc=6YnhIBLqRngAX8CZvku&_nc_ht=scontent.frmq2-1.fna&oh=20902ed9058fbb40d048a22bdc7c70cd&oe=5FA7E82F");
+}
+
+.sec-10 .sec-10-container .img10-06 {
+  background-image: url("https://scontent.frmq2-2.fna.fbcdn.net/v/t31.0-8/13568759_627617080748312_8856479280367360089_o.jpg?_nc_cat=101&_nc_sid=730e14&_nc_ohc=jBo7ZywhPagAX9LedrG&_nc_ht=scontent.frmq2-2.fna&oh=a144b38bcbb6e3bc5e234569930a6d8e&oe=5FA685A2");
+}
+
+.sec-10 .sec-10-container .sec-10-img {
   width: 33.33%;
   height: 50%;
   position: relative;
@@ -3042,6 +3077,9 @@ footer {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /*to right */
   /*to right */
   /* to down */
@@ -3052,18 +3090,12 @@ footer {
   /* to top */
 }
 
-.sec-10 .sec-10-container .sec-10-img-group .sec10-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.sec-10 .sec-10-container .sec-10-img-group .overlay-ToRight {
+.sec-10 .sec-10-container .sec-10-img .overlay-ToRight {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #6a3906;
+  background-color: #bc6821;
   opacity: 0.8;
   overflow: hidden;
   width: 0;
@@ -3072,13 +3104,13 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group:hover .overlay-ToRight {
+.sec-10 .sec-10-container .sec-10-img:hover .overlay-ToRight {
   width: 100%;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group .img-10-text-right {
+.sec-10 .sec-10-container .sec-10-img .img-10-text-right {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3087,12 +3119,12 @@ footer {
   white-space: nowrap;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group .overlay-ToDown {
+.sec-10 .sec-10-container .sec-10-img .overlay-ToDown {
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: #6a3906;
+  background-color: #bc6821;
   opacity: 0.8;
   overflow: hidden;
   width: 100%;
@@ -3101,14 +3133,14 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group:hover .overlay-ToDown {
+.sec-10 .sec-10-container .sec-10-img:hover .overlay-ToDown {
   bottom: 0;
   height: 100%;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group .img-10-text-down {
+.sec-10 .sec-10-container .sec-10-img .img-10-text-down {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3117,12 +3149,12 @@ footer {
   text-align: center;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group .overlay-ToLeft {
+.sec-10 .sec-10-container .sec-10-img .overlay-ToLeft {
   position: absolute;
   bottom: 0;
   left: 100%;
   right: 0;
-  background-color: #6a3906;
+  background-color: #bc6821;
   opacity: 0.8;
   overflow: hidden;
   width: 0;
@@ -3131,14 +3163,14 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group:hover .overlay-ToLeft {
+.sec-10 .sec-10-container .sec-10-img:hover .overlay-ToLeft {
   width: 100%;
   left: 0;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group .img-10-text-left {
+.sec-10 .sec-10-container .sec-10-img .img-10-text-left {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3147,12 +3179,12 @@ footer {
   white-space: nowrap;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group .overlay-ToTop {
+.sec-10 .sec-10-container .sec-10-img .overlay-ToTop {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #6a3906;
+  background-color: #bc6821;
   opacity: 0.8;
   overflow: hidden;
   width: 100%;
@@ -3161,9 +3193,9 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group .overlay-ToTop .img-10-text-top {
+.sec-10 .sec-10-container .sec-10-img .overlay-ToTop .img-10-text-top {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -3172,7 +3204,7 @@ footer {
   text-align: center;
 }
 
-.sec-10 .sec-10-container .sec-10-img-group:hover .overlay-ToTop {
+.sec-10 .sec-10-container .sec-10-img:hover .overlay-ToTop {
   height: 100%;
 }
 /*# sourceMappingURL=TenDrum.css.map */

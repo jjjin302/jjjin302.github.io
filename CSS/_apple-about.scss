@@ -1,4 +1,7 @@
 @mixin apple() {
+    $fon48: 48px;
+    $fon30: 30px;
+    $fon20: 20px;
     ::-webkit-scrollbar {
         display: none;
     }
@@ -7,7 +10,7 @@
     }
     #apple_effect {
         width: 100%;
-        height: 1300vh;
+        min-height: 850vh;
         background-color: #ebe3d4;
         position: relative;
         .parallax_window {
@@ -15,27 +18,34 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             overflow: hidden;
             text-align: center;
 
-            .effect_box {
+            .effect_box {                
                 width: 100%;
                 height: 100vh;
                 overflow: hidden;
                 ///中間背景圖樣式///
+
                 .sec {
                     width: 100%;
-                    height: 100vh;
+                    height: 100%;
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
+
                 }
                 ///中間背景圖樣式///
                 ///各區背景圖///
                 .sec-01 {
                     background-image: url("../img/關於頁面/1.關於十鼓-修正\(降\).jpg");
+                    
+                    @media (max-width: 1440px) {
+                        // background-image: url("../img/關於頁面/sec各區圖片-w1024px_工作區域3.png");
+                    }
                 }
+
                 .sec-02 {
                     background-image: url("../img/關於頁面/2.關於十鼓-背景\(降\).jpg");
                 }
@@ -71,7 +81,7 @@
                     .about-title-00 {
                         margin-top: 15%;
                         width: 50%;
-                        font-size: 40px;
+                        font-size: $fon48;
                         height: 60px;
                         line-height: 60px;
                         color: #673a1b;
@@ -82,7 +92,7 @@
                     ///簡介內容///
                     .about-text-00 {
                         width: 50%;
-                        font-size: 24px;
+                        font-size: $fon30;
                         text-align: left;
                     }
                     ///簡介內容///
@@ -91,7 +101,7 @@
                     .about-title-01 {
                         margin-top: 5%;
                         width: 50%;
-                        font-size: 40px;
+                        font-size: $fon48;
                         height: 60px;
                         line-height: 60px;
                         color: #673a1b;
@@ -123,7 +133,7 @@
                     .about-title-02 {
                         margin-top: 5%;
                         width: 15%;
-                        font-size: 40px;
+                        font-size: $fon48;
                         height: 60px;
                         line-height: 60px;
                         color: #673a1b;
@@ -134,7 +144,7 @@
                         height: 80%;
                         display: flex;
                         align-items: flex-end;
-                        font-size: 20px;
+                        font-size: $fon30;
                         text-align: left;
                         .text-wrap-02 {
                             width: 37.5%;
@@ -257,7 +267,7 @@
                     .about-title-00 {
                         margin-top: 15%;
                         width: 50%;
-                        font-size: 40px;
+                        font-size: $fon48;
                         height: 60px;
                         line-height: 60px;
                         color: #673a1b;
@@ -278,7 +288,7 @@
                                 height: 30px;
                                 line-height: 30px;
                                 text-align: center;
-                                font-size: 12px;
+                                font-size: $fon20;
                                 color: #b5b5b6;
                             }
                             .about-text-5-text {
@@ -355,7 +365,7 @@
                             border-bottom: 1px solid #b15821;
                             .sec-07-title {
                                 width: 100%;
-                                font-size: 40px;
+                                font-size: $fon48;
                                 text-align: center;
                                 color: #673a1b;
                             }
@@ -380,7 +390,7 @@
                             font-weight: bolder;
                         }
                         .sec-07-text {
-                            font-size: 24px;
+                            font-size: $fon30;
                         }
                         .sec-07-more {
                             width: 10%;
@@ -421,7 +431,7 @@
                         border-bottom: 1px solid #b15821;
                         .sec-08-title {
                             width: 100%;
-                            font-size: 40px;
+                            font-size: $fon48;
                             text-align: center;
                             color: #673a1b;
                         }
@@ -457,7 +467,7 @@
                         }
                         .sec-08-text {
                             width: 80%;
-                            font-size: 24px;
+                            font-size: $fon30;
                         }
                         .sec-08-more {
                             width: 10%;
@@ -511,7 +521,7 @@
                 border-bottom: 1px solid #b15821;
                 .sec-09-title {
                     width: 100%;
-                    font-size: 40px;
+                    font-size: $fon48;
                     text-align: center;
                     color: #673a1b;
                 }
@@ -519,19 +529,43 @@
         }
         .sec-09-context {
             width: 80%;
+            height: 100vh;
             .img-group-09 {
                 display: flex;
                 flex-wrap: wrap;
-
+                width: 100%;
+                height: 100%;
+                .img-09-01 {
+                    background-image: url("../img/特色餐飲/打鼓餅-正方形.jpg");
+                }
+                .img-09-02 {
+                    background-image: url("../img/特色餐飲/找鼓蛋-正方形.jpg");
+                }
+                .img-09-03 {
+                    background-image: url("../img/特色餐飲/麵線套餐-正方形.jpg");
+                }
+                .img-09-04 {
+                    background-image: url("../img/特色餐飲/甘蔗汁-正方形.jpg");
+                }
+                .img-09-05 {
+                    background-image: url("../img/特色餐飲/古追燒-正方形.jpg");
+                }
+                .img-09-06 {
+                    background-image: url("../img/特色餐飲/石鼓套餐-正方形.jpg");
+                }
+                .img-09-07 {
+                    background-image: url("../img/特色餐飲/下午茶-正方形.jpg");
+                }
+                .img-09-08 {
+                    background-image: url("../img/特色餐飲/調酒-正方形.jpg");
+                }
                 .img-09 {
                     width: 25%;
                     height: 50%;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
                     position: relative;
-                    .img-09-01 {
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                    }
                     /*to right */
                     .overlay-ToRight {
                         position: absolute;
@@ -550,12 +584,10 @@
                     }
                     .img-09-text-right {
                         color: white;
-                        font-size: 20px;
+                        font-size: $fon30;
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
                         transform: translate(-50%, -50%);
                         white-space: nowrap;
                     }
@@ -581,12 +613,11 @@
 
                     .img-09-text-down {
                         color: white;
-                        font-size: 20px;
+                        font-size: $fon30;
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
+
                         transform: translate(-50%, -50%);
                         text-align: center;
                     }
@@ -612,12 +643,11 @@
 
                     .img-09-text-left {
                         color: white;
-                        font-size: 20px;
+                        font-size: $fon30;
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
+
                         transform: translate(-50%, -50%);
                         white-space: nowrap;
                     }
@@ -642,35 +672,21 @@
 
                     .img-09-text-top {
                         color: white;
-                        font-size: 20px;
+                        font-size: $fon30;
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
+
                         transform: translate(-50%, -50%);
                         text-align: center;
                     }
                     /* to top */
                 }
-                .img-09-team {
-                    width: 50%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    .img-09-01 {
-                        width: 100%;
-                        opacity: 0.5;
-                        transition: 0.5s;
-                        &:hover {
-                            height: 50%;
-                            opacity: 1;
-                        }
-                    }
-                }
             }
         }
     }
     // 特色餐飲
+    // 文創空間
     .sec-10 {
         width: 100%;
         height: 100%;
@@ -679,7 +695,7 @@
         flex-wrap: wrap;
 
         margin-top: 250px;
-       
+
         position: relative;
         .title-10 {
             margin-top: 250px;
@@ -708,30 +724,48 @@
         }
         .sec-10-container {
             width: 80%;
-            height: 100%;
+            height: 100vh;
             padding-bottom: 50px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            .sec-10-img-group {
+            .img10-01 {
+                background-image: url("https://p1-news.hfcdn.com/p1-news/MTkyOTgxOG5ld3M,/0625bb5d8dd31c0f_1600x892.jpg/qs/w=600&h=600&r=16888");
+            }
+            .img10-02 {
+                background-image: url("https://tendrum.com.tw/userfiles/images/%E5%A4%A2%E7%B3%96%E5%8A%87%E5%A0%B4.JPG");
+            }
+            .img10-03 {
+                background-image: url("https://4.bp.blogspot.com/-Yt2ya6JDw4Q/WIlwI0FiLTI/AAAAAAAAAZc/vG2BKWcjW2w9bR5DTqLFhk_-TU7pCy1AACPcB/s640/DSC01273%25E5%2584%25AA.JPG");
+            }
+            .img10-04 {
+                background-image: url("https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/53698446_2035164049870931_960115960218386432_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=vJxT8UzrJg4AX_SFcHb&_nc_ht=scontent.frmq2-1.fna&oh=767f344476aa44d42fd7f8462820bf5d&oe=5FA8E661");
+            }
+            .img10-05 {
+                background-image: url("https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/1546149_245354755641215_1890074086_n.jpg?_nc_cat=106&_nc_sid=cdbe9c&_nc_ohc=6YnhIBLqRngAX8CZvku&_nc_ht=scontent.frmq2-1.fna&oh=20902ed9058fbb40d048a22bdc7c70cd&oe=5FA7E82F");
+            }
+            .img10-06 {
+                background-image: url("https://scontent.frmq2-2.fna.fbcdn.net/v/t31.0-8/13568759_627617080748312_8856479280367360089_o.jpg?_nc_cat=101&_nc_sid=730e14&_nc_ohc=jBo7ZywhPagAX9LedrG&_nc_ht=scontent.frmq2-2.fna&oh=a144b38bcbb6e3bc5e234569930a6d8e&oe=5FA685A2");
+            }
+            .sec-10-img {
                 width: 33.33%;
                 height: 50%;
                 position: relative;
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
-                .sec10-img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                }
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
                 /*to right */
                 .overlay-ToRight {
                     position: absolute;
                     bottom: 0;
                     left: 0;
                     right: 0;
-                    background-color: #6a3906;
+                    background-color: #bc6821;
                     opacity: 0.8;
                     overflow: hidden;
                     width: 0;
@@ -743,7 +777,7 @@
                 }
                 .img-10-text-right {
                     color: white;
-                    font-size: 20px;
+                    font-size: $fon30;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -759,7 +793,7 @@
                     bottom: 100%;
                     left: 0;
                     right: 0;
-                    background-color: #6a3906;
+                    background-color: #bc6821;
                     opacity: 0.8;
                     overflow: hidden;
                     width: 100%;
@@ -774,7 +808,7 @@
 
                 .img-10-text-down {
                     color: white;
-                    font-size: 20px;
+                    font-size: $fon30;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -790,7 +824,7 @@
                     bottom: 0;
                     left: 100%;
                     right: 0;
-                    background-color: #6a3906;
+                    background-color: #bc6821;
                     opacity: 0.8;
                     overflow: hidden;
                     width: 0;
@@ -805,7 +839,7 @@
 
                 .img-10-text-left {
                     color: white;
-                    font-size: 20px;
+                    font-size: $fon30;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -821,7 +855,7 @@
                     bottom: 0;
                     left: 0;
                     right: 0;
-                    background-color: #6a3906;
+                    background-color: #bc6821;
                     opacity: 0.8;
                     overflow: hidden;
                     width: 100%;
@@ -829,7 +863,7 @@
                     transition: 0.5s ease;
                     .img-10-text-top {
                         color: white;
-                        font-size: 20px;
+                        font-size: $fon30;
                         position: absolute;
                         top: 50%;
                         left: 50%;
