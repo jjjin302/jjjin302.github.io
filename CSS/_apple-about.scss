@@ -185,7 +185,7 @@
                     }
                     // 沿革標題
 
-                    ///沿革內容///  
+                    ///沿革內容///
                     .about-text-01 {
                         margin-top: 2%;
                         width: 70%;
@@ -214,7 +214,7 @@
                     }
                     ///沿革內容///
                 }
-                // 發展年表
+                // 發展年表 切板完成
                 .About-02 {
                     padding: 50px;
                     width: 100%;
@@ -265,10 +265,29 @@
                         align-items: flex-end;
                         font-size: $fon30;
                         text-align: left;
+                        @media (max-width: 1280px) {
+                            font-size: $fon24;
+                            margin-top: 12%;
+                        }
+                        @media (max-width: 1024px) {
+                            font-size: $fon20;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: $fon18;
+                        }
+                        @media (max-width: 320px) {
+                            font-size: $fon16;
+                        }
                         .text-wrap-02 {
-                            width: 37.5%;
+                            width: 42.5%;
                             h6 {
                                 font-family: "Fredericka the Great", cursive;
+                                @media (max-width: 768px) {
+                                    margin: 0;
+                                }
+                                @media (max-width: 320px) {
+                                    
+                                }
                             }
                             // 時間軸
                             /* The actual timeline (the vertical ruler) */
@@ -278,7 +297,7 @@
                                 color: #231815;
                                 /* Container around time-content */
                                 .time-container {
-                                    padding: 10px 40px;
+                                    padding: 5px 10px;
                                     position: relative;
                                 }
 
@@ -297,29 +316,18 @@
                                     /* The actual time-content */
                                     .time-content {
                                         width: 100%;
-                                        padding: 20px 20px;
-                                        background-color: white;
+                                        padding: 5px 5px;
                                         position: relative;
-                                        border-radius: 6px;
+                                        .text-02{
+                                            width: 100%;
+                                        }
                                     }
                                 }
 
                                 /* Place the time-container to the right */
                                 .right {
-                                    left: 50%;
+                                    left: 25%;
                                 }
-
-                                /* Add arrows to the right time-container (pointing left) */
-                                .right::before {
-                                    content: " ";
-                                    height: 0;
-                                    position: absolute;
-                                    top: 22px;
-                                    width: 0;
-                                    z-index: 1;
-                                    left: 30px;
-                                }
-
                                 /* Fix the circle for time-containers on the right side */
                                 .right::after {
                                     left: -16px;
@@ -328,11 +336,11 @@
                             .timeline::after {
                                 content: "";
                                 position: absolute;
-                                width: 6px;
+                                width: 5px;
                                 background-color: #6a3906;
                                 top: 0;
                                 bottom: 0;
-                                left: 50%;
+                                left: 25%;
                                 margin-left: -3px;
                             }
                             /* Media queries - Responsive timeline on screens less than 600px wide */
