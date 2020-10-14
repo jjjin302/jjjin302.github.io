@@ -1,4 +1,5 @@
 @mixin hamberger() {
+    // 切板完成
     .hamburger {
         padding: 10px;
         position: fixed;
@@ -187,12 +188,16 @@
         }
         .btn-bacimg {
             position: absolute;
-            left: 0;            
+            left: 0;
             width: 100%;
             height: 100vh;
             background-image: url("../img/打鼓人/打鼓人調色1.png");
             background-position: left;
             background-repeat: no-repeat;
+            @media (max-width: 768px) {
+             background-position: center;   
+            }
+
             .btnsss {
                 display: flex;
 
@@ -217,68 +222,137 @@
                     flex-direction: column;
                     margin-top: 50px;
                     .btn-index {
-                        font-size: 46px;
+                        font-size: $fon48;
                         margin-bottom: 30px;
                         color: #595757;
                         font-family: "Fredericka the Great", cursive;
+                        @media (max-width: 1280px) {
+                            font-size: $fon46;
+                        }
+                        @media (max-width: 1024px) {
+                            font-size: $fon42;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: $fon36;
+                        }
+                        @media (max-width: 320px) {
+                            font-size: $fon30;
+                        }
+                        .home-icon {
+                            font-size: $fon36;
+                            @media (max-width: 1280px) {
+                                font-size: $fon32;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: $fon30;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon24;
+                            }
+                            @media (max-width: 320px) {
+                                font-size: $fon20;
+                            }
+                        }
                     }
                     .btn {
                         padding: 20px;
                         width: 50%;
-                        font-weight: bolder;
+
                         line-height: 50%;
                         text-align: center;
                         border: 0;
                         transition: 0.1s;
+                        .btn-text {
+                            width: 100%;
+                            height: 100%;
+                            font-size: $fon46;
+                            color: #4d483d;
+                            letter-spacing: 5px;
+                            line-height: 20px;
+                            &:hover {
+                                color: #efefef;
+                            }
+                            @media (max-width: 1280px) {
+                                font-size: $fon42;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: $fon36;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon32;
+                            }
+                            @media (max-width: 320px) {
+                                font-size: $fon24;
+                            }
+                        }
 
                         &:hover {
                             background-color: rgba(212, 166, 63, 0.8);
                             color: #efefef;
                         }
-                        h1 {
-                            color: #4d483d;
-                            &:hover {
-                                color: #efefef;
-                            }
-                        }
+                        
                     }
                 }
                 .infor {
                     width: 5%;
                     display: flex;
                     flex-direction: column;
-                    margin-top: 150px;
+
                     flex-wrap: wrap;
-                    padding: 20px;
+                    margin-right:10px ;                    
+                    padding: 10px;
+                    margin-top: 150px;
+                    @media (max-width: 768px) {
+                        position: absolute;
+                        bottom: 10px;
+                    }
                     .top {
                         width: 100%;
                         text-align: center;
-                        .lan {
-                            width: 35px;
-                            height: 35px;
-                            margin: 10px 0;
-                            font-size: 16px;
-                            text-align: center;
-                            line-height: 35px;
-                            &:hover {
-                                cursor: pointer;
+
+
+                        .icon {
+                            width: 60px;
+                            height: 60px;
+                            margin: 5px 0;
+                            @media (max-width: 768px) {
+                                width: 58px;
+                                height: 58px;
                             }
                         }
-                        .en {
-                            color: #d4a63f;
-                            border: 1px solid #d4a63f;
-                            font-family: "Fredericka the Great", cursive;
+                        .icon01 {
+                            background-image: url("../img/漢堡條/FB.png");
                         }
-                        .cn {
-                            color: #595757;
-                            border: 1px solid #595757;
+                        .icon02 {
+                            background-image: url("../img/漢堡條/LINE.png");
+                        }
+                        .icon03 {
+                            background-image: url("../img/漢堡條/E-MAIL.png");
                         }
                     }
                 }
                 .bott {
                     position: absolute;
+                    font-size: $fon30;
                     right: 20px;
                     bottom: 20px;
+                    @media (max-width: 1024px) {
+                        font-size: $fon24;
+                    }
+                    @media (max-width: 768px) {
+                        font-size: $fon20;
+                    }
+                    @media (max-width: 320px) {
+                        font-size: $fon16;
+                    }
+                    .eng {
+                        font-family: "Fredericka the Great", cursive;
+                    }
+                    .address {
+                        @media (max-width: 320px) {
+                            display: none;
+                        }
+                    }
                 }
             }
         }

@@ -705,6 +705,12 @@ footer {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .btn-groupxxx .btn-bacimg {
+    background-position: center;
+  }
+}
+
 .btn-groupxxx .btn-bacimg .btnsss {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,16 +759,67 @@ footer {
 }
 
 .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index {
-  font-size: 46px;
+  font-size: 48px;
   margin-bottom: 30px;
   color: #595757;
   font-family: "Fredericka the Great", cursive;
 }
 
+@media (max-width: 1280px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index {
+    font-size: 30px;
+  }
+}
+
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn-index .home-icon {
+  font-size: 36px;
+}
+
+@media (max-width: 1280px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index .home-icon {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index .home-icon {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index .home-icon {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn-index .home-icon {
+    font-size: 20px;
+  }
+}
+
 .btn-groupxxx .btn-bacimg .btnsss .btns .btn {
   padding: 20px;
   width: 50%;
-  font-weight: bolder;
   line-height: 50%;
   text-align: center;
   border: 0;
@@ -770,16 +827,45 @@ footer {
   transition: 0.1s;
 }
 
-.btn-groupxxx .btn-bacimg .btnsss .btns .btn:hover {
-  background-color: rgba(212, 166, 63, 0.8);
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn .btn-text {
+  width: 100%;
+  height: 100%;
+  font-size: 46px;
+  color: #4d483d;
+  letter-spacing: 5px;
+  line-height: 20px;
+}
+
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn .btn-text:hover {
   color: #efefef;
 }
 
-.btn-groupxxx .btn-bacimg .btnsss .btns .btn h1 {
-  color: #4d483d;
+@media (max-width: 1280px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn .btn-text {
+    font-size: 42px;
+  }
 }
 
-.btn-groupxxx .btn-bacimg .btnsss .btns .btn h1:hover {
+@media (max-width: 1024px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn .btn-text {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn .btn-text {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-groupxxx .btn-bacimg .btnsss .btns .btn .btn-text {
+    font-size: 24px;
+  }
+}
+
+.btn-groupxxx .btn-bacimg .btnsss .btns .btn:hover {
+  background-color: rgba(212, 166, 63, 0.8);
   color: #efefef;
 }
 
@@ -792,10 +878,18 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 150px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px;
+  margin-right: 10px;
+  padding: 10px;
+  margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .btn-groupxxx .btn-bacimg .btnsss .infor {
+    position: absolute;
+    bottom: 10px;
+  }
 }
 
 .btn-groupxxx .btn-bacimg .btnsss .infor .top {
@@ -803,34 +897,64 @@ footer {
   text-align: center;
 }
 
-.btn-groupxxx .btn-bacimg .btnsss .infor .top .lan {
-  width: 35px;
-  height: 35px;
-  margin: 10px 0;
-  font-size: 16px;
-  text-align: center;
-  line-height: 35px;
+.btn-groupxxx .btn-bacimg .btnsss .infor .top .icon {
+  width: 60px;
+  height: 60px;
+  margin: 5px 0;
 }
 
-.btn-groupxxx .btn-bacimg .btnsss .infor .top .lan:hover {
-  cursor: pointer;
+@media (max-width: 768px) {
+  .btn-groupxxx .btn-bacimg .btnsss .infor .top .icon {
+    width: 58px;
+    height: 58px;
+  }
 }
 
-.btn-groupxxx .btn-bacimg .btnsss .infor .top .en {
-  color: #d4a63f;
-  border: 1px solid #d4a63f;
-  font-family: "Fredericka the Great", cursive;
+.btn-groupxxx .btn-bacimg .btnsss .infor .top .icon01 {
+  background-image: url("../img/漢堡條/FB.png");
 }
 
-.btn-groupxxx .btn-bacimg .btnsss .infor .top .cn {
-  color: #595757;
-  border: 1px solid #595757;
+.btn-groupxxx .btn-bacimg .btnsss .infor .top .icon02 {
+  background-image: url("../img/漢堡條/LINE.png");
+}
+
+.btn-groupxxx .btn-bacimg .btnsss .infor .top .icon03 {
+  background-image: url("../img/漢堡條/E-MAIL.png");
 }
 
 .btn-groupxxx .btn-bacimg .btnsss .bott {
   position: absolute;
+  font-size: 30px;
   right: 20px;
   bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .btn-groupxxx .btn-bacimg .btnsss .bott {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-groupxxx .btn-bacimg .btnsss .bott {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn-groupxxx .btn-bacimg .btnsss .bott {
+    font-size: 16px;
+  }
+}
+
+.btn-groupxxx .btn-bacimg .btnsss .bott .eng {
+  font-family: "Fredericka the Great", cursive;
+}
+
+@media (max-width: 320px) {
+  .btn-groupxxx .btn-bacimg .btnsss .bott .address {
+    display: none;
+  }
 }
 
 #fullpage .section {
@@ -1086,16 +1210,65 @@ footer {
   color: #673a1b;
 }
 
+@media (max-width: 1280px) {
+  .New .new-title .new-title-all {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .New .new-title .new-title-all {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 768px) {
+  .New .new-title .new-title-all {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .New .new-title .new-title-all {
+    font-size: 24px;
+  }
+}
+
 .New .new-title .new-title01 {
   margin-top: 10%;
   padding-left: 10px;
-  font-size: 26px;
+  font-size: 36px;
   color: #b15821;
   border-bottom: 1px solid #b15821;
 }
 
 .New .new-title .new-title01:hover {
   cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .New .new-title .new-title01 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .New .new-title .new-title01 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .New .new-title .new-title01 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .New .new-title .new-title01 {
+    font-size: 20px;
+  }
 }
 
 .New .new-title .act {
@@ -1105,7 +1278,7 @@ footer {
 
 .New .new-contexts {
   width: 80%;
-  height: calc(100vh - 30px);
+  height: 100vh;
   margin-top: 5%;
 }
 
@@ -1143,6 +1316,30 @@ footer {
   height: 50px;
 }
 
+@media (max-width: 1280px) {
+  .New .new-contexts .new-context .new-contain .new-context-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .New .new-contexts .new-context .new-contain .new-context-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .New .new-contexts .new-context .new-contain .new-context-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 320px) {
+  .New .new-contexts .new-context .new-contain .new-context-title {
+    font-size: 20px;
+  }
+}
+
 .New .new-contexts .new-context .new-contain .new-context-group {
   width: 100%;
   padding: 0 30px;
@@ -1156,7 +1353,7 @@ footer {
           justify-content: center;
 }
 
-.New .new-contexts .new-context .new-contain .new-context-group .col-sm-12,
+.New .new-contexts .new-context .new-contain .new-context-group .col-md-12,
 .New .new-contexts .new-context .new-contain .new-context-group .col-lg-4 {
   padding-left: 0;
   padding-right: 0;
@@ -1179,18 +1376,17 @@ footer {
 }
 
 .New .new-contexts .new-context .new-contain .new-context-group .news .new-imgs {
+  width: 25%;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.New .new-contexts .new-context .new-contain .new-context-group .news .new-imgs .new-img {
-  width: 90%;
-  margin-bottom: 10px;
-  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .New .new-contexts .new-context .new-contain .new-context-group .news .new-time {
