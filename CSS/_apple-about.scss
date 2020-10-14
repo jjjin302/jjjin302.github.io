@@ -16,7 +16,7 @@
     }
     #apple_effect {
         width: 100%;
-        min-height: 1250vh;
+        min-height: 1300vh;
         .parallax_window {
             position: sticky;
             top: 0;
@@ -286,7 +286,6 @@
                                     margin: 0;
                                 }
                                 @media (max-width: 320px) {
-                                    
                                 }
                             }
                             // 時間軸
@@ -318,7 +317,7 @@
                                         width: 100%;
                                         padding: 5px 5px;
                                         position: relative;
-                                        .text-02{
+                                        .text-02 {
                                             width: 100%;
                                         }
                                     }
@@ -382,7 +381,7 @@
                 }
                 // 發展年表
 
-                // 核心價值
+                // 核心價值 切板完成
                 .About-03 {
                     padding: 50px;
                     width: 90%;
@@ -390,6 +389,18 @@
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    @media (max-width: 1280px) {
+                        padding: 40px;
+                    }
+                    @media (max-width: 1024px) {
+                        padding: 30px;
+                    }
+                    @media (max-width: 768px) {
+                        padding: 20px;
+                    }
+                    @media (max-width: 320px) {
+                        padding: 10px;
+                    }
                     // 標題
                     .about-title-00 {
                         margin-top: 15%;
@@ -403,6 +414,7 @@
                             height: 40px;
                             line-height: 40px;
                             font-size: $fon36;
+                            margin-top: 0;
                         }
                         @media (max-width: 768px) {
                             font-size: $fon32;
@@ -419,25 +431,43 @@
 
                     ///內容///
                     .about-text-00 {
-                        width: 50%;
-                        font-size: 24px;
+                        width: 60%;
+                        font-size: $fon30;
                         text-align: left;
+                        @media (max-width: 1280px) {
+                            font-size: $fon24;
+                        }
+                        @media (max-width: 1024px) {
+                            font-size: $fon20;
+                            width: 65%;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: $fon16;
+                            width: 80%;
+                        }
+                        @media (max-width: 320px) {
+                            font-size: $fon14;
+                        }
                         .about-text-5-team {
                             display: flex;
                             flex-wrap: wrap;
-                            .color-gray {
-                                width: 7%;
-                                height: 30px;
-                                line-height: 30px;
-                                text-align: center;
-                                font-size: $fon20;
-                                color: #b5b5b6;
-                            }
-                            .about-text-5-text {
-                                width: 90%;
-                                color: #231815;
-                                height: 30px;
-                                line-height: 30px;
+                            .team05 {
+                                display: flex;
+                                width: 100%;
+                                .color-gray {
+                                    width: 5%;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    font-size: $fon18;
+                                    color: #b5b5b6;
+                                }
+                                .about-text-5-text {
+                                    width: 95%;
+                                    color: #231815;
+                                    height: 30px;
+                                    line-height: 30px;
+                                }
                             }
                         }
                     }
@@ -445,28 +475,83 @@
                 }
                 // 核心價值
 
-                // 園區主題介紹
+                // 園區主題介紹 切板完成
                 .About-06 {
                     color: #231815;
                     padding-top: 10%;
                     padding-left: 30%;
+                    @media (max-width: 1280px) {
+                        padding-top: 10%;
+                        padding-left: 15%;
+                    }
+                    @media (max-width: 1024px) {
+                        padding-top: 10%;
+                    }
+                    @media (max-width: 768px) {
+                        padding-top: 10%;
+                    }
+                    @media (max-width: 320px) {
+                        padding-top: 10%;
+                    }
                     .en-title {
-                        width: 70%;
-                        font-size: 150px;
-                        font-family: "Fredericka the Great", cursive;
+                        width: 80%;
+                        display: flex;
+
+                        .en-name {
+                            width: 50%;
+                            font-family: "Fredericka the Great", cursive;
+                            font-size: 150px;
+                            @media (max-width: 1280px) {
+                                font-size: 100px;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: 80px;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: 60px;
+                            }
+                            @media (max-width: 320px) {
+                                font-size: $fon48;
+                            }
+                        }
                         .line-01 {
+                            width: 30%;
+                            border-bottom: 1px solid #b15821;
                             color: #b15821;
-                            font-size: 20px;
+
+                            @media (max-width: 1280px) {
+                                font-size: $fon18;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: $fon16;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon14;
+                            }
+                            @media (max-width: 320px) {
+                            }
                         }
                     }
                     .cn-title {
                         width: 70%;
                         font-size: 120px;
+                        @media (max-width: 1280px) {
+                            font-size: 80px;
+                        }
+                        @media (max-width: 1024px) {
+                            font-size: 60px;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: 40px;
+                        }
+                        @media (max-width: 320px) {
+                            font-size: $fon32;
+                        }
                     }
                 }
                 // 園區主題介紹
 
-                // 鼓樂饗宴
+                // 鼓樂饗宴 切板完成
                 .sec-07 {
                     width: 100%;
                     height: 100%;
@@ -491,48 +576,115 @@
                     }
                     .title-07 {
                         width: 50%;
-                        height: 10%;
                         display: flex;
                         justify-content: center;
                         align-content: center;
+                        @media (max-width: 1280px) {
+                            width: 60%;
+                        }
+                        @media (max-width: 768px) {
+                            width: 70%;
+                        }
+                        @media (max-width: 320px) {
+                            width: 80%;
+                        }
+
                         .fas.fa-circle {
                             color: #595757;
                             font-size: 14px;
                             line-height: 100px;
+                            @media (max-width: 1280px) {
+                                line-height: 80px;
+                            }
+                            @media (max-width: 768px) {
+                                line-height: 72px;
+                            }
+                            @media (max-width: 320px) {
+                                line-height: 64px;
+                            }
                         }
-                        .sec-07-line {
+                        .sec-07-title {
                             width: 50%;
                             height: 50px;
                             line-height: 50px;
                             border-bottom: 1px solid #b15821;
-                            .sec-07-title {
-                                width: 100%;
-                                font-size: $fon48;
-                                text-align: center;
-                                color: #673a1b;
+                            font-size: $fon48;
+                            text-align: center;
+                            color: #673a1b;
+                            @media (max-width: 1280px) {
+                                height: 40px;
+                                line-height: 40px;
+                                font-size: $fon36;
+                                margin-top: 0;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon32;
+                                height: 36px;
+                                line-height: 36px;
+                            }
+                            @media (max-width: 320px) {
+                                font-size: $fon20;
+                                height: 32px;
+                                line-height: 32px;
                             }
                         }
                     }
                     .sec-07-context {
                         width: 60%;
-                        height: 80%;
+                        height: 85%;
                         background-color: #0b6c6d;
                         border-radius: 150px;
                         color: #f7f8f8;
                         text-align: left;
                         padding: 50px;
                         position: relative;
+                        @media (max-width: 1280px) {
+                            width: 70%;
+                            border-radius: 150px;
+                            padding: 40px;
+                        }
+                        @media (max-width: 1024px) {
+                            width: 80%;
+                            border-radius: 120px;
+                            padding: 30px;
+                        }
+                        @media (max-width: 768px) {
+                            width: 90%;
+                            border-radius: 90px;
+                        }
+                        @media (max-width: 320px) {
+                            border-radius: 60px;
+                        }
                         .img-group {
                             padding: 30px;
                             margin: auto;
-                            height: 50%;
+                            height: 30%;
                             margin-bottom: 5%;
+                            background-image: url("../img/十鼓樂團/3張合併_工作區域\ 1.png");
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        h3 {
+                            margin: 0;
                         }
                         .sty-bol {
                             font-weight: bolder;
                         }
                         .sec-07-text {
                             font-size: $fon30;
+                            @media (max-width: 1280px) {
+                                font-size: $fon24;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: $fon20;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon18;
+                            }
+                            @media (max-width: 320px) {
+                                font-size: $fon14;
+                            }
                         }
                         .sec-07-more {
                             width: 10%;
@@ -546,36 +698,68 @@
                             border-radius: 10px;
                             font-family: "Fredericka the Great", cursive;
                             padding: 5px;
+
                             &:hover {
                                 cursor: pointer;
+                                letter-spacing: 2px;
+                                transition: 0.5s;
                             }
                         }
                     }
                 }
                 // 鼓樂饗宴
 
-                // 極限體驗
+                // 極限體驗 切板完成
                 .title-08 {
                     width: 50%;
-                    height: 10%;
                     display: flex;
                     justify-content: center;
                     align-content: center;
+                    @media (max-width: 1280px) {
+                        width: 60%;
+                    }
+                    @media (max-width: 768px) {
+                        width: 70%;
+                    }
+                    @media (max-width: 320px) {
+                        width: 80%;
+                    }
                     .fas.fa-circle {
                         color: #595757;
                         font-size: 14px;
                         line-height: 100px;
+                        @media (max-width: 1280px) {
+                            line-height: 80px;
+                        }
+                        @media (max-width: 768px) {
+                            line-height: 72px;
+                        }
+                        @media (max-width: 320px) {
+                            line-height: 56px;
+                        }
                     }
-                    .sec-08-line {
+                    .sec-08-title {
                         width: 50%;
                         height: 50px;
                         line-height: 50px;
                         border-bottom: 1px solid #b15821;
-                        .sec-08-title {
-                            width: 100%;
-                            font-size: $fon48;
-                            text-align: center;
-                            color: #673a1b;
+                        font-size: $fon48;
+                        text-align: center;
+                        color: #673a1b;
+                        @media (max-width: 1280px) {
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: $fon36;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: $fon32;
+                            height: 36px;
+                            line-height: 36px;
+                        }
+                        @media (max-width: 320px) {
+                            font-size: $fon20;
+                            height: 28px;
+                            line-height: 28px;
                         }
                     }
                 }
@@ -590,11 +774,14 @@
                     text-align: left;
                     .img-group {
                         margin: auto;
-                        padding: 30px;
                         width: 80%;
-
-                        .sec-08-img {
-                            width: 90%;
+                        height: 50%;
+                        background-image: url("../img/主頁背景/關於-極限體驗.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        @media (max-width: 768px) {
+                            width: 80%;
                         }
                     }
                     .sec-08-textbox {
@@ -610,6 +797,18 @@
                         .sec-08-text {
                             width: 80%;
                             font-size: $fon30;
+                            @media (max-width: 1280px) {
+                                font-size: $fon24;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: $fon20;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon18;
+                            }
+                            @media (max-width: 320px) {
+                                font-size: $fon14;
+                            }
                         }
                         .sec-08-more {
                             width: 10%;
@@ -617,8 +816,8 @@
 
                             text-align: center;
                             position: absolute;
-                            right: 50px;
-                            bottom: 0;
+                            right: 10px;
+                            bottom: 10px;
                             background-color: #0b6c6d;
                             border-radius: 10px;
                             font-family: "Fredericka the Great", cursive;
