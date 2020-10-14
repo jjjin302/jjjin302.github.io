@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Document</title>
+
+
+    <style>
+        body {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .park_pag {
+            /* height: calc(100vh - 30px); */
+            display: flex;
+            flex-wrap: wrap;
+            background-image: url(入園資訊/背景news.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .park_button_bar {
+            height: calc(100vh - 47px);
+            width: 20%;
+            /* background-color: antiquewhite; */
+            display: flex;
+
+
+        }
+
+        .park_photo_R {
+            height: calc(100vh - 47px);
+            width: 80%;
+            /* background-color: rgb(233, 95, 40); */
+            display: flex;
+            align-items: center;
+        }
+
+        .park_button_g {
+            height: 50%;
+            width: 50%;
+            /* background-color: rgb(40, 53, 233); */
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+
+
+
+
+        }
+
+        .park_tittle {
+            height: 20%;
+            width: 100%;
+            /* background-color: rgb(79, 233, 40); */
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .park_lease_box {
+            height: 20%;
+            width: 100%;
+            /* background-color: rgb(233, 40, 159); */
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .park_lease_box:hover{
+            /* background-color: royalblue; */
+            color: royalblue;
+        }
+
+
+        .park_show {
+            height: 20%;
+            width: 100%;
+            /* background-color: rgb(233, 40, 159); */
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        .park_tour {
+            height: 20%;
+            width: 100%;
+            /* background-color: rgb(233, 40, 159); */
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        .park_photobox {
+            height: 80%;
+            width: 100%;
+            /* background-color: rgb(140, 40, 233); */
+
+        }
+
+        .park_inf {
+            height: 100%;
+            width: 100%;
+            /* background-color: cornflowerblue; */
+            display: none;
+        }
+
+        .park_inf_photo {
+            height: 100%;
+            width: 100%;
+            /* background-color: darksalmon; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        footer {
+            width: 100%;
+            height: 30px;
+            background-color: #B15821;
+            margin: auto;
+            color: #F7F8F8;
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+
+        /* --------開關顯示---- */
+
+        .park_active {
+            display: block;
+        }
+
+        .park_lease_box.park_active {
+            background-color: rgb(149, 218, 58);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .style_img{
+            width: 100%;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div class="park_pag">
+        <div class="park_button_bar">
+            <div class="park_button_g ">
+                <div class="park_tittle">入園資訊</div>
+                <div class="park_lease_box">開園時間</div>
+                <div class="park_lease_box">票價資訊</div>
+                <div class="park_lease_box">交通資訊</div>
+
+                <a class="park_tour"
+                    href="https://tendrum.com.tw/userfiles/images/%E5%9C%92%E5%8D%80%E5%9C%B0%E5%9C%96_%E8%A8%AD%E6%96%BD%E6%99%82%E5%88%BB%E8%A1%A8DM(%E4%B8%AD%E6%96%87%E7%89%88)-%E6%AD%A3%E8%83%8C%E9%9D%A2-01-%E5%AE%98%E7%B6%B2%E5%B0%8F(1).jpg">園區導覽</a>
+
+                <a class="park_show" href="https://jjjin302.github.io/04-Drum.html">定目劇演出</a>
+
+
+
+            </div>
+
+        </div>
+        <div class="park_photo_R">
+            <div class="park_photobox">
+                <div class="park_inf park_active">
+                    <div class="park_inf_photo">
+                        <img class="style_img" src="img/開園時間-02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="park_inf">
+                    <div class="park_inf_photo">
+                        <img class="style_img" src="img/票價資訊_工作區域 1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="park_inf">
+                    <div class="park_inf_photo">\
+                        <img class="style_img" src="img/交通資訊2_工作區域 1.jpg" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>版權聲明</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+        var park_lease_boxs = document.querySelectorAll('.park_lease_box')
+        var park_infs = document.querySelectorAll('.park_inf')
+
+
+
+        for (var i = 0; i < park_lease_boxs.length; i++) {
+
+            const park_lease_box = park_lease_boxs[i];
+            const park_inf = park_infs[i];
+
+
+            park_lease_box.onclick = function () {
+                remove_park_active()
+
+                park_lease_box.classList.add('park_active');
+                park_inf.classList.add('park_active');
+
+            }
+        }
+
+        function remove_park_active() {
+            for (var i = 0; i < park_lease_boxs.length; i++) {
+                const park_lease_box = park_lease_boxs[i];
+                const park_inf = park_infs[i]
+
+                park_lease_box.classList.remove('park_active')
+                park_inf.classList.remove('park_active')
+
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
