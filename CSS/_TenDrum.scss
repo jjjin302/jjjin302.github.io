@@ -1,6 +1,6 @@
 
-@mixin container() {
-    // margin: auto;
+@mixin contain() {
+    margin: auto;
     width: 1280px;
 
     @media (max-width: 1280px) {

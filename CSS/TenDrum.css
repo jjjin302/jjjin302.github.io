@@ -2200,8 +2200,6 @@ footer {
 #apple_effect {
   width: 100%;
   min-height: 850vh;
-  background-color: #ebe3d4;
-  position: relative;
 }
 
 #apple_effect .parallax_window {
@@ -2210,14 +2208,38 @@ footer {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   text-align: center;
 }
 
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window {
+    height: 700px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #apple_effect .parallax_window {
+    height: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window {
+    height: 400px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window {
+    height: 100%;
+  }
+}
+
 #apple_effect .parallax_window .effect_box {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -2226,11 +2248,23 @@ footer {
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .sec {
+    background-size: cover;
+  }
 }
 
 #apple_effect .parallax_window .effect_box .sec-01 {
   background-image: url("../img/關於頁面/1.關於十鼓-修正(降).jpg");
+}
+
+@media (max-width: 1024px) {
+  #apple_effect .parallax_window .effect_box .sec-01 {
+    margin-bottom: 5%;
+  }
 }
 
 #apple_effect .parallax_window .effect_box .sec-02 {
@@ -2281,6 +2315,30 @@ footer {
           align-items: flex-end;
 }
 
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .About {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #apple_effect .parallax_window .effect_box .About {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window .effect_box .About {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window .effect_box .About {
+    padding: 10px;
+  }
+}
+
 #apple_effect .parallax_window .effect_box .About .about-title-00 {
   margin-top: 15%;
   width: 50%;
@@ -2291,15 +2349,64 @@ footer {
   text-align: left;
 }
 
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .About .about-title-00 {
+    margin-top: 10%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window .effect_box .About .about-title-00 {
+    font-size: 32px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window .effect_box .About .about-title-00 {
+    font-size: 20px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
 #apple_effect .parallax_window .effect_box .About .about-text-00 {
-  width: 50%;
+  width: 60%;
   font-size: 30px;
   text-align: left;
 }
 
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .About .about-text-00 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #apple_effect .parallax_window .effect_box .About .about-text-00 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window .effect_box .About .about-text-00 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window .effect_box .About .about-text-00 {
+    font-size: 16px;
+  }
+}
+
 #apple_effect .parallax_window .effect_box .About .about-title-01 {
-  margin-top: 5%;
-  width: 50%;
+  margin-top: 3%;
+  width: 60%;
   font-size: 48px;
   height: 60px;
   line-height: 60px;
@@ -2307,24 +2414,78 @@ footer {
   text-align: left;
 }
 
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .About .about-title-01 {
+    margin-top: 2%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window .effect_box .About .about-title-01 {
+    margin-top: 1%;
+    font-size: 30px;
+    height: 34px;
+    line-height: 34px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window .effect_box .About .about-title-01 {
+    font-size: 20px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
 #apple_effect .parallax_window .effect_box .About .about-text-01 {
-  width: 50%;
+  margin-top: 2%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
+  font-size: 30px;
   text-align: left;
 }
 
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .About .about-text-01 {
+    font-size: 24px;
+    width: 75%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #apple_effect .parallax_window .effect_box .About .about-text-01 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window .effect_box .About .about-text-01 {
+    margin-top: 2.5%;
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window .effect_box .About .about-text-01 {
+    font-size: 14px;
+  }
+}
+
 #apple_effect .parallax_window .effect_box .About .about-text-01 .text-wrap {
-  padding: 0 10px;
+  padding: 0 5px;
   width: 50%;
 }
 
 #apple_effect .parallax_window .effect_box .About-02 {
   padding: 50px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2335,6 +2496,30 @@ footer {
           align-items: flex-start;
 }
 
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .About-02 {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #apple_effect .parallax_window .effect_box .About-02 {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window .effect_box .About-02 {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window .effect_box .About-02 {
+    padding: 10px;
+  }
+}
+
 #apple_effect .parallax_window .effect_box .About-02 .about-title-02 {
   margin-top: 5%;
   width: 15%;
@@ -2343,6 +2528,30 @@ footer {
   line-height: 60px;
   color: #673a1b;
   text-align: right;
+}
+
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .About-02 .about-title-02 {
+    height: 40px;
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window .effect_box .About-02 .about-title-02 {
+    font-size: 32px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window .effect_box .About-02 .about-title-02 {
+    font-size: 20px;
+    height: 32px;
+    line-height: 32px;
+  }
 }
 
 #apple_effect .parallax_window .effect_box .About-02 .about-text-02 {
@@ -2492,6 +2701,30 @@ footer {
   text-align: left;
 }
 
+@media (max-width: 1280px) {
+  #apple_effect .parallax_window .effect_box .About-03 .about-title-00 {
+    height: 40px;
+    line-height: 40px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  #apple_effect .parallax_window .effect_box .About-03 .about-title-00 {
+    font-size: 32px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 320px) {
+  #apple_effect .parallax_window .effect_box .About-03 .about-title-00 {
+    font-size: 20px;
+    height: 32px;
+    line-height: 32px;
+  }
+}
+
 #apple_effect .parallax_window .effect_box .About-03 .about-text-00 {
   width: 50%;
   font-size: 24px;
@@ -2546,7 +2779,7 @@ footer {
 
 #apple_effect .parallax_window .effect_box .sec-07 {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2748,9 +2981,32 @@ footer {
   transition: 0.5s;
 }
 
-.sec-09 {
+.contain {
+  margin: auto;
+  width: 1280px;
+}
+
+@media (max-width: 1280px) {
+  .contain {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .contain {
+    width: 960px;
+  }
+}
+
+@media (max-width: 960px) {
+  .contain {
+    width: 100%;
+  }
+}
+
+.contain .sec-09 {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2761,11 +3017,14 @@ footer {
           justify-content: center;
 }
 
-.sec-09 .title-09 {
-  margin-top: 250px;
-  margin-bottom: 60px;
+@media (max-width: 1140px) {
+  .contain .sec-09 {
+    min-height: 100vh;
+  }
+}
+
+.contain .sec-09 .title-09 {
   width: 50%;
-  height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2776,74 +3035,98 @@ footer {
       align-content: center;
 }
 
-.sec-09 .title-09 .fas.fa-circle {
+.contain .sec-09 .title-09 .fas.fa-circle {
   color: #595757;
   font-size: 14px;
   line-height: 100px;
 }
 
-.sec-09 .title-09 .sec-09-line {
+.contain .sec-09 .title-09 .sec-09-line {
   width: 50%;
   height: 50px;
   line-height: 50px;
   border-bottom: 1px solid #b15821;
 }
 
-.sec-09 .title-09 .sec-09-line .sec-09-title {
+.contain .sec-09 .title-09 .sec-09-line .sec-09-title {
   width: 100%;
   font-size: 48px;
   text-align: center;
   color: #673a1b;
 }
 
-.sec-09 .sec-09-context {
-  width: 80%;
-  height: 100vh;
+@media (max-width: 1140px) {
+  .contain .sec-09 .title-09 .sec-09-line .sec-09-title {
+    font-size: 36px;
+  }
 }
 
-.sec-09 .sec-09-context .img-group-09 {
+@media (max-width: 960px) {
+  .contain .sec-09 .title-09 .sec-09-line .sec-09-title {
+    font-size: 32px;
+  }
+}
+
+.contain .sec-09 .sec-09-context {
+  width: 80%;
+  height: 100%;
+}
+
+.contain .sec-09 .sec-09-context .img-group-09 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09-01 {
+@media (max-width: 1140px) {
+  .contain .sec-09 .sec-09-context .img-group-09 {
+    height: 40%;
+  }
+}
+
+@media (max-width: 960px) {
+  .contain .sec-09 .sec-09-context .img-group-09 {
+    height: 25%;
+  }
+}
+
+.contain .sec-09 .sec-09-context .img-group-09 .img-09-01 {
   background-image: url("../img/特色餐飲/打鼓餅-正方形.jpg");
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09-02 {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09-02 {
   background-image: url("../img/特色餐飲/找鼓蛋-正方形.jpg");
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09-03 {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09-03 {
   background-image: url("../img/特色餐飲/麵線套餐-正方形.jpg");
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09-04 {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09-04 {
   background-image: url("../img/特色餐飲/甘蔗汁-正方形.jpg");
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09-05 {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09-05 {
   background-image: url("../img/特色餐飲/古追燒-正方形.jpg");
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09-06 {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09-06 {
   background-image: url("../img/特色餐飲/石鼓套餐-正方形.jpg");
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09-07 {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09-07 {
   background-image: url("../img/特色餐飲/下午茶-正方形.jpg");
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09-08 {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09-08 {
   background-image: url("../img/特色餐飲/調酒-正方形.jpg");
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 {
   width: 25%;
   height: 50%;
   background-position: center;
@@ -2860,7 +3143,19 @@ footer {
   /* to top */
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToRight {
+@media (max-width: 1140px) {
+  .contain .sec-09 .sec-09-context .img-group-09 .img-09 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 960px) {
+  .contain .sec-09 .sec-09-context .img-group-09 .img-09 {
+    width: 100%;
+  }
+}
+
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToRight {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2874,11 +3169,11 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToRight {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToRight {
   width: 100%;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-right {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-right {
   color: white;
   font-size: 30px;
   position: absolute;
@@ -2889,7 +3184,7 @@ footer {
   white-space: nowrap;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToDown {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToDown {
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -2903,12 +3198,12 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToDown {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToDown {
   bottom: 0;
   height: 100%;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-down {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-down {
   color: white;
   font-size: 30px;
   position: absolute;
@@ -2919,7 +3214,7 @@ footer {
   text-align: center;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToLeft {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToLeft {
   position: absolute;
   bottom: 0;
   left: 100%;
@@ -2933,12 +3228,12 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToLeft {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToLeft {
   width: 100%;
   left: 0;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-left {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-left {
   color: white;
   font-size: 30px;
   position: absolute;
@@ -2949,7 +3244,7 @@ footer {
   white-space: nowrap;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToTop {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 .overlay-ToTop {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2963,11 +3258,11 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToTop {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09:hover .overlay-ToTop {
   height: 100%;
 }
 
-.sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-top {
+.contain .sec-09 .sec-09-context .img-group-09 .img-09 .img-09-text-top {
   color: white;
   font-size: 30px;
   position: absolute;
@@ -2978,9 +3273,32 @@ footer {
   text-align: center;
 }
 
-.sec-10 {
+.contain {
+  margin: auto;
+  width: 1280px;
+}
+
+@media (max-width: 1280px) {
+  .contain {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .contain {
+    width: 960px;
+  }
+}
+
+@media (max-width: 960px) {
+  .contain {
+    width: 100%;
+  }
+}
+
+.contain .sec-10 {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2989,12 +3307,17 @@ footer {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 250px;
+  margin-top: 150px;
   position: relative;
 }
 
-.sec-10 .title-10 {
-  margin-top: 250px;
+@media (max-width: 1140px) {
+  .contain .sec-10 {
+    min-height: 100vh;
+  }
+}
+
+.contain .sec-10 .title-10 {
   width: 50%;
   height: 10%;
   display: -webkit-box;
@@ -3007,76 +3330,93 @@ footer {
       align-content: center;
 }
 
-.sec-10 .title-10 .fas.fa-circle {
+.contain .sec-10 .title-10 .fas.fa-circle {
   color: #595757;
   font-size: 14px;
   line-height: 100px;
 }
 
-.sec-10 .title-10 .sec-10-line {
+.contain .sec-10 .title-10 .sec-10-line {
   width: 50%;
   height: 50px;
   line-height: 50px;
   border-bottom: 1px solid #b15821;
 }
 
-.sec-10 .title-10 .sec-10-line .sec-10-title {
+.contain .sec-10 .title-10 .sec-10-line .sec-10-title {
   width: 100%;
-  font-size: 40px;
+  font-size: 48px;
   text-align: center;
   color: #673a1b;
 }
 
-.sec-10 .sec-10-container {
+@media (max-width: 1140px) {
+  .contain .sec-10 .title-10 .sec-10-line .sec-10-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 960px) {
+  .contain .sec-10 .title-10 .sec-10-line .sec-10-title {
+    font-size: 32px;
+  }
+}
+
+.contain .sec-10 .sec-10-container {
   width: 80%;
-  height: 100vh;
-  padding-bottom: 50px;
+  height: 90%;
+}
+
+.contain .sec-10 .sec-10-container .img-group-10 {
+  width: 100%;
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.sec-10 .sec-10-container .img10-01 {
+@media (max-width: 1140px) {
+  .contain .sec-10 .sec-10-container .img-group-10 {
+    height: 40%;
+  }
+}
+
+@media (max-width: 960px) {
+  .contain .sec-10 .sec-10-container .img-group-10 {
+    height: 25%;
+  }
+}
+
+.contain .sec-10 .sec-10-container .img-group-10 .img10-01 {
   background-image: url("https://p1-news.hfcdn.com/p1-news/MTkyOTgxOG5ld3M,/0625bb5d8dd31c0f_1600x892.jpg/qs/w=600&h=600&r=16888");
 }
 
-.sec-10 .sec-10-container .img10-02 {
+.contain .sec-10 .sec-10-container .img-group-10 .img10-02 {
   background-image: url("https://tendrum.com.tw/userfiles/images/%E5%A4%A2%E7%B3%96%E5%8A%87%E5%A0%B4.JPG");
 }
 
-.sec-10 .sec-10-container .img10-03 {
+.contain .sec-10 .sec-10-container .img-group-10 .img10-03 {
   background-image: url("https://4.bp.blogspot.com/-Yt2ya6JDw4Q/WIlwI0FiLTI/AAAAAAAAAZc/vG2BKWcjW2w9bR5DTqLFhk_-TU7pCy1AACPcB/s640/DSC01273%25E5%2584%25AA.JPG");
 }
 
-.sec-10 .sec-10-container .img10-04 {
+.contain .sec-10 .sec-10-container .img-group-10 .img10-04 {
   background-image: url("https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/53698446_2035164049870931_960115960218386432_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_ohc=vJxT8UzrJg4AX_SFcHb&_nc_ht=scontent.frmq2-1.fna&oh=767f344476aa44d42fd7f8462820bf5d&oe=5FA8E661");
 }
 
-.sec-10 .sec-10-container .img10-05 {
+.contain .sec-10 .sec-10-container .img-group-10 .img10-05 {
   background-image: url("https://scontent.frmq2-1.fna.fbcdn.net/v/t1.0-9/1546149_245354755641215_1890074086_n.jpg?_nc_cat=106&_nc_sid=cdbe9c&_nc_ohc=6YnhIBLqRngAX8CZvku&_nc_ht=scontent.frmq2-1.fna&oh=20902ed9058fbb40d048a22bdc7c70cd&oe=5FA7E82F");
 }
 
-.sec-10 .sec-10-container .img10-06 {
+.contain .sec-10 .sec-10-container .img-group-10 .img10-06 {
   background-image: url("https://scontent.frmq2-2.fna.fbcdn.net/v/t31.0-8/13568759_627617080748312_8856479280367360089_o.jpg?_nc_cat=101&_nc_sid=730e14&_nc_ohc=jBo7ZywhPagAX9LedrG&_nc_ht=scontent.frmq2-2.fna&oh=a144b38bcbb6e3bc5e234569930a6d8e&oe=5FA685A2");
 }
 
-.sec-10 .sec-10-container .sec-10-img {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img {
   width: 33.33%;
   height: 50%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3090,7 +3430,19 @@ footer {
   /* to top */
 }
 
-.sec-10 .sec-10-container .sec-10-img .overlay-ToRight {
+@media (max-width: 1140px) {
+  .contain .sec-10 .sec-10-container .img-group-10 .sec-10-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 960px) {
+  .contain .sec-10 .sec-10-container .img-group-10 .sec-10-img {
+    width: 100%;
+  }
+}
+
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img .overlay-ToRight {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3104,22 +3456,22 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-10 .sec-10-container .sec-10-img:hover .overlay-ToRight {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img:hover .overlay-ToRight {
   width: 100%;
 }
 
-.sec-10 .sec-10-container .sec-10-img .img-10-text-right {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img .img-10-text-right {
   color: white;
   font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 
-.sec-10 .sec-10-container .sec-10-img .overlay-ToDown {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img .overlay-ToDown {
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -3133,23 +3485,23 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-10 .sec-10-container .sec-10-img:hover .overlay-ToDown {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img:hover .overlay-ToDown {
   bottom: 0;
   height: 100%;
 }
 
-.sec-10 .sec-10-container .sec-10-img .img-10-text-down {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img .img-10-text-down {
   color: white;
   font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.sec-10 .sec-10-container .sec-10-img .overlay-ToLeft {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img .overlay-ToLeft {
   position: absolute;
   bottom: 0;
   left: 100%;
@@ -3163,23 +3515,23 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-10 .sec-10-container .sec-10-img:hover .overlay-ToLeft {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img:hover .overlay-ToLeft {
   width: 100%;
   left: 0;
 }
 
-.sec-10 .sec-10-container .sec-10-img .img-10-text-left {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img .img-10-text-left {
   color: white;
   font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 
-.sec-10 .sec-10-container .sec-10-img .overlay-ToTop {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img .overlay-ToTop {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3193,18 +3545,18 @@ footer {
   transition: 0.5s ease;
 }
 
-.sec-10 .sec-10-container .sec-10-img .overlay-ToTop .img-10-text-top {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img .overlay-ToTop .img-10-text-top {
   color: white;
   font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.sec-10 .sec-10-container .sec-10-img:hover .overlay-ToTop {
+.contain .sec-10 .sec-10-container .img-group-10 .sec-10-img:hover .overlay-ToTop {
   height: 100%;
 }
 /*# sourceMappingURL=TenDrum.css.map */
