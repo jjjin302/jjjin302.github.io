@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family:'cwTeXFangSong','cwTeXKai', 'Noto Sans TC', '微軟正黑體', sans-serif;
+    font-family: "cwTeXFangSong", "cwTeXKai", "Noto Sans TC", "微軟正黑體", sans-serif;
 }
 a {
     text-decoration: none;
@@ -19,18 +19,26 @@ body {
     position: relative;
     height: 100%;
 }
-.display-none{
+.display-none {
     display: none;
 }
-
-footer{
+$fon48: 48px;
+$fon36: 36px;
+$fon32: 32px;
+$fon30: 30px;
+$fon24: 24px;
+$fon20: 20px;
+$fon18: 18px;
+$fon16: 16px;
+$fon14: 14px;
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color: #B15821;
+    background-color: #b15821;
     margin: auto;
-    color: #F7F8F8;
+    color: #f7f8f8;
     font-size: 16px;
     text-align: center;
     line-height: 30px;
