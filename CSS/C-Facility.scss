@@ -1,0 +1,148 @@
+$fon48: 48px;
+$fon46: 46px;
+$fon42: 42px;
+$fon36: 36px;
+$fon32: 32px;
+$fon30: 30px;
+$fon24: 24px;
+$fon20: 20px;
+$fon18: 18px;
+$fon16: 16px;
+$fon14: 14px;
+.Facility {
+    width: 100%;
+    min-height: calc(100vh - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #eab854;
+    opacity: 0.8;
+    .bag-img {
+        position: absolute;
+        width: 100%;
+        height: 90vh;
+        background-image: url("./img/插圖/雙飛飛人.png");
+        background-repeat: no-repeat;
+    }
+    .margin-use {
+        width: 8%;
+    }
+    .facility-title {
+        width: 15%;
+        height: 80px;
+        font-size: 54px;
+        text-align: center;
+        color: #f7f8f8;
+        border-bottom: 2px solid #f7f8f8;
+    }
+    .img-groups {
+        width: 70%;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        .img-teams {
+            width: 33.33%;
+            position: relative;
+            .bacimg-04 {
+                background-image: url("../img/設施/鞦韆_工作區域\ 1.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .overlay {
+                position: absolute;
+                z-index: 10;
+                bottom: 0;
+                left: 0;
+                right: 0;
+
+                overflow: hidden;
+                width: 0;
+                height: 100%;
+                transition: 0.5s ease;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                .text-box {
+                    width: 50%;
+                    color: #3e3a39;
+                    font-size: 24px;
+                    position: absolute;
+                }
+            }
+        }
+        .img-teams:hover .overlay {
+            width: 100%;
+        }
+        .img-team {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-items: flex-end;
+            position: relative;
+            &:hover {
+                cursor: pointer;
+            }
+
+            .image-circle {
+                width: 350px;
+                height: 350px;
+
+                border-radius: 50%;
+                border-top: 2px dashed #ffcc00;
+                border-right: 2px dashed #0b6c6d;
+                border-left: 2px dashed #f7f8f8;
+                border-bottom: 2px dashed #571212;
+                margin: 10px;
+                padding: 10px;
+                animation: spin 10s infinite linear;
+                overflow: hidden;
+            }
+            .image-circle img {
+                animation: spin 10s infinite reverse linear;
+                width: 100%;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .imggg {
+                width: 100%;
+                height: 100%;
+                .imgg {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    background-image: url("../img/設施/煙囪滑梯.jpg");
+                    background-position: center;
+                }
+            }
+
+            .img01 {
+                background-image: url("/團體專題/3.程式/img/設施/天空上的鞦韆.jpg");
+            }
+            @keyframes spin {
+                100% {
+                    transform: rotate(1turn);
+                }
+            }
+            .img-name {
+                position: absolute;
+                bottom: 90px;
+                left: -60px;
+                width: 50%;
+                height: 90px;
+                font-size: 24px;
+                text-align: center;
+                line-height: 110px;
+                background-image: url("../img/插圖/設施體驗的雲2.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: 0.5s;
+                &:hover {
+                    color: #b15821;
+                }
+            }
+        }
+    }
+}

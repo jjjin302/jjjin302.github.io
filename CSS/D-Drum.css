@@ -1,0 +1,561 @@
+#Drum_page .Drum {
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 0;
+  line-height: 1.5em;
+}
+
+#Drum_page .Drum .Drum-title-group {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-left: 3%;
+}
+
+#Drum_page .Drum .Drum-title-group .drum-big-title {
+  color: #673a1b;
+}
+
+#Drum_page .Drum .Drum-title-group a {
+  color: #7f4f21;
+}
+
+#Drum_page .Drum .Drum-title-group a:hover {
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#Drum_page .Drum .Drum-title-group a:active {
+  color: #0b6c6d;
+  border-bottom: 1px solid #ea5514;
+}
+
+#Drum_page .book {
+  -webkit-transition: opacity 0.4s 0.2s;
+  transition: opacity 0.4s 0.2s;
+}
+
+#Drum_page .page {
+  width: 30vw;
+  height: 40vw;
+  background-color: #111111;
+  float: left;
+  margin-bottom: 0.5em;
+  background: left top no-repeat;
+  background-size: cover;
+}
+
+#Drum_page .page .page-img {
+  width: 100%;
+  height: 100%;
+}
+
+#Drum_page .page .page-text-about {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #d4a63f;
+  position: relative;
+}
+
+#Drum_page .page .page-text-about span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 5px solid #0b6c6d;
+}
+
+#Drum_page .page .page-text-about h3 {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #f7f8f8;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: #0b6c6d;
+}
+
+#Drum_page .page .page-text-about h6 {
+  width: 100%;
+  font-weight: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+#Drum_page .page .page-text-about h6 .text-time {
+  width: 15%;
+  height: 100%;
+}
+
+#Drum_page .page .page-text-about h6 .text-con {
+  width: 85%;
+}
+
+#Drum_page .page .page-text-note {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #d4a63f;
+  position: relative;
+}
+
+#Drum_page .page .page-text-note .line01 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 5px solid #0b6c6d;
+}
+
+#Drum_page .page .page-text-note h3 {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #f7f8f8;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#Drum_page .page .page-text-note h6 {
+  width: 100%;
+  font-weight: unset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+#Drum_page .page .page-text-note h6 .text-time {
+  width: 15%;
+  height: 100%;
+}
+
+#Drum_page .page .page-text-note h6 .text-con {
+  width: 85%;
+}
+
+#Drum_page .page .page-text-award {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+#Drum_page .page .page-text-award h3 {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #231815;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#Drum_page .page .page-text-award h6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+#Drum_page .page .page-text-award h6 .text-time {
+  width: 15%;
+}
+
+#Drum_page .page .page-text-award h6 .text-con {
+  width: 85%;
+}
+
+#Drum_page .page .page-text-award .page-img-01 {
+  margin-top: 50px;
+  height: 30%;
+}
+
+#Drum_page .page .page-text-award .line02 {
+  width: 20px;
+  border-bottom: 5px solid #bc6821;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#Drum_page .page .page-text-artist {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  position: relative;
+}
+
+#Drum_page .page .page-text-artist .line03 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 5px solid #0b6c6d;
+}
+
+#Drum_page .page .page-text-artist h3 {
+  width: 50%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #231815;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#Drum_page .page .page-text-artist .img-groups {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Drum_page .page .page-text-artist .img-groups .art {
+  position: relative;
+  width: 33.33%;
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .overlay-zoom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #efefef;
+  border: 1px solid #e9c37c;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#Drum_page .page .page-text-artist .img-groups .art:hover .overlay-zoom {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+#Drum_page .page .page-text-artist .img-groups .art:hover .overlay-zoom .art-name {
+  color: #231815;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#Drum_page .page .page-text-drama {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  background-color: #d4a63f;
+  position: relative;
+  color: #f7f8f8;
+}
+
+#Drum_page .page .page-text-drama .line04 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-left: 5px solid #0b6c6d;
+}
+
+#Drum_page .page .page-text-drama .drama-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+#Drum_page .page .page-text-drama .drama-con h3 {
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#Drum_page .page .page-text-drama .drama-con .pl-text {
+  width: 70%;
+  height: 30px;
+}
+
+#Drum_page .page .page-text-drama .drama-img {
+  height: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#Drum_page .page .video {
+  background-color: #b15821;
+  width: 100%;
+  height: 100%;
+  padding: 60px 50px;
+}
+
+#Drum_page .page .video .video-01 {
+  width: 100%;
+  height: 30%;
+  background-color: #efe5cb;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#Drum_page .page .video .video-01 .dvd {
+  width: 40%;
+  height: 25%;
+}
+
+#Drum_page .page .video .video-01 .dvd-text {
+  width: 50%;
+}
+
+#Drum_page .page .video .video-01 .dvd-text h4 {
+  width: 100%;
+}
+
+#Drum_page .page .video .video-01 .dvd-text h5 {
+  width: 100%;
+}
+
+#Drum_page .page .video .video-02 {
+  width: 100%;
+  height: 30%;
+  border: 1px solid #efe5cb;
+  border-radius: 20px;
+  padding: 10px 0;
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#Drum_page .page .video .video-02 .dvd {
+  width: 40%;
+  height: 25%;
+}
+
+#Drum_page .page .video .video-02 .dvd-text {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#Drum_page .page .video .video-02 .dvd-text h4 {
+  width: 100%;
+}
+
+#Drum_page .page .video .video-02 .dvd-text h5 {
+  width: 100%;
+}
+
+#Drum_page .page:nth-child(even) {
+  clear: both;
+}
+
+#Drum_page .Book {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#Drum_page .Book .book {
+  -webkit-perspective: 250vw;
+          perspective: 250vw;
+}
+
+#Drum_page .book .pages {
+  width: 60vw;
+  height: 40vw;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 4px;
+}
+
+#Drum_page .book .page {
+  float: none;
+  clear: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 30vw;
+  height: 40vw;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 1.4s;
+  transition: -webkit-transform 1.4s;
+  transition: transform 1.4s;
+  transition: transform 1.4s, -webkit-transform 1.4s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #f0f0f0;
+}
+
+#Drum_page .book .page:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: background 0.7s;
+  transition: background 0.7s;
+  z-index: 2;
+}
+
+#Drum_page .book .page:nth-child(odd) {
+  pointer-events: all;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  right: 0;
+  border-radius: 0 4px 4px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.15)), color-stop(10%, rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 10%);
+}
+
+#Drum_page .book .page:nth-child(odd):hover {
+  -webkit-transform: rotateY(-15deg);
+          transform: rotateY(-15deg);
+}
+
+#Drum_page .book .page:nth-child(odd):hover:before {
+  background: rgba(188, 104, 33, 0.03);
+}
+
+#Drum_page .book .page:nth-child(odd):before {
+  background: rgba(188, 104, 33, 0);
+}
+
+#Drum_page .book .page:nth-child(even) {
+  pointer-events: none;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+  left: 0;
+  border-radius: 4px 0 0 4px;
+  border-color: black;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(188, 104, 33, 0.12)), color-stop(10%, rgba(188, 104, 33, 0)));
+  background-image: linear-gradient(to left, rgba(188, 104, 33, 0.12) 0%, rgba(188, 104, 33, 0) 10%);
+}
+
+#Drum_page .book .page:nth-child(even):before {
+  background: rgba(188, 104, 33, 0.2);
+}
+
+#Drum_page .book .page.grabbing {
+  -webkit-transition: none;
+  transition: none;
+}
+
+#Drum_page .book .page.flipped:nth-child(odd) {
+  pointer-events: none;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+#Drum_page .book .page.flipped:nth-child(odd):before {
+  background: rgba(188, 104, 33, 0.2);
+}
+
+#Drum_page .book .page.flipped:nth-child(even) {
+  pointer-events: all;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+#Drum_page .book .page.flipped:nth-child(even):hover {
+  -webkit-transform: rotateY(15deg);
+          transform: rotateY(15deg);
+}
+
+#Drum_page .book .page.flipped:nth-child(even):hover:before {
+  background: rgba(188, 104, 33, 0.03);
+}
+
+#Drum_page .book .page.flipped:nth-child(even):before {
+  background: rgba(188, 104, 33, 0);
+}
+
+#Drum_page *,
+#Drum_page * :before,
+#Drum_page *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#Drum_page .page:nth-child(odd) {
+  background-position: right top;
+}
+/*# sourceMappingURL=D-Drum.css.map */

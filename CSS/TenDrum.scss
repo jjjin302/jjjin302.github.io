@@ -46,21 +46,7 @@ footer {
     line-height: 30px;
 }
 @import "./TenDrum";
-@import "./index";
 @import "./hamberger";
-@import "./apple-about";
-@import "./no-use/About";
-@import "./News";
-@import "./Facility";
-@import "./Drum";
-@import "./Information";
-@import "./Rented";
-@include Index();
+
 @include hamberger();
-@include about01();
-@include news();
-@include Facility();
-@include Drum();
-@include Information();
-@include Rented();
-@include apple();
+

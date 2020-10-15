@@ -1,0 +1,205 @@
+$fon48: 48px;
+$fon46: 46px;
+$fon42: 42px;
+$fon36: 36px;
+$fon32: 32px;
+$fon30: 30px;
+$fon24: 24px;
+$fon20: 20px;
+$fon18: 18px;
+$fon16: 16px;
+$fon14: 14px;
+.New {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url("../img/主頁背景/news-降_工作區域\ 1.jpg");
+
+    // 左邊清單 切板完成
+    .new-title {
+        margin-top: 5%;
+        margin-left: 10px;
+        padding: 25px;
+        width: 20%;
+        .new-title-all {
+            font-size: 54px;
+            font-weight: bold;
+            margin-bottom: 60px;
+            color: #673a1b;
+            @media (max-width: 1280px) {
+                font-size: $fon48;
+            }
+            @media (max-width: 1024px) {
+                font-size: $fon46;
+            }
+            @media (max-width: 768px) {
+                font-size: $fon42;
+                margin-bottom: 30px;
+            }
+            @media (max-width: 320px) {
+                font-size: $fon24;
+            }
+        }
+        .new-title01 {
+            margin-top: 10%;
+            padding-left: 10px;
+            font-size: $fon36;
+            color: #b15821;
+            border-bottom: 1px solid #b15821;
+            &:hover {
+                cursor: pointer;
+            }
+            @media (max-width: 1280px) {
+                font-size: $fon32;
+            }
+            @media (max-width: 1024px) {
+                font-size: $fon30;
+            }
+            @media (max-width: 768px) {
+                font-size: $fon24;
+            }
+            @media (max-width: 320px) {
+                font-size: $fon20;
+            }
+        }
+        .act {
+            border-bottom: none;
+            color: #231815;
+        }
+    }
+    // 左邊清單
+    // 消息內容
+    .new-contexts {
+        width: 80%;
+        height: 100vh;
+        margin-top: 5%;
+        .new-context {
+            display: none;
+            .new-contain {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .fas.fa-circle {
+                    font-size: 12px;
+                    line-height: 100px;
+                    color: #0b6c6d;
+                    padding: 0 5px;
+                }
+                .new-context-title {
+                    width: 50%;
+                    margin-bottom: 5%;
+                    font-size: $fon36;
+                    font-weight: bold;
+                    color: #3e3a39;
+                    text-align: center;
+                    border-bottom: 1px solid #727171;
+
+                    height: 50px;
+                    @media (max-width: 1280px) {
+                        font-size: $fon32;
+                    }
+
+                    @media (max-width: 1024px) {
+                        font-size: $fon30;
+                    }
+
+                    @media (max-width: 768px) {
+                        font-size: $fon24;
+                    }
+
+                    @media (max-width: 320px) {
+                        font-size: $fon20;
+                    }
+                }
+                .new-context-group {
+                    width: 100%;
+                    padding: 0 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .col-md-12,
+                    .col-lg-4 {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    .news {
+                        height: 90%;
+                        padding: 15px;
+                        margin: 1%;
+                        background-color: rgba(64, 34, 15, 0.3);
+                        border-radius: 20px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        .new-imgs {
+                            width: 25%;
+                            height: 300px;
+                            display: flex;
+                            justify-content: center;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                        }
+                        .new-img-01 {
+                        }
+                        .new-img-02 {
+                        }
+                        .new-img-03 {
+                        }
+                        .new-img-04 {
+                        }
+                        .new-img-05 {
+                        }
+                        .new-img-06 {
+                        }
+
+                        .new-time {
+                            width: 100%;
+                            text-align: left;
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                        }
+                        .new-name {
+                            width: 100%;
+                            font-size: 18px;
+                            text-align: left;
+                        }
+                        .new-mores {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-content: flex-end;
+                            .new-more {
+                                widows: 90%;
+                                font-family: "Fredericka the Great", cursive;
+                                font-size: 20px;
+                                color: #f7f8f8;
+                                background: #b15821;
+                                border-radius: 10px;
+                                text-align: center;
+                                height: 30px;
+                                line-height: 30px;
+                                padding: 1px;
+                                letter-spacing: 5px;
+                                &:hover {
+                                    cursor: pointer;
+                                    letter-spacing: 3px;
+                                    transition: 0.3s;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .actt {
+            display: block;
+        }
+    }
+    // 消息內容
+}
+footer {
+    position: absolute;
+    bottom: 0;
+}

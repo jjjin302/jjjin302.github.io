@@ -1,0 +1,178 @@
+@charset "UTF-8";
+.Facility {
+  width: 100%;
+  min-height: calc(100vh - 30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  background-color: #eab854;
+  opacity: 0.8;
+}
+
+.Facility .bag-img {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  background-image: url("./img/插圖/雙飛飛人.png");
+  background-repeat: no-repeat;
+}
+
+.Facility .margin-use {
+  width: 8%;
+}
+
+.Facility .facility-title {
+  width: 15%;
+  height: 80px;
+  font-size: 54px;
+  text-align: center;
+  color: #f7f8f8;
+  border-bottom: 2px solid #f7f8f8;
+}
+
+.Facility .img-groups {
+  width: 70%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Facility .img-groups .img-teams {
+  width: 33.33%;
+  position: relative;
+}
+
+.Facility .img-groups .img-teams .bacimg-04 {
+  background-image: url("../img/設施/鞦韆_工作區域 1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Facility .img-groups .img-teams .overlay {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.Facility .img-groups .img-teams .overlay .text-box {
+  width: 50%;
+  color: #3e3a39;
+  font-size: 24px;
+  position: absolute;
+}
+
+.Facility .img-groups .img-teams:hover .overlay {
+  width: 100%;
+}
+
+.Facility .img-groups .img-team {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-items: flex-end;
+  position: relative;
+}
+
+.Facility .img-groups .img-team:hover {
+  cursor: pointer;
+}
+
+.Facility .img-groups .img-team .image-circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border-top: 2px dashed #ffcc00;
+  border-right: 2px dashed #0b6c6d;
+  border-left: 2px dashed #f7f8f8;
+  border-bottom: 2px dashed #571212;
+  margin: 10px;
+  padding: 10px;
+  -webkit-animation: spin 10s infinite linear;
+          animation: spin 10s infinite linear;
+  overflow: hidden;
+}
+
+.Facility .img-groups .img-team .image-circle img {
+  animation: spin 10s infinite reverse linear;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.Facility .img-groups .img-team .imggg {
+  width: 100%;
+  height: 100%;
+}
+
+.Facility .img-groups .img-team .imggg .imgg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url("../img/設施/煙囪滑梯.jpg");
+  background-position: center;
+}
+
+.Facility .img-groups .img-team .img01 {
+  background-image: url("/團體專題/3.程式/img/設施/天空上的鞦韆.jpg");
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+.Facility .img-groups .img-team .img-name {
+  position: absolute;
+  bottom: 90px;
+  left: -60px;
+  width: 50%;
+  height: 90px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 110px;
+  background-image: url("../img/插圖/設施體驗的雲2.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.Facility .img-groups .img-team .img-name:hover {
+  color: #b15821;
+}
+/*# sourceMappingURL=C-Facility.css.map */

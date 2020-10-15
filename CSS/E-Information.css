@@ -1,0 +1,149 @@
+@charset "UTF-8";
+.park_pag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.park_button_bar {
+  height: calc(100vh - 30px);
+  width: 20%;
+  background-color: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.park_photo_R {
+  height: calc(100vh - 30px);
+  width: 80%;
+  background-color: #e95f28;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.park_button_g {
+  height: 50%;
+  width: 50%;
+  background-color: #2835e9;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.park_tittle {
+  height: 20%;
+  width: 100%;
+  background-color: #4fe928;
+  font-size: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.park_lease_box {
+  height: 20%;
+  width: 100%;
+  background-color: #e9289f;
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.park_show {
+  height: 20%;
+  width: 100%;
+  background-color: #e9289f;
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+}
+
+.park_photobox {
+  height: 100%;
+  width: 100%;
+  background-color: #8c28e9;
+}
+
+.park_inf {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+  display: none;
+}
+
+.park_inf_photo {
+  height: 100%;
+  width: 100%;
+  /* background-color: darksalmon; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: #b15821;
+  margin: auto;
+  color: #f7f8f8;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+}
+
+/* --------開關顯示---- */
+.park_active {
+  display: block;
+}
+
+.park_lease_box.park_active {
+  background-color: #d61e1e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=E-Information.css.map */

@@ -1,0 +1,230 @@
+$fon48: 48px;
+$fon46: 46px;
+$fon42: 42px;
+$fon36: 36px;
+$fon32: 32px;
+$fon30: 30px;
+$fon24: 24px;
+$fon20: 20px;
+$fon18: 18px;
+$fon16: 16px;
+$fon14: 14px;
+.Rented {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .button-bar {
+        height: calc(100vh - 30px);
+        width: 20%;
+        background-color: #e9e1d3;
+        display: flex;
+        .button-g {
+            height: 50%;
+            width: 50%;
+
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            .rented-tittle {
+                height: 20%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #673a1b;
+                font-weight: bolder;
+            }
+            .lease-box {
+                height: 20%;
+                width: 100%;
+
+                font-size: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                // h2 {
+                //     $color-gray: #666;
+                //     $color-black: #000;
+                //     $stripe-height: 7px;
+                //     $btn-color: $color-gray;
+                //     $btn-background: #fff;
+                //     $btn-color-hover: #fff;
+                //     $btn-background-hover: $color-gray;
+                //     $border-color: $color-gray;
+                //     $border-color-hover: $color-black;
+
+                //     @mixin reset-button {
+                //         overflow: visible;
+                //         margin: 0;
+                //         padding: 0;
+                //         border: 0;
+                //         background: transparent;
+                //         font: inherit;
+                //         line-height: normal;
+                //         cursor: pointer;
+                //         -moz-user-select: text;
+
+                //         &:-moz-focus-inner {
+                //             padding: 0;
+                //             border: 0;
+                //         }
+                //     }
+
+                //     @keyframes stripe-slide {
+                //         0% {
+                //             background-position: 0% 0;
+                //         }
+                //         100% {
+                //             background-position: 100% 0;
+                //         }
+                //     }
+
+                //     body {
+                //         width: 100%;
+                //         height: 100vh;
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;
+                //         flex-direction: column;
+                //         font-family: sans-serif;
+                //     }
+
+                //     .btnn {
+                //         @include reset-button;
+                //         display: block;
+                //         text-decoration: none;
+                //         text-transform: uppercase;
+                //         padding: 16px 36px 22px;
+                //         background-color: $btn-background;
+                //         color: $btn-color;
+                //         border: 2px solid $border-color;
+                //         border-radius: 6px;
+                //         margin-bottom: 16px;
+                //         transition: all 0.5s ease;
+
+                //         &--stripe {
+                //             overflow: hidden;
+                //             position: relative;
+
+                //             &:after {
+                //                 content: "";
+                //                 display: block;
+                //                 height: $stripe-height;
+                //                 width: 100%;
+                //                 background-image: repeating-linear-gradient(
+                //                     45deg,
+                //                     $border-color,
+                //                     $border-color 1px,
+                //                     transparent 2px,
+                //                     transparent 5px
+                //                 );
+                //                 -webkit-backface-visibility: hidden;
+                //                 backface-visibility: hidden;
+                //                 border-top: 1px solid $border-color;
+                //                 position: absolute;
+                //                 left: 0;
+                //                 bottom: 0;
+                //                 background-size: $stripe-height $stripe-height;
+                //             }
+
+                //             &:hover {
+                //                 background-color: $btn-background-hover;
+                //                 color: $btn-color-hover;
+                //                 border-color: $border-color-hover;
+
+                //                 &:after {
+                //                     background-image: repeating-linear-gradient(
+                //                         45deg,
+                //                         $btn-color-hover,
+                //                         $btn-color-hover 1px,
+                //                         transparent 2px,
+                //                         transparent 5px
+                //                     );
+                //                     border-top: 1px solid $border-color-hover;
+                //                     animation: stripe-slide 12s infinite linear forwards;
+                //                 }
+                //             }
+                //         }
+
+                //         &--large {
+                //             width: 50%;
+                //         }
+
+                //         &--radius {
+                //             border-radius: 36px;
+                //         }
+                //     }
+                // }
+                .text-box {
+                    width: 80%;
+
+                    line-height: 36px;
+                    font-size: 30px;
+                    text-align: start;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .photo-R {
+        height: calc(100vh - 30px);
+        width: 80%;
+        background-color: #e9e1d3;
+        display: flex;
+        align-items: center;
+        .photo {
+            height: 80%;
+            width: 100%;
+            background-color: rgb(140, 40, 233);
+            /* ---輪播CSS--- */
+
+            .swiper-container {
+                width: 100%;
+                height: 100%;
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #e9e1d3;
+
+                    /* Center slide text vertically */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    .rented-img {
+                        width: 80%;
+                        height: 100%;
+                    }
+                    .text-center {
+                        padding: 5px;
+                        background-color: rgba($color: #b15821, $alpha: 0.5);
+                        color: #f7f8f8;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .swiper-pagination-bullet {
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgb(216, 150, 150);
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 30px;
+        background-color: #b15821;
+        margin: auto;
+        color: #f7f8f8;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
+    }
+}
