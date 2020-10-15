@@ -10,6 +10,13 @@ $fon18: 18px;
 $fon16: 16px;
 $fon14: 14px;
 #Drum_page {
+    background-image: url("../img/鼓樂饗宴/鼓樂饗宴背景.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
     .Drum {
         width: 100%;
         min-height: 100%;
@@ -45,9 +52,6 @@ $fon14: 14px;
     }
     // 項目清單
     // 翻書效果
-    .book {
-        transition: opacity 0.4s 0.2s;
-    }
     .page {
         width: 30vw;
         height: 40vw;
@@ -56,18 +60,31 @@ $fon14: 14px;
         margin-bottom: 0.5em;
         background: left top no-repeat;
         background-size: cover;
+        // 封面
+        .img-set {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img-00 {
+            width: 100%;
+            height: 100%;
+            background-image: url("../img/十鼓樂團/封面_工作區域\ 1.jpg");
+        }
+        // 封面
         // 第一頁圖片
         .page-img {
             width: 100%;
             height: 100%;
+            background-image: url("../img/鼓樂饗宴/鼓的傳說.jpg");
         }
         // 第一頁
-        // 第二頁
+        // 第二頁 關於
         .page-text-about {
             width: 100%;
             height: 100%;
             padding: 30px;
-            background-color: #d4a63f;
+            background-color: #f4f3ed;
             position: relative;
             span {
                 position: absolute;
@@ -141,6 +158,7 @@ $fon14: 14px;
         .page-text-award {
             width: 100%;
             height: 100%;
+            background-color: #ffffff;
             padding: 30px;
             display: flex;
             flex-direction: column;
@@ -184,7 +202,7 @@ $fon14: 14px;
             width: 100%;
             height: 100%;
             padding: 25px;
-
+            background-color: #ffffff;
             position: relative;
             .line03 {
                 position: absolute;
@@ -207,43 +225,59 @@ $fon14: 14px;
                 flex-wrap: wrap;
                 .art {
                     position: relative;
-                    width: 33.33%;
-                    .art-img {
-                        display: block;
-                        width: 100%;
-                        height: auto;
+                    width: 33.33% ;
+                    height: 100% ;
+
+                    .art-img01 {                        
+                        background-image: url("../img/樂團成員/成員去背/王昱淇-截圖.png");
                     }
-                    .overlay-zoom {
+                    .art-img02{
+                        background-image: url('../img/樂團成員/成員去背/林孟緯拷貝.png');
+                    }
+                    .art-img03{
+                        background-image: url('../img/樂團成員/成員去背/李意瑩.png');
+                    }
+                    .art-img04{
+                        background-image: url('../img/樂團成員/成員去背/許瑋庭.png');
+                    }
+                    .art-img05{}
+                    .art-img06{}
+
+                    .art-img {
+                        width: 250px;
+                        height: 250px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        position: relative;
+                    }
+                    .overlay-ToRight {
                         position: absolute;
                         bottom: 0;
                         left: 0;
                         right: 0;
                         background-color: #efefef;
-                        border: 1px solid #e9c37c;
+                        // border: 1px solid #e9c37c;
+                        opacity: 0.8;
                         overflow: hidden;
-                        width: 100%;
+                        width: 0;
                         height: 100%;
-                        -webkit-transform: scale(0);
-                        -ms-transform: scale(0);
-                        transform: scale(0);
-                        -webkit-transition: 0.3s ease;
-                        transition: 0.3s ease;
-                    }
-                    &:hover .overlay-zoom {
-                        -webkit-transform: scale(1);
-                        -ms-transform: scale(1);
-                        transform: scale(1);
+                        transition: 0.5s ease;
                         .art-name {
+                            width: 100%;
+                            height: 100%;
                             color: #231815;
-                            font-size: 20px;
+                            font-size: $fon18;
                             position: absolute;
                             top: 50%;
                             left: 50%;
-                            -webkit-transform: translate(-50%, -50%);
-                            -ms-transform: translate(-50%, -50%);
                             transform: translate(-50%, -50%);
-                            text-align: center;
+                            white-space: nowrap;
+                            text-align: left;
                         }
+                    }
+                    &:hover>.overlay-ToRight {
+                        width:100%;
                     }
                 }
             }
@@ -367,9 +401,9 @@ $fon14: 14px;
         height: 40vw;
         position: relative;
         transform-style: preserve-3d;
-        backface-visibility: hidden;
+        // backface-visibility: hidden;
+        // backface-visibility: visible;
         border-radius: 4px;
-        // box-shadow: 0 0 0 1px #e3dfd8;
     }
     .book .page {
         float: none;
@@ -384,8 +418,9 @@ $fon14: 14px;
         backface-visibility: hidden;
         transform-style: preserve-3d;
         cursor: pointer;
-        user-select: none;
-        background-color: #f0f0f0;
+        user-select: auto;
+        
+        // background-color: #f0f0f0;
     }
     .book .page:before {
         content: "";
@@ -394,25 +429,28 @@ $fon14: 14px;
         bottom: 0;
         left: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0);
-        transition: background 0.7s;
-        z-index: 2;
+        // background: rgba(0, 0, 0, 0);
+        // transition: background 0.7s;
+        // z-index: 2;
+        z-index: 0;
     }
     .book .page:nth-child(odd) {
-        pointer-events: all;
+        // pointer-events: all;
+        // pointer-events: visibleFill;
         transform: rotateY(0deg);
         right: 0;
         border-radius: 0 4px 4px 0;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 10%);
+        // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 10%);
     }
+    // 翻起頁角效果(左邊
     .book .page:nth-child(odd):hover {
-        transform: rotateY(-15deg);
+        // transform: rotateY(-15deg);
     }
     .book .page:nth-child(odd):hover:before {
-        background: rgba(188, 104, 33, 0.03);
+        // background: rgba(188, 104, 33, 0.03);
     }
     .book .page:nth-child(odd):before {
-        background: rgba(188, 104, 33, 0);
+        // background: rgba(188, 104, 33, 0);
     }
     .book .page:nth-child(even) {
         pointer-events: none;
@@ -424,30 +462,32 @@ $fon14: 14px;
         background-image: linear-gradient(to left, rgba(188, 104, 33, 0.12) 0%, rgba(188, 104, 33, 0) 10%);
     }
     .book .page:nth-child(even):before {
-        background: rgba(188, 104, 33, 0.2);
+        // background: rgba(188, 104, 33, 0.2);
     }
-    .book .page.grabbing {
+    //原 .book .page.grabbing
+    .book .page.grab {
         transition: none;
     }
     .book .page.flipped:nth-child(odd) {
-        pointer-events: none;
+        pointer-events: all;
         transform: rotateY(-180deg);
     }
     .book .page.flipped:nth-child(odd):before {
-        background: rgba(188, 104, 33, 0.2);
+        // background: rgba(188, 104, 33, 0.2);
     }
     .book .page.flipped:nth-child(even) {
         pointer-events: all;
         transform: rotateY(0deg);
     }
+    // 翻起頁角效果(右邊
     .book .page.flipped:nth-child(even):hover {
-        transform: rotateY(15deg);
+        // transform: rotateY(15deg);
     }
     .book .page.flipped:nth-child(even):hover:before {
-        background: rgba(188, 104, 33, 0.03);
+        // background: rgba(188, 104, 33, 0.03);
     }
     .book .page.flipped:nth-child(even):before {
-        background: rgba(188, 104, 33, 0);
+        // background: rgba(188, 104, 33, 0);
     }
     *,
     * :before,

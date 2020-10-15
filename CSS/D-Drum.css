@@ -1,3 +1,13 @@
+@charset "UTF-8";
+#Drum_page {
+  background-image: url("../img/鼓樂饗宴/鼓樂饗宴背景.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
 #Drum_page .Drum {
   width: 100%;
   min-height: 100%;
@@ -44,11 +54,6 @@
   border-bottom: 1px solid #ea5514;
 }
 
-#Drum_page .book {
-  -webkit-transition: opacity 0.4s 0.2s;
-  transition: opacity 0.4s 0.2s;
-}
-
 #Drum_page .page {
   width: 30vw;
   height: 40vw;
@@ -59,16 +64,29 @@
   background-size: cover;
 }
 
+#Drum_page .page .img-set {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#Drum_page .page .img-00 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/十鼓樂團/封面_工作區域 1.jpg");
+}
+
 #Drum_page .page .page-img {
   width: 100%;
   height: 100%;
+  background-image: url("../img/鼓樂饗宴/鼓的傳說.jpg");
 }
 
 #Drum_page .page .page-text-about {
   width: 100%;
   height: 100%;
   padding: 30px;
-  background-color: #d4a63f;
+  background-color: #f4f3ed;
   position: relative;
 }
 
@@ -154,6 +172,7 @@
 #Drum_page .page .page-text-award {
   width: 100%;
   height: 100%;
+  background-color: #ffffff;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +227,7 @@
   width: 100%;
   height: 100%;
   padding: 25px;
+  background-color: #ffffff;
   position: relative;
 }
 
@@ -240,44 +260,64 @@
 #Drum_page .page .page-text-artist .img-groups .art {
   position: relative;
   width: 33.33%;
+  height: 100%;
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img01 {
+  background-image: url("../img/樂團成員/成員去背/王昱淇-截圖.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img02 {
+  background-image: url("../img/樂團成員/成員去背/林孟緯拷貝.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img03 {
+  background-image: url("../img/樂團成員/成員去背/李意瑩.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img04 {
+  background-image: url("../img/樂團成員/成員去背/許瑋庭.png");
 }
 
 #Drum_page .page .page-text-artist .img-groups .art .art-img {
-  display: block;
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
 }
 
-#Drum_page .page .page-text-artist .img-groups .art .overlay-zoom {
+#Drum_page .page .page-text-artist .img-groups .art .overlay-ToRight {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #efefef;
-  border: 1px solid #e9c37c;
+  opacity: 0.8;
   overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .overlay-ToRight .art-name {
   width: 100%;
   height: 100%;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-#Drum_page .page .page-text-artist .img-groups .art:hover .overlay-zoom {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-#Drum_page .page .page-text-artist .img-groups .art:hover .overlay-zoom .art-name {
   color: #231815;
-  font-size: 20px;
+  font-size: 18px;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: left;
+}
+
+#Drum_page .page .page-text-artist .img-groups .art:hover > .overlay-ToRight {
+  width: 100%;
 }
 
 #Drum_page .page .page-text-drama {
@@ -430,8 +470,6 @@
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   border-radius: 4px;
 }
 
@@ -454,11 +492,10 @@
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-color: #f0f0f0;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
 }
 
 #Drum_page .book .page:before {
@@ -468,33 +505,14 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0);
-  -webkit-transition: background 0.7s;
-  transition: background 0.7s;
-  z-index: 2;
+  z-index: 0;
 }
 
 #Drum_page .book .page:nth-child(odd) {
-  pointer-events: all;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
   right: 0;
   border-radius: 0 4px 4px 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.15)), color-stop(10%, rgba(0, 0, 0, 0)));
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 10%);
-}
-
-#Drum_page .book .page:nth-child(odd):hover {
-  -webkit-transform: rotateY(-15deg);
-          transform: rotateY(-15deg);
-}
-
-#Drum_page .book .page:nth-child(odd):hover:before {
-  background: rgba(188, 104, 33, 0.03);
-}
-
-#Drum_page .book .page:nth-child(odd):before {
-  background: rgba(188, 104, 33, 0);
 }
 
 #Drum_page .book .page:nth-child(even) {
@@ -510,42 +528,21 @@
   background-image: linear-gradient(to left, rgba(188, 104, 33, 0.12) 0%, rgba(188, 104, 33, 0) 10%);
 }
 
-#Drum_page .book .page:nth-child(even):before {
-  background: rgba(188, 104, 33, 0.2);
-}
-
-#Drum_page .book .page.grabbing {
+#Drum_page .book .page.grab {
   -webkit-transition: none;
   transition: none;
 }
 
 #Drum_page .book .page.flipped:nth-child(odd) {
-  pointer-events: none;
+  pointer-events: all;
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
-}
-
-#Drum_page .book .page.flipped:nth-child(odd):before {
-  background: rgba(188, 104, 33, 0.2);
 }
 
 #Drum_page .book .page.flipped:nth-child(even) {
   pointer-events: all;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
-}
-
-#Drum_page .book .page.flipped:nth-child(even):hover {
-  -webkit-transform: rotateY(15deg);
-          transform: rotateY(15deg);
-}
-
-#Drum_page .book .page.flipped:nth-child(even):hover:before {
-  background: rgba(188, 104, 33, 0.03);
-}
-
-#Drum_page .book .page.flipped:nth-child(even):before {
-  background: rgba(188, 104, 33, 0);
 }
 
 #Drum_page *,
