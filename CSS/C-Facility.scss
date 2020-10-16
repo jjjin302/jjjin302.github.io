@@ -17,173 +17,173 @@ $fon14: 14px;
     margin: auto;
     background-color: #eab854;
     opacity: 0.8;
-    .bag-img {
-        position: absolute;
-        width: 100%;
-        height: 90vh;
-        background-image: url("./img/插圖/雙飛飛人.png");
-        background-repeat: no-repeat;
+}
+.bag-img {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    background-image: url("./img/插圖/雙飛飛人.png");
+    background-repeat: no-repeat;
+}
+
+.facility-title {
+    width: 15%;
+    height: 80px;
+    font-size: 54px;
+    text-align: center;
+    color: #f7f8f8;
+    border-bottom: 2px solid #f7f8f8;
+    @media (max-width: 1280px) {
+          font-size: $fon48;      
     }
-    .margin-use {
-        width: 8%;
+    @media (max-width: 1024px) {
+       font-size: $fon42;
     }
-    .facility-title {
-        width: 15%;
-        height: 80px;
-        font-size: 54px;
-        text-align: center;
-        color: #f7f8f8;
-        border-bottom: 2px solid #f7f8f8;
+    @media (max-width: 768px) {
+        font-size: $fon36;
     }
-    .img-groups {
-        width: 70%;
-        margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
-        .cell {
-            display: inline-block;
-            width: 30%;
-            text-align: center;
-            color: rgba(225, 225, 225, 0.5);
-            position: relative;
-        }
-        .circle01 {
-            background-image: url("../img/設施/飛天宅急便-正方形.png");
-        }
+    @media (max-width: 320px) {
+        font-size: $fon24;
+    }
+}
+.img-groups {
+    width: 85%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    color: rgba(225, 225, 225, 0.5);
+    position: relative;    
+    @media (max-width: 1024px) {
+    width: 50%;       
+    }
+    @media (max-width: 768px) {
+    width: 100%;
+        
+    }
+    
+}
+.circle01 {
+    background-image: url("../img/設施/飛天宅急便-正方形.png");
+}
 
-        .circle02 {
-            background-image: url("../img/設施/鋼鐵雷戰-正方形.png");
-        }
-        .circle03 {
-            background-image: url("../img/設施/蜘蛛人-正方形.png");
-        }
-        .circle04 {
-            background-image: url("../img/設施//天堂上的鞦韆-正方形.png");
-        }
-        .circle05 {
-            background-image: url("../img/設施/煙囪滑梯-正方形_.png");
-        }
-        .circle06 {
-            background-image: url("../img/設施/糖精落體-正方形.png");
-        }
+.circle02 {
+    background-image: url("../img/設施/鋼鐵雷戰-正方形.png");
+}
+.circle03 {
+    background-image: url("../img/設施/蜘蛛人-正方形.png");
+}
+.circle04 {
+    background-image: url("../img/設施//天堂上的鞦韆-正方形.png");
+}
+.circle05 {
+    background-image: url("../img/設施/煙囪滑梯-正方形_.png");
+}
+.circle06 {
+    background-image: url("../img/設施/糖精落體-正方形.png");
+}
 
-        .circle {
-            display: inline-block;
-            width: 275px;
-            height: 275px;
-            border-radius: 50%;
+.circle {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
 
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            box-shadow: 4px -40px 60px 5px inset;
-        }
-        /*// General styles */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px -40px 60px 5px inset;
+    @media (max-width: 1280px) {
+        width: 200px;
+        height: 200px;
+    }
+    @media (max-width: 1024px) {
+        width: 150px;
+        height: 150px;
+    }    
+}
+/*// General styles */
 
-        .gelatine {
-            animation: gelatine 2s infinite;
-            /* cursor: pointer; */
-            position: relative;
-        }
+.gelatine {
+    animation: gelatine 2s infinite;
+    /* cursor: pointer; */
+    position: relative;
+}
 
-        @keyframes gelatine {
-            from,
-            to {
-                transform: scale(1, 1);
-            }
+@keyframes gelatine {
+    from,
+    to {
+        transform: scale(1, 1);
+    }
 
-            25% {
-                transform: scale(0.95, 1.05);
-            }
+    25% {
+        transform: scale(0.95, 1.05);
+    }
 
-            50% {
-                transform: scale(1.05, 0.95);
-            }
+    50% {
+        transform: scale(1.05, 0.95);
+    }
 
-            75% {
-                transform: scale(0.95, 1.05);
-            }
-        }
-        .btn {
-            position: absolute;
-            left: 50px;
-            bottom: 150px;
-            width: 200px;
-            height: 90px;
-        }
-
-        .btn-img {
-            background-image: url("../img/設施/設施體驗的雲2.png");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    75% {
+        transform: scale(0.95, 1.05);
+    }
+}
+.btn.btn-img {
+    position: absolute;
+    z-index: 2;
+    left: 20%;
+    bottom: 25%;
+    width: 40%;
+    height: 90px;
+    font-size: $fon24;
+    text-align: center;
+    line-height: 90px;
+    @media (max-width: 1280px) {
+           font-size: $fon20;     
+    }
+    @media (max-width: 1024px) {
+       font-size: $fon18;
+    }
+    @media (max-width: 768px) {
+        width: 30%;
+        font-size: $fon16;
+    }
+    @media (max-width: 320px) {
+        font-size: $fon14;
+        
     }
 }
 
+.btn-img {
+    background-image: url("../img/設施/設施體驗的雲2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.body-bac {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .modal-content01 {
-    background-image: url("../img/設施/飛天宅急便hover.png");
+    background-image: url("../img/設施/飛天宅急便hover02_工作區域\ 1.png");
 }
 .modal-content02 {
     background-image: url("../img/設施/鋼鐵雷戰hover.png");
 }
 .modal-content03 {
-    background-image: url("../img/設施/蜘蛛人hover.png");
+    background-image: url("../img/設施/蜘蛛人hover02_工作區域\ 1.png");
 }
 .modal-content04 {
-    background-image: url("../img/設施/天堂上的鞦韆hover.png");
+    background-image: url("../img/設施/天堂上的鞦韆hover02_工作區域\ 1.png");
 }
 .modal-content05 {
-    background-image: url("../img/設施/煙囪滑梯hover.png");
+    background-image: url("../img/設施/煙囪滑梯hover01_工作區域\ 1.png");
 }
 .modal-content06 {
     background-image: url("../img/設施/糖精落體hover.png");
-}
-.modal-content {
-    width: 100%;
-    height: 100%;
-    background-color: unset;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: unset;
-}
-.modal-header {
-    border: unset;
-}
-.close {
-    color: #d4a63f;
-    font-size: 60px;
-}
-
-.modal-body {
-    width: 85%;
-    background-color: unset;
-    display: flex;
-    align-items: center;
-}
-
-.F-wrap-l {
-    width: 50%;
-    margin-left: 30%;
-}
-
-.F-wrap-r {
-    width: 50%;
-    padding: 20px;
-}
-
-.F-title {
-    width: 100%;
-    font-size: 30px;
-    margin-top: 40px;
-    margin-bottom: 18px;
-}
-
-.f-text {
-    width: 100%;
-    font-size: 20px;
-}
-.f-coin {
-    margin-top: 18px;
 }
