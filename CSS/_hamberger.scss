@@ -257,6 +257,8 @@
                     .btn {
                         padding: 20px;
                         width: 50%;
+                        
+                        // margin-top: 18%;
 
                         line-height: 50%;
                         text-align: center;
@@ -264,11 +266,12 @@
                         transition: 0.1s;
                         .btn-text {
                             width: 100%;
-                            height: 100%;
+                            height: 50px;
+                            line-height: 50px;
                             font-size: $fon46;
                             color: #4d483d;
                             letter-spacing: 5px;
-                            line-height: 20px;
+                           
                             &:hover {
                                 color: #efefef;
                             }

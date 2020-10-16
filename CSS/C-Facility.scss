@@ -40,109 +40,150 @@ $fon14: 14px;
         margin-top: 50px;
         display: flex;
         flex-wrap: wrap;
-        .img-teams {
-            width: 33.33%;
+        .cell {
+            display: inline-block;
+            width: 30%;
+            text-align: center;
+            color: rgba(225, 225, 225, 0.5);
             position: relative;
-            .bacimg-04 {
-                background-image: url("../img/設施/鞦韆_工作區域\ 1.png");
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
+        }
+        .circle01 {
+            background-image: url("../img/設施/飛天宅急便-正方形.png");
+        }
+
+        .circle02 {
+            background-image: url("../img/設施/鋼鐵雷戰-正方形.png");
+        }
+        .circle03 {
+            background-image: url("../img/設施/蜘蛛人-正方形.png");
+        }
+        .circle04 {
+            background-image: url("../img/設施//天堂上的鞦韆-正方形.png");
+        }
+        .circle05 {
+            background-image: url("../img/設施/煙囪滑梯-正方形_.png");
+        }
+        .circle06 {
+            background-image: url("../img/設施/糖精落體-正方形.png");
+        }
+
+        .circle {
+            display: inline-block;
+            width: 275px;
+            height: 275px;
+            border-radius: 50%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 4px -40px 60px 5px inset;
+        }
+        /*// General styles */
+
+        .gelatine {
+            animation: gelatine 2s infinite;
+            /* cursor: pointer; */
+            position: relative;
+        }
+
+        @keyframes gelatine {
+            from,
+            to {
+                transform: scale(1, 1);
             }
-            .overlay {
-                position: absolute;
-                z-index: 10;
-                bottom: 0;
-                left: 0;
-                right: 0;
 
-                overflow: hidden;
-                width: 0;
-                height: 100%;
-                transition: 0.5s ease;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-end;
+            25% {
+                transform: scale(0.95, 1.05);
+            }
 
-                .text-box {
-                    width: 50%;
-                    color: #3e3a39;
-                    font-size: 24px;
-                    position: absolute;
-                }
+            50% {
+                transform: scale(1.05, 0.95);
+            }
+
+            75% {
+                transform: scale(0.95, 1.05);
             }
         }
-        .img-teams:hover .overlay {
-            width: 100%;
+        .btn {
+            position: absolute;
+            left: 50px;
+            bottom: 150px;
+            width: 200px;
+            height: 90px;
         }
-        .img-team {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-items: flex-end;
-            position: relative;
-            &:hover {
-                cursor: pointer;
-            }
 
-            .image-circle {
-                width: 350px;
-                height: 350px;
-
-                border-radius: 50%;
-                border-top: 2px dashed #ffcc00;
-                border-right: 2px dashed #0b6c6d;
-                border-left: 2px dashed #f7f8f8;
-                border-bottom: 2px dashed #571212;
-                margin: 10px;
-                padding: 10px;
-                animation: spin 10s infinite linear;
-                overflow: hidden;
-            }
-            .image-circle img {
-                animation: spin 10s infinite reverse linear;
-                width: 100%;
-                border-radius: 50%;
-                overflow: hidden;
-            }
-            .imggg {
-                width: 100%;
-                height: 100%;
-                .imgg {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 50%;
-                    background-image: url("../img/設施/煙囪滑梯.jpg");
-                    background-position: center;
-                }
-            }
-
-            .img01 {
-                background-image: url("/團體專題/3.程式/img/設施/天空上的鞦韆.jpg");
-            }
-            @keyframes spin {
-                100% {
-                    transform: rotate(1turn);
-                }
-            }
-            .img-name {
-                position: absolute;
-                bottom: 90px;
-                left: -60px;
-                width: 50%;
-                height: 90px;
-                font-size: 24px;
-                text-align: center;
-                line-height: 110px;
-                background-image: url("../img/插圖/設施體驗的雲2.png");
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
-                transition: 0.5s;
-                &:hover {
-                    color: #b15821;
-                }
-            }
+        .btn-img {
+            background-image: url("../img/設施/設施體驗的雲2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
+}
+
+.modal-content01 {
+    background-image: url("../img/設施/飛天宅急便hover.png");
+}
+.modal-content02 {
+    background-image: url("../img/設施/鋼鐵雷戰hover.png");
+}
+.modal-content03 {
+    background-image: url("../img/設施/蜘蛛人hover.png");
+}
+.modal-content04 {
+    background-image: url("../img/設施/天堂上的鞦韆hover.png");
+}
+.modal-content05 {
+    background-image: url("../img/設施/煙囪滑梯hover.png");
+}
+.modal-content06 {
+    background-image: url("../img/設施/糖精落體hover.png");
+}
+.modal-content {
+    width: 100%;
+    height: 100%;
+    background-color: unset;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: unset;
+}
+.modal-header {
+    border: unset;
+}
+.close {
+    color: #d4a63f;
+    font-size: 60px;
+}
+
+.modal-body {
+    width: 85%;
+    background-color: unset;
+    display: flex;
+    align-items: center;
+}
+
+.F-wrap-l {
+    width: 50%;
+    margin-left: 30%;
+}
+
+.F-wrap-r {
+    width: 50%;
+    padding: 20px;
+}
+
+.F-title {
+    width: 100%;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.f-text {
+    width: 100%;
+    font-size: 20px;
+}
+.f-coin {
+    margin-top: 18px;
 }

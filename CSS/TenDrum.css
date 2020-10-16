@@ -532,11 +532,11 @@ footer {
 
 .btn-groupxxx .btn-bacimg .btnsss .btns .btn .btn-text {
   width: 100%;
-  height: 100%;
+  height: 50px;
+  line-height: 50px;
   font-size: 46px;
   color: #4d483d;
   letter-spacing: 5px;
-  line-height: 20px;
 }
 
 .btn-groupxxx .btn-bacimg .btnsss .btns .btn .btn-text:hover {
