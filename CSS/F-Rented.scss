@@ -9,23 +9,34 @@ $fon20: 20px;
 $fon18: 18px;
 $fon16: 16px;
 $fon14: 14px;
+* {
+    a {
+    }
+}
+// 切板完成
 .Rented {
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    background-image: url("../img/場地租借/場地租借背景-01_工作區域\ 1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     .button-bar {
         height: calc(100vh - 30px);
         width: 20%;
-        background-color: #e9e1d3;
+        // background-color: #e9e1d3;
         display: flex;
         .button-g {
             height: 50%;
-            width: 50%;
+            width: 100%;
 
             margin: auto;
             display: flex;
             flex-wrap: wrap;
             text-align: center;
+            // 場地租借 標題
             .rented-tittle {
                 height: 20%;
                 width: 100%;
@@ -35,135 +46,157 @@ $fon14: 14px;
                 color: #673a1b;
                 font-weight: bolder;
             }
+            // 租借要點
             .lease-box {
                 height: 20%;
                 width: 100%;
-
-                font-size: 32px;
+                text-decoration: unset;
+                font-size: $fon32;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media (max-width: 1280px) {
+                    font-size: $fon30;
+                }
+                @media (max-width: 1024px) {
+                    font-size: $fon24;
+                }
+                @media (max-width: 768px) {
+                    font-size: $fon20;
+                }
+                @media (max-width: 320px) {
+                    font-size: $fon18;
+                }
+                // 按鈕樣式
+                $color-gray: #c67b56;
+                $color-black: #595757;
+                $stripe-height: 7px;
+                $btn-color: $color-gray;
+                $btn-background: #efe5cb;
+                $btn-color-hover: #fff;
+                $btn-background-hover: #d4a63f;
+                $border-color: $color-gray;
+                $border-color-hover: #c67b56;
 
-                // h2 {
-                //     $color-gray: #666;
-                //     $color-black: #000;
-                //     $stripe-height: 7px;
-                //     $btn-color: $color-gray;
-                //     $btn-background: #fff;
-                //     $btn-color-hover: #fff;
-                //     $btn-background-hover: $color-gray;
-                //     $border-color: $color-gray;
-                //     $border-color-hover: $color-black;
+                @mixin reset-button {
+                    overflow: visible;
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    background: transparent;
+                    font: inherit;
+                    line-height: normal;
+                    cursor: pointer;
+                    -moz-user-select: text;
 
-                //     @mixin reset-button {
-                //         overflow: visible;
-                //         margin: 0;
-                //         padding: 0;
-                //         border: 0;
-                //         background: transparent;
-                //         font: inherit;
-                //         line-height: normal;
-                //         cursor: pointer;
-                //         -moz-user-select: text;
+                    &:-moz-focus-inner {
+                        padding: 0;
+                        border: 0;
+                    }
+                }
 
-                //         &:-moz-focus-inner {
-                //             padding: 0;
-                //             border: 0;
-                //         }
-                //     }
+                @keyframes stripe-slide {
+                    0% {
+                        background-position: 0% 0;
+                    }
+                    100% {
+                        background-position: 100% 0;
+                    }
+                }
 
-                //     @keyframes stripe-slide {
-                //         0% {
-                //             background-position: 0% 0;
-                //         }
-                //         100% {
-                //             background-position: 100% 0;
-                //         }
-                //     }
+                .btn {
+                    @include reset-button;
+                    display: block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 16px 10px 22px;
+                    background-color: $btn-background;
+                    color: $color-black;
+                    // border: 2px solid $border-color;
+                    border-radius: 6px;
+                    margin-bottom: 16px;
+                    transition: all 0.5s ease;
 
-                //     body {
-                //         width: 100%;
-                //         height: 100vh;
-                //         display: flex;
-                //         justify-content: center;
-                //         align-items: center;
-                //         flex-direction: column;
-                //         font-family: sans-serif;
-                //     }
+                    &--stripe {
+                        overflow: hidden;
+                        position: relative;
 
-                //     .btnn {
-                //         @include reset-button;
-                //         display: block;
-                //         text-decoration: none;
-                //         text-transform: uppercase;
-                //         padding: 16px 36px 22px;
-                //         background-color: $btn-background;
-                //         color: $btn-color;
-                //         border: 2px solid $border-color;
-                //         border-radius: 6px;
-                //         margin-bottom: 16px;
-                //         transition: all 0.5s ease;
+                        &:after {
+                            content: "";
+                            display: block;
+                            height: $stripe-height;
+                            width: 100%;
+                            background-image: repeating-linear-gradient(
+                                45deg,
+                                $border-color,
+                                $border-color 1px,
+                                transparent 2px,
+                                transparent 5px
+                            );
+                            -webkit-backface-visibility: hidden;
+                            backface-visibility: hidden;
+                            border-top: 1px solid $border-color;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            background-size: $stripe-height $stripe-height;
+                        }
 
-                //         &--stripe {
-                //             overflow: hidden;
-                //             position: relative;
+                        &:hover {
+                            background-color: $btn-background-hover;
+                            color: $btn-color-hover;
+                            border-color: $border-color-hover;
 
-                //             &:after {
-                //                 content: "";
-                //                 display: block;
-                //                 height: $stripe-height;
-                //                 width: 100%;
-                //                 background-image: repeating-linear-gradient(
-                //                     45deg,
-                //                     $border-color,
-                //                     $border-color 1px,
-                //                     transparent 2px,
-                //                     transparent 5px
-                //                 );
-                //                 -webkit-backface-visibility: hidden;
-                //                 backface-visibility: hidden;
-                //                 border-top: 1px solid $border-color;
-                //                 position: absolute;
-                //                 left: 0;
-                //                 bottom: 0;
-                //                 background-size: $stripe-height $stripe-height;
-                //             }
+                            &:after {
+                                background-image: repeating-linear-gradient(
+                                    45deg,
+                                    $btn-color-hover,
+                                    $btn-color-hover 1px,
+                                    transparent 2px,
+                                    transparent 5px
+                                );
+                                border-top: 1px solid $border-color-hover;
+                                animation: stripe-slide 12s infinite linear forwards;
+                            }
+                        }
+                    }
 
-                //             &:hover {
-                //                 background-color: $btn-background-hover;
-                //                 color: $btn-color-hover;
-                //                 border-color: $border-color-hover;
+                    &--large {
+                        width: 50%;
+                    }
 
-                //                 &:after {
-                //                     background-image: repeating-linear-gradient(
-                //                         45deg,
-                //                         $btn-color-hover,
-                //                         $btn-color-hover 1px,
-                //                         transparent 2px,
-                //                         transparent 5px
-                //                     );
-                //                     border-top: 1px solid $border-color-hover;
-                //                     animation: stripe-slide 12s infinite linear forwards;
-                //                 }
-                //             }
-                //         }
+                    &--radius {
+                        border-radius: 36px;
+                    }
+                }
+                // 按鈕樣式
 
-                //         &--large {
-                //             width: 50%;
-                //         }
+                .modal-content {
+                    width: 100%;                    
+                    background-color: rgba($color: #e9e1d3, $alpha: 0.9);
+                    
+                    .modal-header{
+                        
+                    }
+                    .text-box {
+                        width: 80%;
 
-                //         &--radius {
-                //             border-radius: 36px;
-                //         }
-                //     }
-                // }
-                .text-box {
-                    width: 80%;
-
-                    line-height: 36px;
-                    font-size: 30px;
-                    text-align: start;
-                    margin: auto;
+                        font-size: $fon30;
+                        text-align: start;
+                        margin: auto;
+                        @media (max-width: 1280px) {
+                            font-size: $fon24;
+                        }
+                        @media (max-width: 1024px) {
+                            font-size: $fon20;
+                        }
+                        @media (max-width: 768px) {
+                            font-size: $fon18;
+                        }
+                        @media (max-width: 320px) {
+                            font-size: $fon16;
+                        }
+                    }
                 }
             }
         }
@@ -172,13 +205,13 @@ $fon14: 14px;
     .photo-R {
         height: calc(100vh - 30px);
         width: 80%;
-        background-color: #e9e1d3;
+        // background-color: #e9e1d3;
         display: flex;
         align-items: center;
         .photo {
             height: 80%;
             width: 100%;
-            background-color: rgb(140, 40, 233);
+            // background-color: rgb(140, 40, 233);
             /* ---輪播CSS--- */
 
             .swiper-container {
@@ -187,7 +220,7 @@ $fon14: 14px;
                 .swiper-slide {
                     text-align: center;
                     font-size: 18px;
-                    background: #e9e1d3;
+                    // background: #e9e1d3;
 
                     /* Center slide text vertically */
                     display: flex;
@@ -197,15 +230,50 @@ $fon14: 14px;
                     .rented-img {
                         width: 80%;
                         height: 100%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    .rented-img01{
+                        background-image: url('../img/場地租借/石鼓會議廳-2.jpg');
+                    }
+                    .rented-img02{
+                        background-image: url('../img/場地租借/永不出軌宴會廳-1.jpg');
+                    }
+                    .rented-img03{
+                        background-image: url('../img/場地租借/齒輪舞台-3.jpg');
+                    }
+                    .rented-img04{
+                        background-image: url('../img/場地租借/水槽劇場-4.jpg');
                     }
                     .text-center {
-                        padding: 5px;
+                        width: 300px;
+                        height: 300px;
+                        padding: 8px;
                         background-color: rgba($color: #b15821, $alpha: 0.5);
                         color: #f7f8f8;
                         position: absolute;
                         top: 50%;
                         left: 50%;
+                        font-size: $fon30;
+                        text-align: center;
+                        line-height: 50px;
                         transform: translate(-50%, -50%);
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+                        
+                        @media (max-width: 768px) {
+                            width: 150px;
+                            height: 150px; 
+                            font-size: $fon16; 
+                            line-height: 25px;
+                            padding: 0;
+                        }
+                        .text-set {
+                            width: 100%;
+                        }
                     }
                 }
                 .swiper-pagination-bullet {
@@ -223,8 +291,8 @@ $fon14: 14px;
         background-color: #b15821;
         margin: auto;
         color: #f7f8f8;
-        font-size: 16px;
+        font-size: $fon16;
         text-align: center;
-        line-height: 30px;
+        line-height: $fon30;
     }
 }

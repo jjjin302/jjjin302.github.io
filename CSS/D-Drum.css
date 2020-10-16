@@ -54,9 +54,15 @@
   border-bottom: 1px solid #ea5514;
 }
 
+@media (max-width: 320px) {
+  #Drum_page .Drum {
+    display: none;
+  }
+}
+
 #Drum_page .page {
-  width: 30vw;
-  height: 40vw;
+  width: 36vw;
+  height: 88vh;
   background-color: #111111;
   float: left;
   margin-bottom: 0.5em;
@@ -259,7 +265,7 @@
 
 #Drum_page .page .page-text-artist .img-groups .art {
   position: relative;
-  width: 33.33%;
+  width: 50%;
   height: 100%;
 }
 
@@ -279,9 +285,37 @@
   background-image: url("../img/樂團成員/成員去背/許瑋庭.png");
 }
 
+#Drum_page .page .page-text-artist .img-groups .art .art-img05 {
+  background-image: url("../img/樂團成員/成員去背/吳鴻村.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img06 {
+  background-image: url("../img/樂團成員/成員去背/江逸芹.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img07 {
+  background-image: url("../img/樂團成員/成員去背/林薏軒.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img08 {
+  background-image: url("../img/樂團成員/成員去背/張嘉方.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img09 {
+  background-image: url("../img/樂團成員/成員去背/徐霈純.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img10 {
+  background-image: url("../img/樂團成員/成員去背/黃士芬.png");
+}
+
+#Drum_page .page .page-text-artist .img-groups .art .art-img11 {
+  background-image: url("../img/樂團成員/成員去背/黃志荃.png");
+}
+
 #Drum_page .page .page-text-artist .img-groups .art .art-img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -318,6 +352,7 @@
 
 #Drum_page .page .page-text-artist .img-groups .art:hover > .overlay-ToRight {
   width: 100%;
+  border: 1px solid #e9c37c;
 }
 
 #Drum_page .page .page-text-drama {
@@ -345,15 +380,17 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 50px;
   width: 100%;
   height: 50%;
 }
 
-#Drum_page .page .page-text-drama .drama-con h3 {
+#Drum_page .page .page-text-drama .drama-con .drama-title {
   text-align: center;
   width: 100%;
   height: 50px;
   line-height: 50px;
+  font-size: 32px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -363,18 +400,43 @@
   height: 30px;
 }
 
+#Drum_page .page .page-text-drama .drama-con .drama-sub-t {
+  font-size: 30px;
+}
+
+#Drum_page .page .page-text-drama .drama-con .drama-text {
+  font-size: 24px;
+}
+
 #Drum_page .page .page-text-drama .drama-img {
-  height: 30%;
+  height: 40%;
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
 #Drum_page .page .video {
+  position: relative;
+  z-index: 2;
   background-color: #b15821;
   width: 100%;
   height: 100%;
   padding: 60px 50px;
+}
+
+#Drum_page .page .video .video-00 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #Drum_page .page .video .video-01 {
@@ -384,14 +446,6 @@
   border-radius: 20px;
   padding: 10px 0;
   margin: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#Drum_page .page .video .video-01 .dvd {
-  width: 40%;
-  height: 25%;
 }
 
 #Drum_page .page .video .video-01 .dvd-text {
@@ -404,6 +458,29 @@
 
 #Drum_page .page .video .video-01 .dvd-text h5 {
   width: 100%;
+  letter-spacing: 2px;
+}
+
+#Drum_page .page .video .dvd {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+#Drum_page .page .video .dvd-img01 {
+  background-image: url("../img/鼓樂饗宴/天空斬照片.jpeg");
+}
+
+#Drum_page .page .video .dvd-img02 {
+  background-image: url("../img/鼓樂饗宴/風馳雷擊照片.jpg");
+}
+
+#Drum_page .page .video .dvd-img03 {
+  background-image: url("../img/鼓樂饗宴/祈天獻日照片.jpg");
 }
 
 #Drum_page .page .video .video-02 {
@@ -420,11 +497,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-#Drum_page .page .video .video-02 .dvd {
-  width: 40%;
-  height: 25%;
 }
 
 #Drum_page .page .video .video-02 .dvd-text {
@@ -465,8 +537,8 @@
 }
 
 #Drum_page .book .pages {
-  width: 60vw;
-  height: 40vw;
+  width: 72vw;
+  height: 88vh;
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -479,8 +551,8 @@
   margin: 0;
   position: absolute;
   top: 0;
-  width: 30vw;
-  height: 40vw;
+  width: 36vw;
+  height: 88vh;
   -webkit-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transition: -webkit-transform 1.4s;
@@ -496,6 +568,7 @@
      -moz-user-select: auto;
       -ms-user-select: auto;
           user-select: auto;
+  background-color: #f0f0f0;
 }
 
 #Drum_page .book .page:before {
@@ -505,6 +578,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  background: rgba(0, 0, 0, 0);
   z-index: 0;
 }
 
@@ -513,6 +587,14 @@
           transform: rotateY(0deg);
   right: 0;
   border-radius: 0 4px 4px 0;
+}
+
+#Drum_page .book .page:nth-child(odd):hover:before {
+  background: rgba(188, 104, 33, 0.03);
+}
+
+#Drum_page .book .page:nth-child(odd):before {
+  background: rgba(188, 104, 33, 0);
 }
 
 #Drum_page .book .page:nth-child(even) {
@@ -528,6 +610,10 @@
   background-image: linear-gradient(to left, rgba(188, 104, 33, 0.12) 0%, rgba(188, 104, 33, 0) 10%);
 }
 
+#Drum_page .book .page:nth-child(even):before {
+  background: rgba(188, 104, 33, 0.2);
+}
+
 #Drum_page .book .page.grab {
   -webkit-transition: none;
   transition: none;
@@ -539,10 +625,22 @@
           transform: rotateY(-180deg);
 }
 
+#Drum_page .book .page.flipped:nth-child(odd):before {
+  background: rgba(188, 104, 33, 0.2);
+}
+
 #Drum_page .book .page.flipped:nth-child(even) {
   pointer-events: all;
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+#Drum_page .book .page.flipped:nth-child(even):hover:before {
+  background: rgba(188, 104, 33, 0.03);
+}
+
+#Drum_page .book .page.flipped:nth-child(even):before {
+  background: rgba(188, 104, 33, 0);
 }
 
 #Drum_page *,
