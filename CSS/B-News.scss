@@ -1,3 +1,4 @@
+@import "./TenDrum";
 $fon48: 48px;
 $fon46: 46px;
 $fon42: 42px;
@@ -14,6 +15,15 @@ $fon14: 14px;
     height: 100vh;
     display: flex;
     background-image: url("../img/主頁背景/news-降_工作區域\ 1.jpg");
+    @media (max-width: 1280px) {
+    }
+    @media (max-width: 1024px) {
+        height: auto;
+    }
+    @media (max-width: 768px) {
+    }
+    @media (max-width: 320px) {
+    }
 
     // 左邊清單 切板完成
     .new-title {
@@ -71,20 +81,25 @@ $fon14: 14px;
     // 消息內容
     .new-contexts {
         width: 80%;
-        height: 100vh;
-        margin-top: 5%;
+        height: 100%;
         .new-context {
             display: none;
+            height: 100%;
+            width: 80%;
             .new-contain {
                 width: 100%;
+                height: 100%;
+                margin: auto;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+
                 .fas.fa-circle {
                     font-size: 12px;
                     line-height: 100px;
                     color: #0b6c6d;
                     padding: 0 5px;
+                    margin-top: 5%;
                 }
                 .new-context-title {
                     width: 50%;
@@ -94,7 +109,7 @@ $fon14: 14px;
                     color: #3e3a39;
                     text-align: center;
                     border-bottom: 1px solid #727171;
-
+                    margin-top: 5%;
                     height: 50px;
                     @media (max-width: 1280px) {
                         font-size: $fon32;
@@ -114,6 +129,7 @@ $fon14: 14px;
                 }
                 .new-context-group {
                     width: 100%;
+                    height: 75%;
                     padding: 0 30px;
                     display: flex;
                     flex-wrap: wrap;
@@ -124,69 +140,114 @@ $fon14: 14px;
                         padding-right: 0;
                     }
                     .news {
-                        height: 90%;
-                        padding: 15px;
+                        height: 80%;
+                        padding: 37px;
                         margin: 1%;
-                        background-color: rgba(64, 34, 15, 0.3);
-                        border-radius: 20px;
+                        background-color: rgba($color: #40220f, $alpha: 0.55);
+                        border-radius: 30px;
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: center;
+                        position: relative;
                         .new-imgs {
-                            width: 25%;
-                            height: 300px;
+                            width: 100%;
+                            height: 50%;
                             display: flex;
                             justify-content: center;
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: contain;
+                            @media (max-width: 1024px) {
+                                height: 80%;
+                            }
                         }
                         .new-img-01 {
+                            background-image: url("../img/最新消息/01.工作區/最新消息_工作區域\ 1.jpg");
                         }
                         .new-img-02 {
+                            background-image: url("../img/最新消息/01.工作區/最新消息-02.jpg");
                         }
                         .new-img-03 {
+                            background-image: url("../img/最新消息/01.工作區/最新消息_工作區域\ 1.jpg");
                         }
                         .new-img-04 {
+                            background-image: url("../img/最新消息/01.工作區/最新消息-04.jpg");
                         }
                         .new-img-05 {
+                            background-image: url("../img/最新消息/01.工作區/最新消息-03-04.jpg");
                         }
                         .new-img-06 {
+                            background-image: url("../img/最新消息/01.工作區/最新消息-04.jpg");
                         }
-
+                        .new-text {
+                            width: 100%;
+                            height: 50%;
+                            color: #ffffff;
+                            text-align: left;
+                        }
                         .new-time {
                             width: 100%;
-                            text-align: left;
                             margin-bottom: 10px;
-                            font-size: 14px;
+                            font-size: $fon18;
+                            font-family: "Fredericka the Great", cursive;
+                            @media (max-width: 1280px) {
+                                font-size: $fon16;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon14;
+                            }
                         }
                         .new-name {
                             width: 100%;
-                            font-size: 18px;
-                            text-align: left;
+                            height: 30%;
+                            font-size: $fon24;
+                            @media (max-width: 1280px) {
+                                font-size: $fon20;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: $fon18;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon16;
+                            }
                         }
-                        .new-mores {
-                            width: 100%;
-                            display: flex;
-                            justify-content: flex-end;
-                            align-content: flex-end;
-                            .new-more {
-                                widows: 90%;
-                                font-family: "Fredericka the Great", cursive;
-                                font-size: 20px;
-                                color: #f7f8f8;
-                                background: #b15821;
-                                border-radius: 10px;
-                                text-align: center;
-                                height: 30px;
-                                line-height: 30px;
-                                padding: 1px;
+
+                        .new-more {
+                            position: absolute;
+                            right: 37px;
+                            bottom: 37px;
+                            width: 30%;
+                            font-family: "Fredericka the Great", cursive;
+                            font-size: $fon20;
+                            color: #f7f8f8;
+                            background: #d4a63f;
+                            border-radius: 10px;
+                            text-align: center;
+                            height: 30px;
+                            line-height: 30px;
+
+                            letter-spacing: 3px;
+                            @media (max-width: 1280px) {
+                                font-size: $fon18;
+                                right: 25px;
+                                bottom: 25px;
+                            }
+                            @media (max-width: 1024px) {
+                                font-size: $fon16;
+                                width: 20%;
+                                right: 15px;
+                                bottom: 15px;
+                            }
+                            @media (max-width: 768px) {
+                                font-size: $fon14;
+                                right: 10px;
+                                bottom: 10px;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
                                 letter-spacing: 5px;
-                                &:hover {
-                                    cursor: pointer;
-                                    letter-spacing: 3px;
-                                    transition: 0.3s;
-                                }
+                                transition: 0.5s;
                             }
                         }
                     }

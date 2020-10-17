@@ -8,6 +8,12 @@
   background-image: url("../img/主頁背景/news-降_工作區域 1.jpg");
 }
 
+@media (max-width: 1024px) {
+  .New {
+    height: auto;
+  }
+}
+
 .New .new-title {
   margin-top: 5%;
   margin-left: 10px;
@@ -90,16 +96,19 @@
 
 .New .new-contexts {
   width: 80%;
-  height: 100vh;
-  margin-top: 5%;
+  height: 100%;
 }
 
 .New .new-contexts .new-context {
   display: none;
+  height: 100%;
+  width: 80%;
 }
 
 .New .new-contexts .new-context .new-contain {
   width: 100%;
+  height: 100%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,6 +124,7 @@
   line-height: 100px;
   color: #0b6c6d;
   padding: 0 5px;
+  margin-top: 5%;
 }
 
 .New .new-contexts .new-context .new-contain .new-context-title {
@@ -125,6 +135,7 @@
   color: #3e3a39;
   text-align: center;
   border-bottom: 1px solid #727171;
+  margin-top: 5%;
   height: 50px;
 }
 
@@ -154,6 +165,7 @@
 
 .New .new-contexts .new-context .new-contain .new-context-group {
   width: 100%;
+  height: 75%;
   padding: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,11 +184,11 @@
 }
 
 .New .new-contexts .new-context .new-contain .new-context-group .news {
-  height: 90%;
-  padding: 15px;
+  height: 80%;
+  padding: 37px;
   margin: 1%;
-  background-color: rgba(64, 34, 15, 0.3);
-  border-radius: 20px;
+  background-color: rgba(64, 34, 15, 0.55);
+  border-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,11 +197,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .New .new-contexts .new-context .new-contain .new-context-group .news .new-imgs {
-  width: 25%;
-  height: 300px;
+  width: 100%;
+  height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -201,50 +214,132 @@
   background-size: contain;
 }
 
+@media (max-width: 1024px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-imgs {
+    height: 80%;
+  }
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-img-01 {
+  background-image: url("../img/最新消息/01.工作區/最新消息_工作區域 1.jpg");
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-img-02 {
+  background-image: url("../img/最新消息/01.工作區/最新消息-02.jpg");
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-img-03 {
+  background-image: url("../img/最新消息/01.工作區/最新消息_工作區域 1.jpg");
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-img-04 {
+  background-image: url("../img/最新消息/01.工作區/最新消息-04.jpg");
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-img-05 {
+  background-image: url("../img/最新消息/01.工作區/最新消息-03-04.jpg");
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-img-06 {
+  background-image: url("../img/最新消息/01.工作區/最新消息-04.jpg");
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-text {
+  width: 100%;
+  height: 50%;
+  color: #ffffff;
+  text-align: left;
+}
+
 .New .new-contexts .new-context .new-contain .new-context-group .news .new-time {
   width: 100%;
-  text-align: left;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: "Fredericka the Great", cursive;
+}
+
+@media (max-width: 1280px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-time {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-time {
+    font-size: 14px;
+  }
 }
 
 .New .new-contexts .new-context .new-contain .new-context-group .news .new-name {
   width: 100%;
-  font-size: 18px;
-  text-align: left;
+  height: 30%;
+  font-size: 24px;
 }
 
-.New .new-contexts .new-context .new-contain .new-context-group .news .new-mores {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+@media (max-width: 1280px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-name {
+    font-size: 20px;
+  }
 }
 
-.New .new-contexts .new-context .new-contain .new-context-group .news .new-mores .new-more {
-  widows: 90%;
+@media (max-width: 1024px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-name {
+    font-size: 16px;
+  }
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-more {
+  position: absolute;
+  right: 37px;
+  bottom: 37px;
+  width: 30%;
   font-family: "Fredericka the Great", cursive;
   font-size: 20px;
   color: #f7f8f8;
-  background: #b15821;
+  background: #d4a63f;
   border-radius: 10px;
   text-align: center;
   height: 30px;
   line-height: 30px;
-  padding: 1px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
-.New .new-contexts .new-context .new-contain .new-context-group .news .new-mores .new-more:hover {
+@media (max-width: 1280px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-more {
+    font-size: 18px;
+    right: 25px;
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-more {
+    font-size: 16px;
+    width: 20%;
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .New .new-contexts .new-context .new-contain .new-context-group .news .new-more {
+    font-size: 14px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+.New .new-contexts .new-context .new-contain .new-context-group .news .new-more:hover {
   cursor: pointer;
-  letter-spacing: 3px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  letter-spacing: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .New .new-contexts .actt {
