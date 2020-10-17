@@ -18,71 +18,7 @@ $fon20: 20px;
 $fon18: 18px;
 $fon16: 16px;
 $fon14: 14px;
-body {
-    
-    overflow-x: hidden;
-  }
-.bg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: url() center center no-repeat;
-    background-size: cover;
-  }
-  
-  .smoke,
-  .smoke-bg {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    
-    background-image: url('../img/主頁背景/cloud_PNG4.png');
-    z-index: -4;
-    background-size: cover;
-  }
-  
-  .smoke-bg {
-    
-    background-image: url('../img/主頁背景/sport-smoke.png');
-    z-index: -5;
-  }
-  
-  .smoke {
-    animation: float2 15s infinite ease-in-out;
-  }
-  
-  .smoke-bg {
-    animation: float alternate 30s infinite ease-in-out;
-  }
-  
-  @keyframes float {
-    0% {
-      opacity: 0.8;
-      transform: translateX(3%) scale(1.2);
-    }
-    50% {
-      opacity: 0.8;
-      transform: translateX(0) scale(1.4);
-    }
-    100% {
-      opacity: 0.8;
-      transform: translateX(-3%) scale(1.2);
-    }
-  }
-  @keyframes float2 {
-    0% {
-      opacity: 0;
-      transform: translateX(-10%) scale(1.5);
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(0) scale(1.2);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(10%) scale(1.5);
-    }
-  }
+
 
 // 切板完成
 .index {
@@ -239,16 +175,7 @@ body {
                         right: 42%;
                         top: 165px;
                     }
-                }
-                .cloud03 {
-                    display: none;
-                    width: 50%;
-                    right: 30%;
-                    top: 200px;
-                    @media (max-width: 768px) {
-                        display: block;
-                    }
-                }
+                }                
                 .cloud02 {
                     width: 20%;
                     right: 30%;
