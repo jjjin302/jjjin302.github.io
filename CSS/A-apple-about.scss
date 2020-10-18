@@ -90,8 +90,9 @@ $fon14: 14px;
                     @media (max-width: 768px) {
                         padding: 20px;
                     }
-                    @media (max-width: 320px) {
+                    @media (max-width: 400px) {
                         padding: 10px;
+                        width: 100%;
                     }
                     // 關於十鼓-簡介標題 切板完成
                     .about-title-00 {
@@ -113,7 +114,7 @@ $fon14: 14px;
                             height: 36px;
                             line-height: 36px;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon20;
                             height: 32px;
                             line-height: 32px;
@@ -136,7 +137,7 @@ $fon14: 14px;
                         @media (max-width: 768px) {
                             font-size: $fon18;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon16;
                         }
                     }
@@ -145,7 +146,7 @@ $fon14: 14px;
                     // 沿革標題 切板完成
                     .about-title-01 {
                         margin-top: 3%;
-                        width: 68%;
+                        width: 80%;
                         font-size: $fon48;
                         height: 65px;
                         padding-top: 50px;
@@ -167,8 +168,8 @@ $fon14: 14px;
                             height: 34px;
                             line-height: 0px;
                         }
-                        @media (max-width: 320px) {
-                            margin-top:75px;
+                        @media (max-width: 400px) {
+                            margin-top:0;
 
                             font-size: $fon20;
                             height: 40px;
@@ -180,7 +181,7 @@ $fon14: 14px;
                     ///沿革內容///
                     .about-text-01 {
                         margin-top: 6%;
-                        width: 70%;
+                        width: 100%;
                         display: flex;
                         font-size: $fon30;
                         text-align: left;
@@ -196,7 +197,7 @@ $fon14: 14px;
                             width: 80%;
                             font-size: $fon16;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon14;
                         }
                         .text-wrap {
@@ -223,7 +224,7 @@ $fon14: 14px;
                     @media (max-width: 768px) {
                         padding: 20px;
                     }
-                    @media (max-width: 320px) {
+                    @media (max-width: 400px) {
                         padding: 10px;
                     }
                     .about-title-02 {
@@ -244,7 +245,7 @@ $fon14: 14px;
                             height: 36px;
                             line-height: 36px;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon20;
                             height: 32px;
                             line-height: 32px;
@@ -267,7 +268,7 @@ $fon14: 14px;
                         @media (max-width: 768px) {
                             font-size: $fon18;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon16;
                         }
                         .text-wrap-02 {
@@ -277,7 +278,7 @@ $fon14: 14px;
                                 @media (max-width: 768px) {
                                     margin: 0;
                                 }
-                                @media (max-width: 320px) {
+                                @media (max-width: 400px) {
                                 }
                             }
                             // 時間軸
@@ -390,7 +391,7 @@ $fon14: 14px;
                     @media (max-width: 768px) {
                         padding: 20px;
                     }
-                    @media (max-width: 320px) {
+                    @media (max-width: 400px) {
                         padding: 10px;
                     }
                     // 標題
@@ -413,7 +414,7 @@ $fon14: 14px;
                             height: 36px;
                             line-height: 36px;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon20;
                             height: 32px;
                             line-height: 32px;
@@ -437,7 +438,7 @@ $fon14: 14px;
                             font-size: $fon16;
                             width: 80%;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon14;
                         }
                         .about-text-5-team {
@@ -482,7 +483,7 @@ $fon14: 14px;
                     @media (max-width: 768px) {
                         padding-top: 10%;
                     }
-                    @media (max-width: 320px) {
+                    @media (max-width: 400px) {
                         padding-top: 10%;
                     }
                     .en-title {
@@ -502,7 +503,7 @@ $fon14: 14px;
                             @media (max-width: 768px) {
                                 font-size: 60px;
                             }
-                            @media (max-width: 320px) {
+                            @media (max-width: 400px) {
                                 font-size: $fon48;
                             }
                         }
@@ -520,7 +521,7 @@ $fon14: 14px;
                             @media (max-width: 768px) {
                                 font-size: $fon14;
                             }
-                            @media (max-width: 320px) {
+                            @media (max-width: 400px) {
                             }
                         }
                     }
@@ -536,7 +537,7 @@ $fon14: 14px;
                         @media (max-width: 768px) {
                             font-size: 40px;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon32;
                         }
                     }
@@ -577,7 +578,7 @@ $fon14: 14px;
                         @media (max-width: 768px) {
                             width: 70%;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             width: 80%;
                         }
 
@@ -591,7 +592,7 @@ $fon14: 14px;
                             @media (max-width: 768px) {
                                 line-height: 72px;
                             }
-                            @media (max-width: 320px) {
+                            @media (max-width: 400px) {
                                 line-height: 64px;
                             }
                         }
@@ -614,7 +615,7 @@ $fon14: 14px;
                                 height: 36px;
                                 line-height: 36px;
                             }
-                            @media (max-width: 320px) {
+                            @media (max-width: 400px) {
                                 font-size: $fon20;
                                 height: 32px;
                                 line-height: 32px;
@@ -644,7 +645,7 @@ $fon14: 14px;
                             width: 90%;
                             border-radius: 90px;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             border-radius: 60px;
                         }
                         .img-group {
@@ -674,7 +675,7 @@ $fon14: 14px;
                             @media (max-width: 768px) {
                                 font-size: $fon18;
                             }
-                            @media (max-width: 320px) {
+                            @media (max-width: 400px) {
                                 font-size: $fon14;
                             }
                         }
@@ -713,7 +714,7 @@ $fon14: 14px;
                     @media (max-width: 768px) {
                         width: 70%;
                     }
-                    @media (max-width: 320px) {
+                    @media (max-width: 400px) {
                         width: 80%;
                     }
                     .fas.fa-circle {
@@ -726,7 +727,7 @@ $fon14: 14px;
                         @media (max-width: 768px) {
                             line-height: 72px;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             line-height: 56px;
                         }
                     }
@@ -748,7 +749,7 @@ $fon14: 14px;
                             height: 36px;
                             line-height: 36px;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon20;
                             height: 28px;
                             line-height: 28px;
@@ -798,7 +799,7 @@ $fon14: 14px;
                             @media (max-width: 768px) {
                                 font-size: $fon18;
                             }
-                            @media (max-width: 320px) {
+                            @media (max-width: 400px) {
                                 font-size: $fon14;
                             }
                         }

@@ -113,9 +113,10 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About {
     padding: 10px;
+    width: 100%;
   }
 }
 
@@ -146,7 +147,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About .about-title-00 {
     font-size: 20px;
     height: 32px;
@@ -178,7 +179,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About .about-text-00 {
     font-size: 16px;
   }
@@ -186,7 +187,7 @@
 
 #apple_effect .parallax_window .effect_box .About .about-title-01 {
   margin-top: 3%;
-  width: 68%;
+  width: 80%;
   font-size: 48px;
   height: 65px;
   padding-top: 50px;
@@ -214,9 +215,9 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About .about-title-01 {
-    margin-top: 75px;
+    margin-top: 0;
     font-size: 20px;
     height: 40px;
     line-height: -5;
@@ -225,7 +226,7 @@
 
 #apple_effect .parallax_window .effect_box .About .about-text-01 {
   margin-top: 6%;
-  width: 70%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +255,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About .about-text-01 {
     font-size: 14px;
   }
@@ -297,7 +298,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-02 {
     padding: 10px;
   }
@@ -329,7 +330,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-02 .about-title-02 {
     font-size: 20px;
     height: 32px;
@@ -369,7 +370,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-02 .about-text-02 {
     font-size: 16px;
   }
@@ -514,7 +515,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-03 {
     padding: 10px;
   }
@@ -547,7 +548,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-03 .about-title-00 {
     font-size: 20px;
     height: 32px;
@@ -581,7 +582,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-03 .about-text-00 {
     font-size: 14px;
   }
@@ -643,7 +644,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-06 {
     padding-top: 10%;
   }
@@ -680,7 +681,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-06 .en-title .en-name {
     font-size: 48px;
   }
@@ -733,7 +734,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .About-06 .cn-title {
     font-size: 32px;
   }
@@ -793,7 +794,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .sec-07 .title-07 {
     width: 80%;
   }
@@ -817,7 +818,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .sec-07 .title-07 .fas.fa-circle {
     line-height: 64px;
   }
@@ -850,7 +851,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .sec-07 .title-07 .sec-07-title {
     font-size: 20px;
     height: 32px;
@@ -892,7 +893,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .sec-07 .sec-07-context {
     border-radius: 60px;
   }
@@ -939,7 +940,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .sec-07 .sec-07-context .sec-07-text {
     font-size: 14px;
   }
@@ -989,7 +990,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .title-08 {
     width: 80%;
   }
@@ -1013,7 +1014,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .title-08 .fas.fa-circle {
     line-height: 56px;
   }
@@ -1045,7 +1046,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .title-08 .sec-08-title {
     font-size: 20px;
     height: 28px;
@@ -1122,7 +1123,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   #apple_effect .parallax_window .effect_box .sec-08-context .sec-08-textbox .sec-08-text {
     font-size: 14px;
   }
