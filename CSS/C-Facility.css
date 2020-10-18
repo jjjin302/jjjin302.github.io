@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .facility-title {
     font-size: 24px;
   }
@@ -212,7 +212,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .btn.btn-img {
     font-size: 14px;
   }

@@ -46,7 +46,7 @@ $fon14: 14px;
                 position: absolute;
                 right: 1%;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 400px) {
                 width: 100%;
             }
             .Menu-group {
@@ -65,7 +65,7 @@ $fon14: 14px;
                 @media (max-width: 768px) {
                     font-size: $fon18;
                 }
-                @media (max-width: 320px) {
+                @media (max-width: 400px) {
                     font-size: $fon14;
                 }
                 .index-btn {

@@ -42,7 +42,7 @@ $fon14: 14px;
     @media (max-width: 768px) {
         font-size: $fon36;
     }
-    @media (max-width: 320px) {
+    @media (max-width: 400px) {
         font-size: $fon24;
     }
 }
@@ -152,7 +152,7 @@ $fon14: 14px;
         width: 30%;
         font-size: $fon16;
     }
-    @media (max-width: 320px) {
+    @media (max-width: 400px) {
         font-size: $fon14;
         
     }

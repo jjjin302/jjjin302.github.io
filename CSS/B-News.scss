@@ -94,7 +94,7 @@ body {
     }
     @media (max-width: 768px) {
     }
-    @media (max-width: 320px) {
+    @media (max-width: 400px) {
     }
 
     // 左邊清單 切板完成
@@ -118,7 +118,7 @@ body {
                 font-size: $fon42;
                 margin-bottom: 30px;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 400px) {
                 font-size: $fon24;
             }
         }
@@ -140,7 +140,7 @@ body {
             @media (max-width: 768px) {
                 font-size: $fon24;
             }
-            @media (max-width: 320px) {
+            @media (max-width: 400px) {
                 font-size: $fon20;
             }
         }
@@ -195,7 +195,7 @@ body {
                         font-size: $fon24;
                     }
 
-                    @media (max-width: 320px) {
+                    @media (max-width: 400px) {
                         font-size: $fon20;
                     }
                 }

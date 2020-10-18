@@ -25,8 +25,7 @@ $fon14: 14px;
     background-repeat: no-repeat;
     .button-bar {
         height: calc(100vh - 30px);
-        width: 20%;
-        // background-color: #e9e1d3;
+        width: 20%;       
         display: flex;
         .button-g {
             height: 50%;
@@ -64,7 +63,7 @@ $fon14: 14px;
                 @media (max-width: 768px) {
                     font-size: $fon20;
                 }
-                @media (max-width: 320px) {
+                @media (max-width: 400px) {
                     font-size: $fon18;
                 }
                 // 按鈕樣式
@@ -193,7 +192,7 @@ $fon14: 14px;
                         @media (max-width: 768px) {
                             font-size: $fon18;
                         }
-                        @media (max-width: 320px) {
+                        @media (max-width: 400px) {
                             font-size: $fon16;
                         }
                     }

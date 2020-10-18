@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .index .Nav .left-group {
     width: 100%;
   }
@@ -69,7 +69,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .index .Nav .left-group .Menu-group {
     font-size: 14px;
   }

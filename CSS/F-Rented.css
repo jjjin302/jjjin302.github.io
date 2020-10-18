@@ -83,7 +83,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .Rented .button-bar .button-g .lease-box {
     font-size: 18px;
   }
@@ -205,7 +205,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .Rented .button-bar .button-g .lease-box .modal-content .text-box {
     font-size: 16px;
   }

@@ -65,7 +65,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .park_tittle {
     font-size: 18px;
   }
@@ -97,7 +97,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .park_lease_box {
     font-size: 16px;
   }
@@ -136,7 +136,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .park_lease_tour {
     font-size: 16px;
   }
@@ -175,7 +175,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .park_lease_show {
     font-size: 16px;
   }
