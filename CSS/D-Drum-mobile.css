@@ -165,18 +165,18 @@
           align-items: center;
 }
 
-.swiper-slide .mobile-art {
+.mobile-art {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide .mobile-art .mobile-art-img {
+.mobile-art-img {
   width: 250px;
   height: 250px;
 }
 
-.swiper-slide .mobile-art .mobile-art-name {
+.mobile-art-name {
   background-color: #efefef;
   border: 1px solid #e9c37c;
   width: 100%;
@@ -194,7 +194,7 @@
       flex-wrap: wrap;
 }
 
-.swiper-slide .mobile-art .mobile-art-name .mobile-art-text {
+.mobile-art-text {
   width: 60%;
 }
 /*# sourceMappingURL=D-Drum-mobile.css.map */
