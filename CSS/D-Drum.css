@@ -8,6 +8,12 @@
   height: 100vh;
 }
 
+@media (max-width: 320px) {
+  #Drum_page {
+    display: none;
+  }
+}
+
 #Drum_page .Drum {
   width: 100%;
   min-height: 100%;
@@ -106,6 +112,7 @@
 #Drum_page .page .page-text-about h3 {
   width: 100%;
   height: 50px;
+  font-size: 28px;
   line-height: 50px;
   text-align: center;
   color: #f7f8f8;
@@ -117,6 +124,7 @@
 #Drum_page .page .page-text-about h6 {
   width: 100%;
   font-weight: unset;
+  font-size: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,6 +159,7 @@
   width: 100%;
   height: 50px;
   line-height: 50px;
+  font-size: 28px;
   text-align: center;
   color: #f7f8f8;
   margin-top: 20px;
@@ -160,6 +169,7 @@
 #Drum_page .page .page-text-note h6 {
   width: 100%;
   font-weight: unset;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +179,7 @@
 #Drum_page .page .page-text-note h6 .text-time {
   width: 15%;
   height: 100%;
+  font-family: "Fredericka the Great", cursive;
 }
 
 #Drum_page .page .page-text-note h6 .text-con {
@@ -194,6 +205,7 @@
   width: 100%;
   height: 50px;
   line-height: 50px;
+  font-size: 28px;
   text-align: center;
   color: #231815;
   margin-top: 30px;
@@ -205,11 +217,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 24px;
   margin: 10px 0;
 }
 
 #Drum_page .page .page-text-award h6 .text-time {
   width: 15%;
+  font-family: "Fredericka the Great", cursive;
 }
 
 #Drum_page .page .page-text-award h6 .text-con {
@@ -218,7 +232,7 @@
 
 #Drum_page .page .page-text-award .page-img-01 {
   margin-top: 50px;
-  height: 30%;
+  height: 40%;
 }
 
 #Drum_page .page .page-text-award .line02 {
@@ -248,6 +262,7 @@
   width: 50%;
   height: 50px;
   line-height: 50px;
+  font-size: 28px;
   text-align: center;
   color: #231815;
   margin-top: 20px;
@@ -652,5 +667,232 @@
 
 #Drum_page .page:nth-child(odd) {
   background-position: right top;
+}
+
+#Drum-mobile {
+  background-image: url("../img/鼓樂饗宴/鼓樂饗宴背景.png");
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#Drum-mobile .Drum-mobile-title {
+  color: #673a1b;
+  font-size: 30px;
+  padding: 20px;
+}
+
+#Drum-mobile .dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#Drum-mobile .dropdown .dropbtn {
+  background: none;
+  color: #0b6c6d;
+  padding: 16px;
+  font-size: 20px;
+  height: 30px;
+  line-height: 30px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+#Drum-mobile .dropdown .dropbtn .fal.fa-angle-down {
+  margin-left: 10px;
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#Drum-mobile .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(237, 227, 202, 0.5);
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 18px;
+}
+
+#Drum-mobile .dropdown-content .drum-title01 {
+  color: #7f4f21;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+#Drum-mobile .dropdown-content .drum-title01:hover {
+  background-color: #ede3ca;
+}
+
+#Drum-mobile .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#Drum-mobile .dropdown:hover .dropbtn {
+  color: rgba(11, 108, 109, 0.5);
+}
+
+#Drum-mobile .act {
+  border-bottom: none;
+  color: #231815;
+}
+
+#Drum-mobile .drum-context {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#Drum-mobile .drum-context .mobile-con {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(177, 88, 33, 0.28);
+  border-radius: 20px;
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context {
+  width: 100%;
+  padding: 10px;
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts {
+  color: #231815;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .text-time {
+  font-family: "Fredericka the Great", cursive;
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img01 {
+  background-image: url("../img/樂團成員/成員去背/王昱淇-截圖.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img02 {
+  background-image: url("../img/樂團成員/成員去背/林孟緯拷貝.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img03 {
+  background-image: url("../img/樂團成員/成員去背/李意瑩.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img04 {
+  background-image: url("../img/樂團成員/成員去背/許瑋庭.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img05 {
+  background-image: url("../img/樂團成員/成員去背/吳鴻村.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img06 {
+  background-image: url("../img/樂團成員/成員去背/江逸芹.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img07 {
+  background-image: url("../img/樂團成員/成員去背/林薏軒.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img08 {
+  background-image: url("../img/樂團成員/成員去背/張嘉方.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img09 {
+  background-image: url("../img/樂團成員/成員去背/徐霈純.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img10 {
+  background-image: url("../img/樂團成員/成員去背/黃士芬.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img11 {
+  background-image: url("../img/樂團成員/成員去背/黃志荃.png");
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .art-img {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .overlay-ToRight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #efefef;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art .overlay-ToRight .art-name {
+  width: 100%;
+  height: 100%;
+  color: #231815;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: left;
+}
+
+#Drum-mobile .drum-context .mobile-con .mobile-context .mobile-texts .art:hover > .overlay-ToRight {
+  width: 100%;
+  border: 1px solid #e9c37c;
+}
+
+#Drum-mobile .drum-context .book-img {
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 30%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#Drum-mobile .drum-context .book-img01 {
+  background-image: url("../img/鼓樂饗宴/手機版翻書01.png");
+}
+
+#Drum-mobile .drum-context .book-img02 {
+  background-image: url("../img/鼓樂饗宴/手機版翻書02.png");
+}
+
+#Drum-mobile .drum-context .book-img03 {
+  background-image: url("../img/鼓樂饗宴/手機版翻書03.png");
+}
+
+#Drum-mobile .drum-context .book-img04 {
+  background-image: url("../img/鼓樂饗宴/手機版翻書04.png");
+}
+
+#Drum-mobile .actt {
+  display: block;
 }
 /*# sourceMappingURL=D-Drum.css.map */
