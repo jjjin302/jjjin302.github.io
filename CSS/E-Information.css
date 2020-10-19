@@ -3,6 +3,112 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url() center center no-repeat;
+  background-size: cover;
+}
+
+.smoke,
+.smoke-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/主頁背景/cloud_PNG4.png");
+  z-index: 1;
+  background-size: cover;
+}
+
+.smoke-bg {
+  background-image: url("../img/主頁背景/sport-smoke.png");
+  z-index: 0;
+}
+
+.smoke {
+  -webkit-animation: float2 15s infinite ease-in-out;
+          animation: float2 15s infinite ease-in-out;
+}
+
+.smoke-bg {
+  -webkit-animation: float alternate 30s infinite ease-in-out;
+          animation: float alternate 30s infinite ease-in-out;
+}
+
+@-webkit-keyframes float {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translateX(3%) scale(1.2);
+            transform: translateX(3%) scale(1.2);
+  }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: translateX(0) scale(1.4);
+            transform: translateX(0) scale(1.4);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transform: translateX(-3%) scale(1.2);
+            transform: translateX(-3%) scale(1.2);
+  }
+}
+
+@keyframes float {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translateX(3%) scale(1.2);
+            transform: translateX(3%) scale(1.2);
+  }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: translateX(0) scale(1.4);
+            transform: translateX(0) scale(1.4);
+  }
+  100% {
+    opacity: 0.8;
+    -webkit-transform: translateX(-3%) scale(1.2);
+            transform: translateX(-3%) scale(1.2);
+  }
+}
+
+@-webkit-keyframes float2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10%) scale(1.5);
+            transform: translateX(-10%) scale(1.5);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(0) scale(1.2);
+            transform: translateX(0) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(10%) scale(1.5);
+            transform: translateX(10%) scale(1.5);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-10%) scale(1.5);
+            transform: translateX(-10%) scale(1.5);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(0) scale(1.2);
+            transform: translateX(0) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(10%) scale(1.5);
+            transform: translateX(10%) scale(1.5);
+  }
 }
 
 .park_pag {
@@ -19,6 +125,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 4;
 }
 
 .park_button_bar {
@@ -35,6 +142,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+  z-index: 5;
 }
 
 .park_tittle {
@@ -217,6 +325,7 @@ a.park_lease_show:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 5;
 }
 
 .park_photobox {
